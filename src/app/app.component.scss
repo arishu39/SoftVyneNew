@@ -1,0 +1,64 @@
+/* Add this to your styles.css */
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: #2c3e50; /* Dark Navy */
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #00bfae; /* Teal */
+  }
+  
+  .navbar-nav .nav-item .active {
+    font-weight: bold;
+    color: #00bfae;
+  }
+  
+  /* Section Styling */
+  section {
+    padding: 60px 0;
+    margin: 0 0 20px 0;
+  }
+  
+  /* Background Colors for sections */
+  #home {
+    background-color: #2c3e50;
+    color: white;
+  }
+  
+  #about, #portfolio {
+    background-color: #f8f9fa;
+  }
+  
+  #services, #contact {
+    background-color: #ecf0f1;
+  }
+  
+  footer {
+    background-color: #2c3e50;
+    color: white;
+  }
+  .content {
+    margin-top: 30px;
+  }
+  /* Adjust padding-top for each section to prevent overlap with navbar */
+  #home {
+    padding-top: 100px; /* Ensure Home section is not hidden */
+  }
+  .about, .services, .portfolio, .contact {
+    padding-top: 80px; /* Adjust padding for other sections */
+    padding-bottom: 80px;
+  }
+  
