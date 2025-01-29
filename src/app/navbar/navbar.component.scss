@@ -1,5 +1,42 @@
-.navbar-nav .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Subtle background change */
-    border-radius: 5px; /* Rounded corners on hover */
-  }
-  
+// .navbar-nav .nav-link:hover {
+//     background-color: rgba(255, 255, 255, 0.2); /* Subtle background change */
+//     border-radius: 5px; /* Rounded corners on hover */
+//   }
+.navbar {
+  position: sticky;
+  top: 0;
+}
+.navbar .brand {
+  margin: 0px;
+  font-weight: 700;
+  color: #7f8184;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 25px;
+}
+.navbar .nav-link {
+  color: #474554;
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.navbar .nav-link:active,
+.navbar .nav-link:hover {
+  background-color: rgba(255, 90, 44, 0.1);
+  border-radius: 5px;
+  color: #495057;
+}
+.navbar .btn {
+  border: 2px solid grey;
+  padding: 4px 40px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px #8685ef;
+}
+.navbar .btn:hover,
+.navbar .btn:active {
+  background-color: #8685ef;
+  color: #fff;
+  border: none;
+}

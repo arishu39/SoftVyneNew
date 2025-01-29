@@ -1,0 +1,48 @@
+.aboutus {
+  padding-top: 50px;
+  margin-top: 10px;
+}
+.aboutus h2 {
+  font-size: 55px;
+  color: #373b3e;
+}
+.about-subheading {
+  color: #8685ef;
+  font-size: 20px;
+}
+.aboutus .card {
+  border: none;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.aboutus .card:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.aboutus h5 {
+  color: #5f5c6d;
+}
+
+.aboutus .btn {
+  border: 2px solid grey;
+  padding: 4px 40px;
+  font-weight: 700;
+  cursor: pointer;
+  font-weight: 500;
+  background: #8685ef;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+}
+.aboutus .btn:hover {
+  background: #889fa5;
+}
+.aboutus .card-text {
+  color: #889fa5;
+  font-weight: 500;
+  word-spacing: 1px;
+}
