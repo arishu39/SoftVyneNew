@@ -1,0 +1,23 @@
+.client-section h5 {
+  font-size: 55px;
+  color: #373b3e;
+}
+.client-section p {
+  color: #8685ef;
+  font-size: 20px;
+}
+.client-section .btn {
+  border: 2px solid grey;
+  padding: 4px 40px;
+  font-weight: 700;
+  cursor: pointer;
+  font-weight: 500;
+  background: #8685ef;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+}
+.client-section .btn:hover,
+.client-section .btn:active {
+  background: #889fa5;
+}

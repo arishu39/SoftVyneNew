@@ -1,8 +1,22 @@
-.tech-stack h2 {
+.tech-section h2 {
   font-size: 55px;
   color: #373b3e;
 }
-.techsection p {
+.tech-section p {
   color: #8685ef;
   font-size: 20px;
+}
+.tech-section .nav-link {
+  color: #474554;
+  font-weight: 500;
+}
+.tech-section .active {
+  background: #8685ef;
+  color: #fff;
+}
+.tech-category {
+  margin-bottom: 45px;
+}
+.tech-icons img {
+  margin-right: 20px;
 }

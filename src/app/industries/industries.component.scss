@@ -20,3 +20,26 @@
 // .industry-item {
 //   text-align: center;
 // }
+.industry-section h2 {
+  font-size: 55px;
+  color: #373b3e;
+}
+.industry-description {
+  color: #8685ef;
+  font-size: 20px;
+}
+.industry-section .btn {
+  border: 2px solid grey;
+  padding: 4px 40px;
+  font-weight: 700;
+  cursor: pointer;
+  font-weight: 500;
+  background: #8685ef;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+}
+.industry-section .btn:hover,
+.industry-section .btn:active {
+  background: #889fa5;
+}

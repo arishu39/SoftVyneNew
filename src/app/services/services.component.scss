@@ -1,3 +1,47 @@
-.services .card {
-  background: linear-gradient(235deg, #ffc107ba, #ee3300bd);
+.services-section .card {
+  margin-top: 60px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+.services-section .card img {
+  transform: translateY(-80px);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.services-section h2 {
+  font-size: 55px;
+  color: #373b3e;
+}
+
+.services-section p {
+  color: #8685ef;
+  font-size: 20px;
+}
+.services-section .card-body {
+  transform: translateY(-62px);
+}
+.services-section .btn {
+  border: 2px solid grey;
+  padding: 4px 40px;
+  font-weight: 700;
+  cursor: pointer;
+  font-weight: 500;
+  background: #8685ef;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+}
+.services-section .btn:hover,
+.about-us .btn:active {
+  background: #889fa5;
+}
+.services-section .card-text {
+  color: #889fa5;
+  font-weight: 500;
+  font-size: 13px;
+}
+.services-section h5 {
+  color: #5f5c6d;
 }
