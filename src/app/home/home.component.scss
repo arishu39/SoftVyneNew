@@ -1,33 +1,55 @@
-// Blue: #0077C8 (A vibrant blue used for the "Reach new audiences" text and the "Get Started" button.)
-// Black: #000000 (Used for the main headings: "Digital growth tailored to your business" and the supporting text below.)
-// Gray: #909090 (Used for the subtle shadow under the "Get Started" button.)
-// White: #FFFFFF (Used for the background of the image.)
-.main h1 {
-  font-size: 80px;
-  color: #373b3e;
-}
-.main p {
-  font-size: 25px;
-  margin-top: 30px;
-  color: #8685ef;
-}
-.main img {
+/* Ensure the section is full width and full height based on content */
+.main {
+  position: relative;
   width: 100%;
-  height: 100%;
-}
-.main button {
-  border: 2px solid grey;
-  padding: 4px 40px;
-  font-weight: 700;
-  cursor: pointer;
-  font-weight: bold;
-  background: #5f5c6d;
-  color: #ffffff;
-  text-transform: uppercase;
+  background-image: url('/assets/Fynore_Background_image_800px.png');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0; /* Adjust padding to control the height of the section */
+  height: 800px;
 }
 
-.main button:hover,
-.main button:active {
-  background-color: #8685ef;
-  transform: scale(1.1);
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: -220px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  color: rgb(31, 31, 31); /* Text color for visibility*/
+  text-align: center;
+}
+
+h1{
+  margin: 10px 0;
+  font-size: 5rem;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff; /* Button styling */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Button hover effect */
 }
