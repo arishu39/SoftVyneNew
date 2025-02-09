@@ -1,43 +1,77 @@
-// .navbar-nav .nav-link:hover {
-//     background-color: rgba(255, 255, 255, 0.2); /* Subtle background change */
-//     border-radius: 5px; /* Rounded corners on hover */
-//   }
-
+/* Sticky Navbar with Shadow */
 .navbar {
   position: sticky;
   top: 0;
-}
-.navbar .brand {
-  margin: 0px;
-  font-weight: 700;
-  color: #7f8184;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 25px;
-}
-.navbar .nav-link {
-  color: #474554;
-  margin-right: 20px;
-  font-weight: 500;
-  font-size: 18px;
+  z-index: 1000;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  padding: 10px 0;
 }
 
-.navbar .nav-link:active,
+/* Logo Styling */
+.navbar-brand img {
+  height: 60px;
+}
+
+/* Nav Links */
+.navbar .nav-link {
+  color: #333;
+  font-weight: 500;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
 .navbar .nav-link:hover {
   background-color: rgba(255, 90, 44, 0.1);
   border-radius: 5px;
-  color: #495057;
+  color: #ff5a2c;
 }
-.navbar .btn {
-  border: 2px solid grey;
-  padding: 4px 40px;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: 2px 2px 2px #8685ef;
-}
-.navbar .btn:hover,
-.navbar .btn:active {
-  background-color: #8685ef;
-  color: #fff;
+
+/* Dropdown Styling */
+.dropdown-menu {
+  border-radius: 8px;
   border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 90, 44, 0.1);
+  color: #ff5a2c;
+}
+
+/* Call-to-Action Button */
+.navbar .btn {
+  background-color: #ff5a2c;
+  color: white;
+  border: none;
+  padding: 8px 25px;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(255, 90, 44, 0.3);
+}
+
+.navbar .btn:hover {
+  background-color: #e04e24;
+  box-shadow: 2px 2px 10px rgba(255, 90, 44, 0.5);
+}
+
+/* Responsive Dropdowns */
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
 }
