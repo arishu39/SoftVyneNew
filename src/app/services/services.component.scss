@@ -1,3 +1,19 @@
+/* Section Title - Consistent with Other Sections */
+.section-title {
+  font-size: 50px;
+  color: #373b3e;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Description Styling */
+.services-description {
+  color: #5a5a8e;
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
 /* Ensures all cards have the same height */
 .services-section .row {
   display: flex;
@@ -5,7 +21,7 @@
   justify-content: center;
 }
 
-/* Card Container */
+/* Card Styling */
 .services-section .card {
   display: flex;
   flex-direction: column;
@@ -39,17 +55,17 @@
 
 /* Ensures button is at the bottom */
 .learn-more-btn {
-  background: #8685ef;
+  background: #6558f5;
   color: #ffffff;
-  padding: 8px 30px;
+  padding: 10px 30px;
   font-weight: 600;
   text-transform: uppercase;
-  border: none;
+  border-radius: 6px;
   transition: background 0.3s ease;
   align-self: center;
   margin-top: auto; /* Pushes button to the bottom */
 }
 
 .learn-more-btn:hover {
-  background: #889fa5;
+  background: #4c44c0;
 }

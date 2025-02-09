@@ -1,8 +1,16 @@
+/* Background Styling */
+.industry-section {
+  background: linear-gradient(to right, #f9f9f9, #eef1f6);
+  padding: 60px 20px;
+  border-radius: 15px;
+}
+
 /* Section Title & Description */
 .industry-section h2 {
-  font-size: 55px;
+  font-size: 50px;
   color: #373b3e;
   font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .industry-description {
@@ -21,7 +29,7 @@
 
 .industry-item {
   background: #ffffff;
-  padding: 20px;
+  padding: 25px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -34,24 +42,24 @@
 }
 
 .industry-icon {
-  font-size: 40px;
-  color: #8685ef;
-  margin-bottom: 10px;
+  font-size: 42px;
+  color: #6558f5;
+  margin-bottom: 12px;
 }
 
 /* Button */
 .industry-btn {
-  border: 2px solid grey;
-  padding: 10px 40px;
+  padding: 12px 40px;
   font-weight: 700;
   cursor: pointer;
-  background: #8685ef;
+  background: #6558f5;
   color: #ffffff;
   text-transform: uppercase;
-  border: none;
+  border-radius: 8px;
   margin-top: 30px;
+  transition: background 0.3s;
 }
 
 .industry-btn:hover {
-  background: #889fa5;
+  background: #4c44c0;
 }
