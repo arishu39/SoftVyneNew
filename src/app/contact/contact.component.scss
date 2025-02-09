@@ -1,41 +1,48 @@
+/* Contact Section Styling */
 .contact-section {
   text-align: center;
-  padding: 60px 0;
-  background: linear-gradient(
-    to top,
-    #fff1eb 0%,
-    #ace0f9 100%
-  ); /* Matching other sections */
+  padding: 60px 20px;
+  background: #f8f9fa; /* Light gray for a clean look */
   border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
+/* Heading Styles */
 .contact-section h2 {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
-  color: #373b3e; /* Keeping consistency */
-  margin-bottom: 20px;
+  color: #2d4059;
+  margin-bottom: 15px;
 }
 
 .contact-section p {
-  color: #555; /* Softened for readability */
+  color: #555;
   font-size: 18px;
+  margin-bottom: 30px;
 }
 
+/* Form Box */
 .contact-form {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 25px;
+  background: #ffffff;
+  padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Softer shadow */
-  backdrop-filter: blur(5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align text inside form to the left */
+  max-width: 500px; /* Prevent form from being too wide */
+  margin: auto; /* Center the form */
 }
 
+/* Label Styling */
 .contact-form label {
-  font-size: 18px;
-  font-weight: 500;
-  color: #373b3e;
-  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d4059;
+  margin-bottom: 8px;
+  display: block;
+  text-align: left;
 }
 
+/* Input & Select Styling */
 .contact-form input,
 .contact-form select {
   width: 100%;
@@ -43,13 +50,15 @@
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  background-color: #fdf2e9; /* Matching the theme */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
 }
 
+/* Submit Button */
 .btn-form {
-  background: #8685ef; /* Theme Color */
-  color: #fff;
+  background: #007bff;
+  color: #ffffff;
   padding: 12px;
   font-size: 16px;
   width: 100%;
@@ -60,46 +69,55 @@
 }
 
 .btn-form:hover {
-  background: #6a64e0; /* Darker shade for hover */
+  background: #0056b3;
 }
 
+/* Office Location Styling */
+.contact-info {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-info h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2d4059;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Google Map */
 .map iframe {
   border-radius: 10px;
   width: 100%;
   height: 250px;
 }
 
-/* Responsive */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-  .contact-section .row {
-    flex-direction: column;
+  .contact-form {
+    padding: 20px;
   }
-
-  .contact-section .col-md-6 {
-    margin-bottom: 20px;
+  .contact-info {
+    padding: 15px;
   }
-}
-
-.contact-form label {
-  font-size: 18px;
-  font-weight: 500;
-  color: #373b3e;
-  margin-bottom: 5px;
-  display: block;
-  text-align: left; /* Aligns labels to the left */
-}
-
-.contact-form input,
-.contact-form select {
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #fdf2e9;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form {
-  text-align: left; /* Ensures form elements align left */
 }
