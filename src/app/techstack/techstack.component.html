@@ -6,106 +6,146 @@
   </p>
 
   <!-- Navigation Tabs -->
-  <ul class="nav nav-tabs mb-4 justify-content-center">
+  <ul class="nav nav-tabs mb-4 justify-content-center" id="techTabs" role="tablist">
     <li class="nav-item">
-      <a class="nav-link active" href="#">Web</a>
+      <a class="nav-link active" id="web-tab" data-bs-toggle="tab" href="#web" role="tab" aria-controls="web" aria-selected="true">Web</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Mobile</a>
+      <a class="nav-link" id="mobile-tab" data-bs-toggle="tab" href="#mobile" role="tab" aria-controls="mobile" aria-selected="false">Mobile</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">DevOps</a>
+      <a class="nav-link" id="devops-tab" data-bs-toggle="tab" href="#devops" role="tab" aria-controls="devops" aria-selected="false">DevOps</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Cloud</a>
+      <a class="nav-link" id="cloud-tab" data-bs-toggle="tab" href="#cloud" role="tab" aria-controls="cloud" aria-selected="false">Cloud</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Platforms</a>
+      <a class="nav-link" id="platforms-tab" data-bs-toggle="tab" href="#platforms" role="tab" aria-controls="platforms" aria-selected="false">Platforms</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Relational Databases</a>
+      <a class="nav-link" id="relational-databases-tab" data-bs-toggle="tab" href="#relational-databases" role="tab" aria-controls="relational-databases" aria-selected="false">Relational Databases</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Big Data</a>
+      <a class="nav-link" id="big-data-tab" data-bs-toggle="tab" href="#big-data" role="tab" aria-controls="big-data" aria-selected="false">Big Data</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Machine Learning</a>
+      <a class="nav-link" id="machine-learning-tab" data-bs-toggle="tab" href="#machine-learning" role="tab" aria-controls="machine-learning" aria-selected="false">Machine Learning</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Automation Tools</a>
+      <a class="nav-link" id="automation-tools-tab" data-bs-toggle="tab" href="#automation-tools" role="tab" aria-controls="automation-tools" aria-selected="false">Automation Tools</a>
     </li>
   </ul>
-</div>
 
-<!-- Technology Categories -->
-<div class="container tech-category">
-  <h5 class="tech-heading">BACK END</h5>
-  <div class="d-flex flex-wrap justify-content-center tech-icons">
-    <img
-      src="assets/techstack/RubyRails.png"
-      alt="Ruby on Rails"
-    />
-    <img
-      src="assets/techstack/NET.png"
-      alt=".NET"
-    />
-    <img
-    src="assets/techstack/NETcore.png"
-    alt=".NET Core"
-    />
-    <img
-    src="assets/techstack/Node.js.png"
-    alt="NodeJS"
-    />
-    <img
-    src="assets/techstack/Python.png"
-    alt="Python"
-    />
-    <img
-    src="assets/techstack/Java.png"
-    alt="JAVA"
-    />  
-    <img    
-    src="assets/techstack/Go.png"
-    alt="Go"
-    />
-    <img
-    src="assets/techstack/PHP.png"
-    alt="PHP"
-    />
-    <img
-    src="assets/techstack/Laravel.png"
-    alt="Laravel"
-    />          
-  </div>
-</div>
+  <div class="tab-content" id="techTabsContent">
+    <div class="tab-pane fade show active" id="web" role="tabpanel" aria-labelledby="web-tab">
+      <!-- Technology Categories -->
+      <div class="container tech-category">
+        <h5 class="tech-heading">BACK END</h5>
+        <div class="d-flex flex-wrap justify-content-center tech-icons">
+          <img
+            src="assets/techstack/RubyRails.png"
+            alt="Ruby on Rails"
+          />
+          <img
+            src="assets/techstack/NET.png"
+            alt=".NET"
+          />
+          <img
+          src="assets/techstack/NETcore.png"
+          alt=".NET Core"
+          />
+          <img
+          src="assets/techstack/Node.js.png"
+          alt="NodeJS"
+          />
+          <img
+          src="assets/techstack/Python.png"
+          alt="Python"
+          />
+          <img
+          src="assets/techstack/Java.png"
+          alt="JAVA"
+          />  
+          <img    
+          src="assets/techstack/Go.png"
+          alt="Go"
+          />
+          <img
+          src="assets/techstack/PHP.png"
+          alt="PHP"
+          />
+          <img
+          src="assets/techstack/Laravel.png"
+          alt="Laravel"
+          />          
+        </div>
+      </div>
 
-<div class="container tech-category">
-  <h5 class="tech-heading">FRONT END</h5>
-  <div class="d-flex flex-wrap justify-content-center tech-icons">
-    <img
-    src="assets/techstack/Angular.png"
-    alt="Angular"
-    />
-    <img
-    src="assets/techstack/React.png"
-    alt="React"
-    />    
-    <img
-    src="assets/techstack/Vue.js.png"
-    alt="Veu.js"
-    />    
-    <img
-    src="assets/techstack/JavaScript.png"
-    alt="JavaScript"
-    />
-    <img
-    src="assets/techstack/HTML5.png"
-    alt="HTML5"
-    />  
-    <img
-    src="assets/techstack/TypeScript.png"
-    alt="TypeScript"
-    />       
+      <div class="container tech-category">
+        <h5 class="tech-heading">FRONT END</h5>
+        <div class="d-flex flex-wrap justify-content-center tech-icons">
+          <img
+          src="assets/techstack/Angular.png"
+          alt="Angular"
+          />
+          <img
+          src="assets/techstack/React.png"
+          alt="React"
+          />    
+          <img
+          src="assets/techstack/Vue.js.png"
+          alt="Veu.js"
+          />    
+          <img
+          src="assets/techstack/JavaScript.png"
+          alt="JavaScript"
+          />
+          <img
+          src="assets/techstack/HTML5.png"
+          alt="HTML5"
+          />  
+          <img
+          src="assets/techstack/TypeScript.png"
+          alt="TypeScript"
+          />       
+        </div>
+      </div>
+      
+    </div>
+    <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
+      <div class="container tech-category">
+        <div class="d-flex flex-wrap justify-content-center tech-icons">
+
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"  alt="React"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"  alt="Flutter"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apple/apple-original.svg" alt="Apple" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-plain.svg" alt="Android" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xamarin/xamarin-original.svg" alt="Xamarin"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"  alt="Firebase" />             
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ionic/ionic-original.svg" alt="Ionic" />
+          
+        </div>
+      </div>      
+
+    </div>
+    <div class="tab-pane fade" id="devops" role="tabpanel" aria-labelledby="devops-tab">
+      <div class="container tech-category">
+        <div class="d-flex flex-wrap justify-content-center tech-icons">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />          
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg" />
+          <img src="assets/techstack/openshift.svg" alt="OpenShift" />
+          <img src="assets/techstack/mesos_logo.png" alt="MESOS" />
+          
+          
+        </div>
+      </div>       
+
+    </div>
+    <div class="tab-pane fade" id="cloud" role="tabpanel" aria-labelledby="cloud-tab">Cloud content...</div>
+    <div class="tab-pane fade" id="platforms" role="tabpanel" aria-labelledby="platforms-tab">Platforms content...</div>
+    <div class="tab-pane fade" id="relational-databases" role="tabpanel" aria-labelledby="relational-databases-tab">Relational Databases content...</div>
+    <div class="tab-pane fade" id="big-data" role="tabpanel" aria-labelledby="big-data-tab">Big Data content...</div>
+    <div class="tab-pane fade" id="machine-learning" role="tabpanel" aria-labelledby="machine-learning-tab">Machine Learning content...</div>
+    <div class="tab-pane fade" id="automation-tools" role="tabpanel" aria-labelledby="automation-tools-tab">Automation Tools content...</div>
   </div>
 </div>
