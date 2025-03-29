@@ -1,0 +1,142 @@
+/* Google Font */
+
+/* General Styling */
+body {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  color: #333;
+  text-align: center;
+}
+
+/* Pricing Section */
+.pricing-section {
+  padding: 60px 10%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.subtext {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Pricing Container */
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Pricing Card */
+.pricing-card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 320px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Highlighted Card */
+.highlighted {
+  border: 3px solid #ff6f00;
+  background: #fff4e6;
+}
+
+.badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff6f00;
+  color: white;
+  font-size: 0.8rem;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Price Styling */
+.price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff6f00;
+  margin-bottom: 5px;
+}
+
+.price span {
+  font-size: 1.8rem;
+  color: #999;
+}
+
+.price-type {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Pricing Buttons */
+.pricing-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #ff6f00;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pricing-btn:hover {
+  background: #e65c00;
+}
+
+/* CTA Button */
+.cta-button {
+  margin-top: 40px;
+  background: #ff6f00;
+  color: white;
+  font-size: 1.2rem;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background: #e65c00;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    width: 90%;
+  }
+}

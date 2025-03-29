@@ -12,6 +12,10 @@ import { ContactlocationsComponent } from './contactlocations/contactlocations.c
 import { ConnectComponent } from './connect/connect.component';
 import { AIComponent } from './ai/ai.component';
 import { ClientComponent } from './client/client.component';
+import { HiringComponent } from './hiring/hiring.component';
+import { HiredevComponent } from './hiredev/hiredev.component';
+import { FullstackComponent } from './fullstack/fullstack.component';
+import { PricingComponent } from './pricing/pricing.component';
 
 @Component({
   selector: 'app-root',
@@ -26,10 +30,14 @@ import { ClientComponent } from './client/client.component';
     ServicesComponent,
     ContactlocationsComponent,
     ConnectComponent,
+    HiringComponent,
     PortfolioComponent,
     ContactComponent,
     NavbarComponent,
     FooterComponent,
+    HiredevComponent,
+    FullstackComponent,
+    PricingComponent,
   ], // Import RouterOutlet and RouterLink
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
