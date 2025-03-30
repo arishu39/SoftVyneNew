@@ -1,47 +1,18 @@
-<section class="full-stack">
-  <h1>Drive Web Excellence with Our Top Full-Stack Angular Developers</h1>
+<section class="full-stack" *ngIf="content">
+  <h1>{{ content.title }}</h1>
   <p>
-    Angular is an excellent choice for front-end development when paired with
-    back-end technologies like Rails, Node.js, and PHP. Build next-gen solutions
-    that make your app stand out.
+    {{ content.description }}
   </p>
 
   <div class="grid-container">
-    <div class="grid-item">
+    <div class="grid-item" *ngFor="let item of content.items">
       <div class="icon">
-        <img src="assets/techstack/Angular.png" alt="Angular AWS" />
+        <img [src]="item.icon" [alt]="item.alt" />
       </div>
       <div class="content">
-        <h2>Angular + AWS</h2>
+        <h2>{{ item.title }}</h2>
         <p>
-          Combine Angular with AWS for scalable cloud hosting, seamless CI/CD,
-          and a secure backend.
-        </p>
-      </div>
-    </div>
-
-    <div class="grid-item">
-      <div class="icon">
-        <img src="assets/techstack/Angular.png" alt="Angular Docker" />
-      </div>
-      <div class="content">
-        <h2>Angular + Docker</h2>
-        <p>
-          Use Docker with Angular for simplified deployments, faster development
-          cycles, and scalability.
-        </p>
-      </div>
-    </div>
-
-    <div class="grid-item">
-      <div class="icon">
-        <img src="assets/techstack/Angular.png" alt="Angular ROR" />
-      </div>
-      <div class="content">
-        <h2>Angular + ROR</h2>
-        <p>
-          Pair Angular with Ruby on Rails for a powerful front-end and a rapid,
-          flexible backend.
+          {{ item.content }}
         </p>
       </div>
     </div>

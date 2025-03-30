@@ -1,38 +1,37 @@
-<section class="hero-section">
+<section class="hero-section" *ngIf="hiringContent">
   <div class="content">
-    <h1>Hire Angular Developers</h1>
+    <h1>{{ hiringContent.heroTitle }}</h1>
     <p>
-      Hire Angular developers from us to create dynamic and interactive web
-      applications. Our experienced developers ensure seamless performance, easy
-      navigation, and enhanced UX, delivering 2x faster results. Get in touch to
-      build consistent, scalable front-ends that drive your business growth.
+      {{ hiringContent.heroDescription }}
     </p>
     <div class="cta-buttons">
-      <a href="#" class="btn primary">START 15 DAYS RISK-FREE TRIAL</a>
-      <a href="#" class="btn secondary">SCHEDULE A CALL</a>
+      <a href="#" class="btn primary">{{ hiringContent.trialButtonText }}</a>
+      <a href="#" class="btn secondary">{{ hiringContent.callButtonText }}</a>
     </div>
     <div class="features">
       <div class="feature-item">
         <!-- <img src="experience-icon.png" alt="Experience Icon" /> -->
         <i _ngcontent-ng-c3993503101="" class="fas fa-code fa-2x"></i>
-        <p><strong>13+ Years</strong> of Experience</p>
+        <p>
+          <strong>{{ hiringContent.experienceYears }}</strong> of Experience
+        </p>
       </div>
       <div class="feature-item">
         <!-- <img src="upgrade-icon.png" alt="Upgrade Icon" /> -->
         <i _ngcontent-ng-c3993503101="" class="fas fa-code fa-2x"></i>
-        <p>Angular Upgrade Service</p>
+        <p>{{ hiringContent.upgradeServiceText }}</p>
       </div>
       <div class="feature-item">
         <!-- <img src="cost-icon.png" alt="Cost Icon" /> -->
         <i _ngcontent-ng-c3993503101="" class="fas fa-code fa-2x"></i>
-        <p>Save Up to 40% On Development Cost</p>
+        <p>{{ hiringContent.costSavingText }}</p>
       </div>
     </div>
   </div>
 
   <div class="image-container">
     <div class="image-frame">
-      <img src="assets/insights.jpg" alt="Angular Developer" />
+      <img [src]="hiringContent.imageUrl" alt="Angular Developer" />
     </div>
   </div>
 </section>

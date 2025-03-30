@@ -1,17 +1,16 @@
 <section class="pricing-section">
-  <h1>Hire Angular Developer As Per Your Need</h1>
+  <h1>{{ content?.heroTitle }}</h1>
   <p class="subtext">
-    Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit
-    Policy
+    {{ content?.heroDescription }}
   </p>
 
   <div class="pricing-container">
     <!-- Hourly Pricing -->
     <div class="pricing-card">
-      <h2 class="price">$2<span>*</span></h2>
+      <h2 class="price">{{ content?.hourlyPrice }}<span>*</span></h2>
       <p class="price-type">Hourly (USD)</p>
       <p class="description">
-        We’ll provide a fully signed NDA for your project’s confidentiality.
+        {{ content?.hourlyDescription }}
       </p>
       <button class="pricing-btn">Hire Now</button>
     </div>
@@ -19,24 +18,25 @@
     <!-- Monthly Pricing - Individual -->
     <div class="pricing-card highlighted">
       <div class="badge">STARTS WITH</div>
-      <h2 class="price">$2<span>***</span></h2>
+      <h2 class="price">
+        {{ content?.monthlyPriceIndividual }}<span>***</span>
+      </h2>
       <p class="price-type">Monthly (USD)</p>
       <p class="description">
-        Senior Angular Developer <br />
-        160 hours per month.
+        {{ content?.monthlyDescriptionIndividual }}
       </p>
       <button class="pricing-btn">Get Started</button>
     </div>
 
     <!-- Monthly Pricing - Team -->
     <div class="pricing-card">
-      <h2 class="price">$1<span>*****</span></h2>
+      <h2 class="price">{{ content?.monthlyPriceTeam }}<span>*****</span></h2>
       <p class="price-type">Monthly (USD)</p>
-      <p class="description">Build a SCRUM Team of 5 Developers.</p>
+      <p class="description">{{ content?.monthlyDescriptionTeam }}</p>
       <button class="pricing-btn">Contact Us</button>
     </div>
   </div>
   <div class="text-center">
-    <button class="cta-button">SCHEDULE A DEVELOPER INTERVIEW</button>
+    <button class="cta-button">{{ content?.trialButtonText }}</button>
   </div>
 </section>

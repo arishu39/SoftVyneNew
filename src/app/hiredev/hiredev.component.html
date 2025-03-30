@@ -1,13 +1,8 @@
-<section class="hiredev">
+<section class="hiredev" *ngIf="hiredevContent">
   <div class="container text-center my-5">
-    <h2 class="section-title">Hire Angular Developers</h2>
+    <h2 class="section-title">{{ hiredevContent.heroTitle }}</h2>
     <p class="about-subheading">
-      <strong>Hire Angular developers</strong> to enhance your front-end
-      development with interactive, future-ready web applications. Our experts
-      write efficient code, turning complex business needs into high-value
-      revenue streams. With core Java and J2EE design pattern expertise, we
-      support you at every stage of development, from requirements analysis to
-      development.
+      {{ hiredevContent.heroDescription }}
     </p>
   </div>
 
@@ -16,17 +11,18 @@
       <div class="col-md-4">
         <div class="card custom-card">
           <img
-            src="assets/consulting.jpg"
+            [src]="hiredevContent.imageUrl"
             class="card-img-top"
-            alt="Consulting"
+            alt="Dedicated Developers"
           />
           <div class="card-body text-center">
-            <h5 class="card-title">Start 15 Days Risk-Free Trial!</h5>
+            <h5 class="card-title">{{ hiredevContent.trialButtonText }}</h5>
             <p class="card-text">
-              Try our exceptional service free for 15 days. No commitment, no
-              risk. See if it exceeds your expectations.
+              {{ hiredevContent.callButtonText }}
             </p>
-            <a href="#" class="btn custom-btn">Talk To Our Expert</a>
+            <a href="#" class="btn custom-btn">{{
+              hiredevContent.trialButtonText
+            }}</a>
           </div>
         </div>
       </div>
@@ -34,17 +30,18 @@
       <div class="col-md-4">
         <div class="card custom-card">
           <img
-            src="assets/enterprise.jpg"
+            [src]="hiredevContent.imageUrl"
             class="card-img-top"
-            alt="Enterprise"
+            alt="Dedicated Developers"
           />
           <div class="card-body text-center">
-            <h5 class="card-title">Hiring Engagement Options:</h5>
+            <h5 class="card-title">{{ hiredevContent.experienceYears }}</h5>
             <p class="card-text">
-              We offer flexible hiring models, including full-time, part-time,
-              and hourly options.
+              {{ hiredevContent.upgradeServiceText }}
             </p>
-            <a href="#" class="btn custom-btn">Talk To Our Expert</a>
+            <a href="#" class="btn custom-btn">{{
+              hiredevContent.callButtonText
+            }}</a>
           </div>
         </div>
       </div>
@@ -52,17 +49,18 @@
       <div class="col-md-4">
         <div class="card custom-card">
           <img
-            src="assets/appdev.jpg"
+            [src]="hiredevContent.imageUrl"
             class="card-img-top"
-            alt="App Development"
+            alt="Dedicated Developers"
           />
           <div class="card-body text-center">
-            <h5 class="card-title">Why Should I Hire Angular Developers?</h5>
+            <h5 class="card-title">{{ hiredevContent.costSavingText }}</h5>
             <p class="card-text">
-              Our developers have years of experience in Angular and deliver
-              high-quality, scalable applications.
+              {{ hiredevContent.costSavingText }}
             </p>
-            <a href="#" class="btn custom-btn">Talk To Our Expert</a>
+            <a href="#" class="btn custom-btn">{{
+              hiredevContent.callButtonText
+            }}</a>
           </div>
         </div>
       </div>
