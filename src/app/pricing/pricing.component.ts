@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
-import { Content } from '../content.interface';
+import { LanguageSpecificContent } from '../content.interface';
 
 @Component({
   selector: 'app-pricing',
-  imports: [],
   templateUrl: './pricing.component.html',
   styleUrl: './pricing.component.scss',
+  standalone: false,
 })
 export class PricingComponent implements OnInit {
-  content: Content | undefined;
+  content:
+    | (LanguageSpecificContent & {
+        trialButtonText: string;
+        callButtonText: string;
+      })
+    | undefined;
 
   constructor(private dataService: DataService) {}
 

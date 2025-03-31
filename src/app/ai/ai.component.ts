@@ -2,10 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-ai',
-  imports: [],
   templateUrl: './ai.component.html',
-  styleUrl: './ai.component.scss'
+  styleUrl: './ai.component.scss',
+  standalone: false,
 })
-export class AIComponent {
-
-}
+export class AIComponent {}

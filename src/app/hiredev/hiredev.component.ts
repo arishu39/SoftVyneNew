@@ -1,17 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DataService } from '../data.service';
-import { Content } from '../content.interface';
+import { Content, HireDevContent } from '../content.interface';
 
 @Component({
   selector: 'app-hiredev',
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: './hiredev.component.html',
-  styleUrl: './hiredev.component.scss',
+  styleUrls: ['./hiredev.component.scss'],
+  standalone: false,
 })
 export class HiredevComponent implements OnInit {
-  hiredevContent: Content | null = null;
+  hiredevContent: HireDevContent | null = null;
 
   constructor(private dataService: DataService) {}
 

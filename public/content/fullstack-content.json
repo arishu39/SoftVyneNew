@@ -1,0 +1,76 @@
+{
+  "languages": {
+    "angular": {
+      "title": "Drive Web Excellence with Our Top Full-Stack Angular Developers",
+      "description": "Angular is an excellent choice for front-end development when paired with back-end technologies like Rails, Node.js, and PHP. Build next-gen solutions that make your app stand out.",
+      "items": [
+        {
+          "icon": "assets/techstack/Angular.png",
+          "alt": "Angular AWS",
+          "title": "Angular + AWS",
+          "content": "Combine Angular with AWS for scalable cloud hosting, seamless CI/CD, and a secure backend."
+        },
+        {
+          "icon": "assets/techstack/Angular.png",
+          "alt": "Angular Docker",
+          "title": "Angular + Docker",
+          "content": "Use Docker with Angular for simplified deployments, faster development cycles, and scalability."
+        },
+        {
+          "icon": "assets/techstack/Angular.png",
+          "alt": "Angular ROR",
+          "title": "Angular + ROR",
+          "content": "Pair Angular with Ruby on Rails for a powerful front-end and a rapid, flexible backend."
+        }
+      ]
+    },
+    "react": {
+      "title": "Build Powerful Applications with Our Expert React Developers",
+      "description": "React's component-based architecture and vast ecosystem make it perfect for building modern web applications with any backend technology.",
+      "items": [
+        {
+          "icon": "assets/techstack/React.png",
+          "alt": "React Node",
+          "title": "React + Node.js",
+          "content": "Create full JavaScript stack applications with React and Node.js for optimal performance and developer productivity."
+        },
+        {
+          "icon": "assets/techstack/React.png",
+          "alt": "React Python",
+          "title": "React + Python",
+          "content": "Combine React with Python backends for data-intensive applications and machine learning integration."
+        },
+        {
+          "icon": "assets/techstack/React.png",
+          "alt": "React Java",
+          "title": "React + Java",
+          "content": "Unite React with Java for enterprise-grade applications with robust backend capabilities."
+        }
+      ]
+    },
+    "vue": {
+      "title": "Develop Progressive Web Apps with Our Vue.js Experts",
+      "description": "Vue.js offers incredible flexibility and performance for modern web applications, making it an excellent choice for any project scale.",
+      "items": [
+        {
+          "icon": "assets/techstack/Vue.png",
+          "alt": "Vue Laravel",
+          "title": "Vue + Laravel",
+          "content": "Leverage Vue with Laravel for a seamless full-stack development experience with powerful PHP backend."
+        },
+        {
+          "icon": "assets/techstack/Vue.png",
+          "alt": "Vue Express",
+          "title": "Vue + Express",
+          "content": "Build lightweight and fast applications combining Vue.js with Express.js backend."
+        },
+        {
+          "icon": "assets/techstack/Vue.png",
+          "alt": "Vue Django",
+          "title": "Vue + Django",
+          "content": "Create scalable applications with Vue frontend and Django's powerful backend framework."
+        }
+      ]
+    }
+  }
+}

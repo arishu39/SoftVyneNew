@@ -2,10 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-contactlocations',
-  imports: [],
   templateUrl: './contactlocations.component.html',
-  styleUrl: './contactlocations.component.scss'
+  styleUrl: './contactlocations.component.scss',
+  standalone: false,
 })
-export class ContactlocationsComponent {
-
-}
+export class ContactlocationsComponent {}

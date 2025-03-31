@@ -1,17 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { DataService } from '../data.service';
-import { Content } from '../content.interface';
+import { Content, LanguageSpecificContent } from '../content.interface';
 
 @Component({
   selector: 'app-hiring',
   templateUrl: './hiring.component.html',
   styleUrl: './hiring.component.scss',
-  standalone: true,
-  imports: [CommonModule],
+  standalone: false,
 })
 export class HiringComponent implements OnInit {
-  hiringContent: Content | null = null;
+  hiringContent:
+    | (LanguageSpecificContent & {
+        trialButtonText: string;
+        callButtonText: string;
+      })
+    | undefined;
 
   constructor(private dataService: DataService) {}
 

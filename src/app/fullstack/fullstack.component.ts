@@ -1,17 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
-import { FullstackContent } from '../content.interface';
+import {
+  FullstackContent,
+  FullstackLanguageContent,
+} from '../content.interface';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-fullstack',
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: './fullstack.component.html',
   styleUrl: './fullstack.component.scss',
+  standalone: false,
 })
 export class FullstackComponent implements OnInit {
-  content: FullstackContent | undefined;
+  content: FullstackLanguageContent | undefined;
 
   constructor(private dataService: DataService) {}
 

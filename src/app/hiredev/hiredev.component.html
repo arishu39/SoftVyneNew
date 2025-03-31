@@ -1,8 +1,8 @@
 <section class="hiredev" *ngIf="hiredevContent">
   <div class="container text-center my-5">
-    <h2 class="section-title">{{ hiredevContent.heroTitle }}</h2>
+    <h2 class="section-title">{{ hiredevContent!.heroTitle }}</h2>
     <p class="about-subheading">
-      {{ hiredevContent.heroDescription }}
+      {{ hiredevContent!.heroDescription }}
     </p>
   </div>
 
@@ -11,17 +11,17 @@
       <div class="col-md-4">
         <div class="card custom-card">
           <img
-            [src]="hiredevContent.imageUrl"
+            [src]="hiredevContent!.imageUrl"
             class="card-img-top"
             alt="Dedicated Developers"
           />
           <div class="card-body text-center">
-            <h5 class="card-title">{{ hiredevContent.trialButtonText }}</h5>
+            <h5 class="card-title">{{ hiredevContent!.trialButtonText }}</h5>
             <p class="card-text">
-              {{ hiredevContent.callButtonText }}
+              {{ hiredevContent!.callButtonText }}
             </p>
             <a href="#" class="btn custom-btn">{{
-              hiredevContent.trialButtonText
+              hiredevContent!.trialButtonText
             }}</a>
           </div>
         </div>
@@ -30,17 +30,17 @@
       <div class="col-md-4">
         <div class="card custom-card">
           <img
-            [src]="hiredevContent.imageUrl"
+            [src]="hiredevContent!.imageUrl"
             class="card-img-top"
             alt="Dedicated Developers"
           />
           <div class="card-body text-center">
-            <h5 class="card-title">{{ hiredevContent.experienceYears }}</h5>
+            <h5 class="card-title">{{ hiredevContent!.experienceYears }}</h5>
             <p class="card-text">
-              {{ hiredevContent.upgradeServiceText }}
+              {{ hiredevContent!.upgradeServiceText }}
             </p>
             <a href="#" class="btn custom-btn">{{
-              hiredevContent.callButtonText
+              hiredevContent!.callButtonText
             }}</a>
           </div>
         </div>
@@ -49,17 +49,17 @@
       <div class="col-md-4">
         <div class="card custom-card">
           <img
-            [src]="hiredevContent.imageUrl"
+            [src]="hiredevContent!.imageUrl"
             class="card-img-top"
             alt="Dedicated Developers"
           />
           <div class="card-body text-center">
-            <h5 class="card-title">{{ hiredevContent.costSavingText }}</h5>
+            <h5 class="card-title">{{ hiredevContent!.costSavingText }}</h5>
             <p class="card-text">
-              {{ hiredevContent.costSavingText }}
+              {{ hiredevContent!.costSavingText }}
             </p>
             <a href="#" class="btn custom-btn">{{
-              hiredevContent.callButtonText
+              hiredevContent!.callButtonText
             }}</a>
           </div>
         </div>

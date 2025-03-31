@@ -1,0 +1,37 @@
+{
+  "languages": {
+    "angular": {
+      "heroTitle": "Hire Angular Developer As Per Your Need",
+      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
+      "hourlyPrice": "$2",
+      "monthlyPriceIndividual": "$2",
+      "monthlyPriceTeam": "$1",
+      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
+      "monthlyDescriptionIndividual": "Senior Angular Developer <br />160 hours per month.",
+      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
+    },
+    "react": {
+      "heroTitle": "Hire React Developer As Per Your Need",
+      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
+      "hourlyPrice": "$2.5",
+      "monthlyPriceIndividual": "$2.2",
+      "monthlyPriceTeam": "$1.2",
+      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
+      "monthlyDescriptionIndividual": "Senior React Developer <br />160 hours per month.",
+      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
+    },
+    "vue": {
+      "heroTitle": "Hire Vue Developer As Per Your Need",
+      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
+      "hourlyPrice": "$1.8",
+      "monthlyPriceIndividual": "$1.9",
+      "monthlyPriceTeam": "$0.9",
+      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
+      "monthlyDescriptionIndividual": "Senior Vue Developer <br />160 hours per month.",
+      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
+    }
+  },
+  "trialButtonText": "SCHEDULE A DEVELOPER INTERVIEW",
+  "callButtonText": "SCHEDULE A CALL",
+  "positions": []
+}

@@ -1,0 +1,18 @@
+{
+  "heroTitle": "Hire Dedicated Developers",
+  "heroDescription": "Supercharge your projects with our expert developers. We offer flexible hiring models to fit your needs. Scale your team with top talent and achieve your goals faster.",
+  "trialButtonText": "START 15 DAYS RISK-FREE TRIAL",
+  "callButtonText": "SCHEDULE A CALL",
+  "experienceYears": "10+ Years",
+  "upgradeServiceText": "Custom Development Solutions",
+  "costSavingText": "Reduce Development Costs by 50%",
+  "imageUrl": "assets/dedicated-developers.jpg",
+  "positions": [
+    {
+      "title": "Frontend Developer",
+      "description": "Looking for skilled frontend developers",
+      "requirements": ["React", "Angular", "Vue.js"],
+      "location": "Remote"
+    }
+  ]
+}

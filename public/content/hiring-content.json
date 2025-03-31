@@ -1,0 +1,38 @@
+{
+  "languages": {
+    "angular": {
+      "heroTitle": "Hire Angular Developers",
+      "heroDescription": "Hire Angular developers from us to create dynamic and interactive web applications. Our experienced developers ensure seamless performance, easy navigation, and enhanced UX, delivering 2x faster results.",
+      "experienceYears": "13+ Years",
+      "upgradeServiceText": "Angular Upgrade Service",
+      "costSavingText": "Save Up to 40% On Development Cost",
+      "imageUrl": "assets/insights-angular.jpg"
+    },
+    "react": {
+      "heroTitle": "Hire React Developers",
+      "heroDescription": "Hire React developers to build modern, responsive web applications. Our expert team delivers high-performance solutions with optimal code quality and reusable components.",
+      "experienceYears": "10+ Years",
+      "upgradeServiceText": "React Migration Service",
+      "costSavingText": "Save Up to 45% On Development Cost",
+      "imageUrl": "assets/insights-react.jpg"
+    },
+    "vue": {
+      "heroTitle": "Hire Vue Developers",
+      "heroDescription": "Hire Vue.js developers to create lightweight and progressive web applications. Our specialists deliver scalable solutions with rapid development cycles.",
+      "experienceYears": "8+ Years",
+      "upgradeServiceText": "Vue.js Integration Service",
+      "costSavingText": "Save Up to 35% On Development Cost",
+      "imageUrl": "assets/insights-vue.jpg"
+    }
+  },
+  "trialButtonText": "START 15 DAYS RISK-FREE TRIAL",
+  "callButtonText": "SCHEDULE A CALL",
+  "positions": [
+    {
+      "title": "Software Developer",
+      "description": "Join our development team",
+      "requirements": ["Angular experience", "TypeScript knowledge"],
+      "location": "Remote"
+    }
+  ]
+}
