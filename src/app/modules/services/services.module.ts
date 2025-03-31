@@ -7,8 +7,9 @@ import { HiredevComponent } from './components/hiredev/hiredev.component';
 import { FullstackComponent } from './components/fullstack/fullstack.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { DataService } from '../../services/data.service';
-
-const routes: Routes = [{ path: '', component: HiringComponent }];
+import { HttpClientModule } from '@angular/common/http';
+import { ServicesRoutingModule } from './services-main-routing.module';
+import { ServicesMainComponent } from './components/services-main/services-main.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +17,14 @@ const routes: Routes = [{ path: '', component: HiringComponent }];
     HiredevComponent,
     FullstackComponent,
     PricingComponent,
+    ServicesMainComponent,
   ],
-  imports: [CommonModule, SharedModule, RouterModule.forChild(routes)],
+  imports: [
+    HttpClientModule,
+    CommonModule,
+    SharedModule,
+    ServicesRoutingModule,
+  ],
   providers: [DataService],
 })
 export class ServicesModule {}

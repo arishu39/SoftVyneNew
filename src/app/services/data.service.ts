@@ -9,9 +9,7 @@ import {
 } from '../interfaces/content.interface';
 import { HttpClient } from '@angular/common/http';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable()
 export class DataService {
   private readonly DEFAULT_LANGUAGE = 'angular';
 
