@@ -4,6 +4,8 @@ import { ServicesComponent } from './components/services/services.component';
 import { ConnectComponent } from './components/connect/connect.component';
 import { ContactlocationsComponent } from './components/contactlocations/contactlocations.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -11,6 +13,8 @@ import { ContactComponent } from './components/contact/contact.component';
     ConnectComponent,
     ContactlocationsComponent,
     ContactComponent,
+    NavbarComponent,
+    FooterComponent,
   ],
   imports: [CommonModule],
   exports: [
@@ -18,6 +22,8 @@ import { ContactComponent } from './components/contact/contact.component';
     ConnectComponent,
     ContactlocationsComponent,
     ContactComponent,
+    NavbarComponent,
+    FooterComponent,
   ],
 })
 export class SharedModule {}
