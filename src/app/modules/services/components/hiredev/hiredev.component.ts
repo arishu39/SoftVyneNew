@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DataService } from '../data.service';
-import { Content, HireDevContent } from '../content.interface';
+import {
+  Content,
+  HireDevContent,
+} from '../../../../interfaces/content.interface';
+import { DataService } from '../../../../services/data.service';
 
 @Component({
   selector: 'app-hiredev',

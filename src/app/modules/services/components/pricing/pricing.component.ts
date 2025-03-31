@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
-import { LanguageSpecificContent } from '../content.interface';
+import { DataService } from '../../../../services/data.service';
+import { LanguageSpecificContent } from '../../../../interfaces/content.interface';
 
 @Component({
   selector: 'app-pricing',

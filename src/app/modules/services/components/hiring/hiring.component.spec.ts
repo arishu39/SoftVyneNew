@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { HiringComponent } from './hiring.component';
-import { DataService } from '../data.service';
+import { DataService } from '../../../../data.service';
 import { of } from 'rxjs';
 
 describe('HiringComponent', () => {

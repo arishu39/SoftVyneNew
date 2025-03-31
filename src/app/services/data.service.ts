@@ -6,7 +6,7 @@ import {
   LanguageSpecificContent,
   FullstackContent,
   FullstackLanguageContent,
-} from './content.interface';
+} from '../interfaces/content.interface';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({

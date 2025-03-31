@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
+import { DataService } from '../../../../services/data.service';
 import {
   FullstackContent,
   FullstackLanguageContent,
-} from '../content.interface';
-import { CommonModule } from '@angular/common';
+} from '../../../../interfaces/content.interface';
 
 @Component({
   selector: 'app-fullstack',

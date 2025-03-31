@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
-import { Content, LanguageSpecificContent } from '../content.interface';
+import { DataService } from '../../../../services/data.service';
+import {
+  Content,
+  LanguageSpecificContent,
+} from '../../../../interfaces/content.interface';
 
 @Component({
   selector: 'app-hiring',
