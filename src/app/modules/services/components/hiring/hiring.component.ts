@@ -1,4 +1,10 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  OnChanges,
+  SimpleChanges,
+} from '@angular/core';
 import { DataService } from '../../../../services/data.service';
 import {
   Content,
@@ -11,7 +17,7 @@ import {
   styleUrl: './hiring.component.scss',
   standalone: false,
 })
-export class HiringComponent implements OnInit {
+export class HiringComponent implements OnInit, OnChanges {
   @Input() serviceType: string = '';
   hiringContent:
     | (LanguageSpecificContent & {
@@ -22,13 +28,17 @@ export class HiringComponent implements OnInit {
 
   constructor(private dataService: DataService) {}
 
-  ngOnInit(): void {
-    if (this.serviceType) {
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['serviceType'] && this.serviceType) {
       this.dataService
         .getHiringContent(this.serviceType)
         .subscribe((content) => {
           this.hiringContent = content;
         });
     }
+  }
+
+  ngOnInit(): void {
+    // Remove the content fetching from here as it's now handled in ngOnChanges
   }
 }

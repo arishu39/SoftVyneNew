@@ -1,4 +1,10 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  OnChanges,
+  SimpleChanges,
+} from '@angular/core';
 import { DataService } from '../../../../services/data.service';
 import { LanguageSpecificContent } from '../../../../interfaces/content.interface';
 
@@ -8,7 +14,7 @@ import { LanguageSpecificContent } from '../../../../interfaces/content.interfac
   styleUrl: './pricing.component.scss',
   standalone: false,
 })
-export class PricingComponent implements OnInit {
+export class PricingComponent implements OnInit, OnChanges {
   @Input() serviceType: string = '';
   content:
     | (LanguageSpecificContent & {
@@ -19,11 +25,15 @@ export class PricingComponent implements OnInit {
 
   constructor(private dataService: DataService) {}
 
-  ngOnInit(): void {
-    if (this.serviceType) {
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['serviceType'] && this.serviceType) {
       this.dataService.getPricingContent(this.serviceType).subscribe((data) => {
         this.content = data;
       });
     }
+  }
+
+  ngOnInit(): void {
+    // Remove the content fetching from here as it's now handled in ngOnChanges
   }
 }
