@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   Content,
@@ -13,13 +13,16 @@ import { DataService } from '../../../../services/data.service';
   standalone: false,
 })
 export class HiredevComponent implements OnInit {
+  @Input() serviceType: string = '';
   hiredevContent: HireDevContent | null = null;
 
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
-    this.dataService.getHiredevContent().subscribe((content) => {
-      this.hiredevContent = content;
-    });
+    if (this.serviceType) {
+      this.dataService.getHiredevContent().subscribe((content) => {
+        this.hiredevContent = content;
+      });
+    }
   }
 }

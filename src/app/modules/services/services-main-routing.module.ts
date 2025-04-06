@@ -4,8 +4,13 @@ import { ServicesMainComponent } from './components/services-main/services-main.
 
 const routes: Routes = [
   {
-    path: '',
+    path: ':serviceType',
     component: ServicesMainComponent,
+  },
+  {
+    path: '',
+    redirectTo: 'frontend',
+    pathMatch: 'full',
   },
 ];
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { DataService } from '../../../../services/data.service';
 import {
   FullstackContent,
@@ -12,13 +12,18 @@ import {
   standalone: false,
 })
 export class FullstackComponent implements OnInit {
+  @Input() serviceType: string = '';
   content: FullstackLanguageContent | undefined;
 
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
-    this.dataService.getFullstackContent().subscribe((data) => {
-      this.content = data;
-    });
+    if (this.serviceType) {
+      this.dataService
+        .getFullstackContent(this.serviceType)
+        .subscribe((data) => {
+          this.content = data;
+        });
+    }
   }
 }

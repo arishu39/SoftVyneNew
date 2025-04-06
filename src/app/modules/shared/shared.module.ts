@@ -6,6 +6,7 @@ import { ContactlocationsComponent } from './components/contactlocations/contact
 import { ContactComponent } from './components/contact/contact.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { FooterComponent } from './components/footer/footer.component';
     NavbarComponent,
     FooterComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   exports: [
     ServicesComponent,
     ConnectComponent,

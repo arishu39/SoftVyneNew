@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { DataService } from '../../../../services/data.service';
 import {
   Content,
@@ -12,6 +12,7 @@ import {
   standalone: false,
 })
 export class HiringComponent implements OnInit {
+  @Input() serviceType: string = '';
   hiringContent:
     | (LanguageSpecificContent & {
         trialButtonText: string;
@@ -22,8 +23,12 @@ export class HiringComponent implements OnInit {
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
-    this.dataService.getHiringContent().subscribe((content) => {
-      this.hiringContent = content;
-    });
+    if (this.serviceType) {
+      this.dataService
+        .getHiringContent(this.serviceType)
+        .subscribe((content) => {
+          this.hiringContent = content;
+        });
+    }
   }
 }

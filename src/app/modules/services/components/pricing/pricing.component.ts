@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { DataService } from '../../../../services/data.service';
 import { LanguageSpecificContent } from '../../../../interfaces/content.interface';
 
@@ -9,6 +9,7 @@ import { LanguageSpecificContent } from '../../../../interfaces/content.interfac
   standalone: false,
 })
 export class PricingComponent implements OnInit {
+  @Input() serviceType: string = '';
   content:
     | (LanguageSpecificContent & {
         trialButtonText: string;
@@ -19,8 +20,10 @@ export class PricingComponent implements OnInit {
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
-    this.dataService.getPricingContent().subscribe((data) => {
-      this.content = data;
-    });
+    if (this.serviceType) {
+      this.dataService.getPricingContent(this.serviceType).subscribe((data) => {
+        this.content = data;
+      });
+    }
   }
 }
