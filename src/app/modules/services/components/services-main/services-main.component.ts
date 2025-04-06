@@ -12,13 +12,26 @@ export class ServicesMainComponent implements OnInit, OnDestroy {
   private routeSub!: Subscription;
   serviceType: string = '';
   componentKey = 0; // Add this to force refresh
+  loading: boolean = true; // Add loading property
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.routeSub = this.route.params.subscribe((params) => {
+      const oldServiceType = this.serviceType;
       this.serviceType = params['serviceType'];
-      this.componentKey++; // Increment to force refresh child components
+
+      // Only show loader when service type actually changes
+      if (oldServiceType !== this.serviceType) {
+        this.loading = true;
+        // Keep old content visible while loading
+        setTimeout(() => {
+          this.componentKey++;
+          setTimeout(() => {
+            this.loading = false;
+          }, 300);
+        }, 100);
+      }
     });
   }
 
