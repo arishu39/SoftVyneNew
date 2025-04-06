@@ -22,49 +22,41 @@
         </li>
 
         <!-- Services Dropdown -->
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="servicesDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-          >
+        <li
+          class="nav-item dropdown"
+          (mouseenter)="toggleMainDropdown(true)"
+          (mouseleave)="toggleMainDropdown(false)"
+        >
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown">
             Services
           </a>
-          <ul class="dropdown-menu">
-            <li *ngFor="let service of services">
-              <a
-                class="dropdown-item"
-                [routerLink]="['/services', service.route]"
-              >
+          <ul class="dropdown-menu" [class.show]="isMainDropdownOpen">
+            <li
+              *ngFor="let service of services"
+              class="dropdown"
+              (mouseenter)="setActiveSubmenu(service.route, $event)"
+              [class.active]="activeSubmenu === service.route"
+            >
+              <a class="dropdown-item dropdown-toggle">
                 {{ service.name }}
               </a>
+              <ul
+                class="dropdown-menu dropdown-submenu"
+                [class.show]="activeSubmenu === service.route"
+              >
+                <li *ngFor="let subitem of service.submenu">
+                  <a
+                    class="dropdown-item"
+                    [routerLink]="['/services', subitem.route]"
+                  >
+                    {{ subitem.name }}
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </li>
 
-        <!-- Industries Dropdown -->
-        <!-- <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="industriesDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-          >
-            Industries
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">E-commerce</a></li>
-            <li><a class="dropdown-item" href="#">Healthcare</a></li>
-            <li><a class="dropdown-item" href="#">Finance</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Portfolio</a>
-        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="#">Contact Us</a>
         </li>

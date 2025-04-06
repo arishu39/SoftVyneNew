@@ -28,12 +28,17 @@
   color: #ff5a2c;
 }
 
-/* Dropdown Styling */
+/* Dropdown and Submenu Styling */
 .dropdown-menu {
   border-radius: 8px;
   border: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   animation: fadeIn 0.3s ease-in-out;
+  margin: 0; // Remove margin to prevent gaps
+  display: none;
+  &.show {
+    display: block;
+  }
 }
 
 @keyframes fadeIn {
@@ -50,6 +55,47 @@
 .dropdown-item:hover {
   background-color: rgba(255, 90, 44, 0.1);
   color: #ff5a2c;
+}
+
+.dropdown-submenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  display: none;
+  margin-left: 1px; // Small gap between parent and submenu
+  &.show {
+    display: block;
+  }
+}
+
+.dropdown-submenu.show {
+  display: block;
+}
+
+// .dropdown-menu li:hover > .dropdown-submenu {
+//   display: block;
+// }
+
+.dropdown-menu li {
+  position: relative;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1.5rem;
+  position: relative;
+  &.dropdown-toggle::after {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+  }
+}
+
+.dropdown-toggle::after {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* Call-to-Action Button */
@@ -72,6 +118,15 @@
 /* Responsive Dropdowns */
 @media (min-width: 992px) {
   .nav-item.dropdown:hover .dropdown-menu {
+    display: none;
+  }
+
+  .nav-item.dropdown .dropdown-menu.show {
     display: block;
+  }
+
+  .dropdown-item.dropdown-toggle::after {
+    transform: rotate(-90deg);
+    top: 50%;
   }
 }
