@@ -71,6 +71,606 @@
           "content": "Create scalable applications with Vue frontend and Django's powerful backend framework."
         }
       ]
+    },
+    "typescript": {
+      "title": "Build Type-Safe Applications with Our TypeScript Experts",
+      "description": "TypeScript brings strong typing to JavaScript, enabling safer and more maintainable code for large-scale applications.",
+      "items": [
+        {
+          "icon": "assets/techstack/TypeScript.png",
+          "alt": "TypeScript Node",
+          "title": "TypeScript + Node.js",
+          "content": "Create end-to-end type-safe applications with TypeScript on both frontend and backend."
+        },
+        {
+          "icon": "assets/techstack/TypeScript.png",
+          "alt": "TypeScript Express",
+          "title": "TypeScript + Express",
+          "content": "Build robust APIs with TypeScript and Express for improved development experience."
+        },
+        {
+          "icon": "assets/techstack/TypeScript.png",
+          "alt": "TypeScript NestJS",
+          "title": "TypeScript + NestJS",
+          "content": "Develop enterprise-grade applications with TypeScript and NestJS framework."
+        }
+      ]
+    },
+    "nextjs": {
+      "title": "Develop High-Performance Applications with Next.js",
+      "description": "Next.js provides the best developer experience for React applications with hybrid static & server rendering.",
+      "items": [
+        {
+          "icon": "assets/techstack/NextJS.png",
+          "alt": "NextJS Prisma",
+          "title": "Next.js + Prisma",
+          "content": "Build full-stack applications with Next.js and Prisma for type-safe database operations."
+        },
+        {
+          "icon": "assets/techstack/NextJS.png",
+          "alt": "NextJS GraphQL",
+          "title": "Next.js + GraphQL",
+          "content": "Create efficient APIs with Next.js and GraphQL for optimal data fetching."
+        },
+        {
+          "icon": "assets/techstack/NextJS.png",
+          "alt": "NextJS MongoDB",
+          "title": "Next.js + MongoDB",
+          "content": "Develop scalable applications with Next.js and MongoDB's flexible document store."
+        }
+      ]
+    },
+    "python": {
+      "title": "Create Powerful Backend Solutions with Python",
+      "description": "Python's versatility makes it perfect for web backends, data science, and machine learning applications.",
+      "items": [
+        {
+          "icon": "assets/techstack/Python.png",
+          "alt": "Python Django",
+          "title": "Python + Django",
+          "content": "Build robust web applications with Python and Django's battle-tested framework."
+        },
+        {
+          "icon": "assets/techstack/Python.png",
+          "alt": "Python Flask",
+          "title": "Python + Flask",
+          "content": "Create lightweight APIs and microservices with Python and Flask."
+        },
+        {
+          "icon": "assets/techstack/Python.png",
+          "alt": "Python FastAPI",
+          "title": "Python + FastAPI",
+          "content": "Develop high-performance APIs with Python and FastAPI's modern framework."
+        }
+      ]
+    },
+    "javascript": {
+      "title": "Create Dynamic Web Applications with JavaScript",
+      "description": "JavaScript powers modern web development with its versatility and extensive ecosystem of tools and frameworks.",
+      "items": [
+        {
+          "icon": "assets/techstack/JavaScript.png",
+          "alt": "JavaScript Node",
+          "title": "JavaScript + Node.js",
+          "content": "Build full-stack JavaScript applications with seamless integration between frontend and backend."
+        },
+        {
+          "icon": "assets/techstack/JavaScript.png",
+          "alt": "JavaScript Express",
+          "title": "JavaScript + Express",
+          "content": "Create robust web applications with JavaScript and Express.js framework."
+        },
+        {
+          "icon": "assets/techstack/JavaScript.png",
+          "alt": "JavaScript MongoDB",
+          "title": "JavaScript + MongoDB",
+          "content": "Develop modern applications with JavaScript and MongoDB's flexible database."
+        }
+      ]
+    },
+    "dotnet": {
+      "title": "Enterprise Solutions with .NET Framework",
+      "description": ".NET provides a comprehensive platform for building enterprise-grade applications with excellent performance and security.",
+      "items": [
+        {
+          "icon": "assets/techstack/DotNet.png",
+          "alt": "DotNet SQL",
+          "title": ".NET + SQL Server",
+          "content": "Create robust enterprise applications with .NET and SQL Server integration."
+        },
+        {
+          "icon": "assets/techstack/DotNet.png",
+          "alt": "DotNet Azure",
+          "title": ".NET + Azure",
+          "content": "Build cloud-native applications with .NET and Azure services."
+        },
+        {
+          "icon": "assets/techstack/DotNet.png",
+          "alt": "DotNet Docker",
+          "title": ".NET + Docker",
+          "content": "Containerize .NET applications for consistent deployment and scaling."
+        }
+      ]
+    },
+    "golang": {
+      "title": "High-Performance Systems with Go",
+      "description": "Go excels in building fast, reliable, and scalable backend services with built-in concurrency support.",
+      "items": [
+        {
+          "icon": "assets/techstack/Go.png",
+          "alt": "Go Docker",
+          "title": "Go + Docker",
+          "content": "Create containerized microservices with Go's lightweight runtime."
+        },
+        {
+          "icon": "assets/techstack/Go.png",
+          "alt": "Go Kubernetes",
+          "title": "Go + Kubernetes",
+          "content": "Build cloud-native applications with Go and Kubernetes orchestration."
+        },
+        {
+          "icon": "assets/techstack/Go.png",
+          "alt": "Go gRPC",
+          "title": "Go + gRPC",
+          "content": "Develop high-performance microservices with Go and gRPC."
+        }
+      ]
+    },
+    "rag": {
+      "title": "Revolutionize Applications with RAG (Retrieval-Augmented Generation",
+      "description": "RAG combines retrieval systems with generative models to create intelligent, context-aware applications.",
+      "items": [
+        {
+          "icon": "assets/techstack/RAG.png",
+          "alt": "RAG Knowledge Base",
+          "title": "RAG + Knowledge Base",
+          "content": "Integrate RAG with knowledge bases for accurate and context-driven responses."
+        },
+        {
+          "icon": "assets/techstack/RAG.png",
+          "alt": "RAG NLP",
+          "title": "RAG + NLP",
+          "content": "Enhance NLP applications with RAG for better understanding and generation."
+        },
+        {
+          "icon": "assets/techstack/RAG.png",
+          "alt": "RAG AI Agents",
+          "title": "RAG + AI Agents",
+          "content": "Build smarter AI agents using RAG for real-time information retrieval."
+        }
+      ]
+    },
+    "generative-ai": {
+      "title": "Unlock Creativity with Generative AI",
+      "description": "Generative AI enables the creation of unique content, designs, and solutions using advanced machine learning models.",
+      "items": [
+        {
+          "icon": "assets/techstack/GenerativeAI.png",
+          "alt": "Generative AI Art",
+          "title": "Generative AI + Art",
+          "content": "Create stunning visuals and designs with Generative AI tools."
+        },
+        {
+          "icon": "assets/techstack/GenerativeAI.png",
+          "alt": "Generative AI Text",
+          "title": "Generative AI + Text",
+          "content": "Generate high-quality text content for various applications."
+        },
+        {
+          "icon": "assets/techstack/GenerativeAI.png",
+          "alt": "Generative AI Music",
+          "title": "Generative AI + Music",
+          "content": "Compose music and soundtracks with Generative AI models."
+        }
+      ]
+    },
+    "llm": {
+      "title": "Empower Applications with Large Language Models",
+      "description": "LLMs provide advanced natural language understanding and generation capabilities for diverse applications.",
+      "items": [
+        {
+          "icon": "assets/techstack/LLM.png",
+          "alt": "LLM Chatbots",
+          "title": "LLM + Chatbots",
+          "content": "Build intelligent chatbots with LLMs for seamless user interactions."
+        },
+        {
+          "icon": "assets/techstack/LLM.png",
+          "alt": "LLM Summarization",
+          "title": "LLM + Summarization",
+          "content": "Summarize large documents efficiently using LLMs."
+        },
+        {
+          "icon": "assets/techstack/LLM.png",
+          "alt": "LLM Translation",
+          "title": "LLM + Translation",
+          "content": "Enable accurate and context-aware translations with LLMs."
+        }
+      ]
+    },
+    "transformers": {
+      "title": "Transform Applications with Transformer Models",
+      "description": "Transformers power state-of-the-art AI applications in NLP, vision, and beyond.",
+      "items": [
+        {
+          "icon": "assets/techstack/Transformers.png",
+          "alt": "Transformers NLP",
+          "title": "Transformers + NLP",
+          "content": "Enhance NLP tasks with transformer-based models like BERT and GPT."
+        },
+        {
+          "icon": "assets/techstack/Transformers.png",
+          "alt": "Transformers Vision",
+          "title": "Transformers + Vision",
+          "content": "Apply transformers to computer vision tasks for improved accuracy."
+        },
+        {
+          "icon": "assets/techstack/Transformers.png",
+          "alt": "Transformers Speech",
+          "title": "Transformers + Speech",
+          "content": "Leverage transformers for speech recognition and synthesis."
+        }
+      ]
+    },
+    "deep-learning": {
+      "title": "Build Advanced Models with Deep Learning",
+      "description": "Deep learning enables the creation of complex models for tasks like image recognition, NLP, and more.",
+      "items": [
+        {
+          "icon": "assets/techstack/DeepLearning.png",
+          "alt": "Deep Learning Vision",
+          "title": "Deep Learning + Vision",
+          "content": "Develop cutting-edge vision applications with deep learning."
+        },
+        {
+          "icon": "assets/techstack/DeepLearning.png",
+          "alt": "Deep Learning NLP",
+          "title": "Deep Learning + NLP",
+          "content": "Enhance NLP tasks with deep learning techniques."
+        },
+        {
+          "icon": "assets/techstack/DeepLearning.png",
+          "alt": "Deep Learning Robotics",
+          "title": "Deep Learning + Robotics",
+          "content": "Integrate deep learning into robotics for intelligent automation."
+        }
+      ]
+    },
+    "nlp": {
+      "title": "Enhance Communication with Natural Language Processing",
+      "description": "NLP enables machines to understand, interpret, and respond to human language effectively.",
+      "items": [
+        {
+          "icon": "assets/techstack/NLP.png",
+          "alt": "NLP Chatbots",
+          "title": "NLP + Chatbots",
+          "content": "Build conversational AI systems with NLP."
+        },
+        {
+          "icon": "assets/techstack/NLP.png",
+          "alt": "NLP Sentiment Analysis",
+          "title": "NLP + Sentiment Analysis",
+          "content": "Analyze customer sentiment with NLP tools."
+        },
+        {
+          "icon": "assets/techstack/NLP.png",
+          "alt": "NLP Translation",
+          "title": "NLP + Translation",
+          "content": "Enable multilingual communication with NLP-based translation."
+        }
+      ]
+    },
+    "computer-vision": {
+      "title": "Unlock Visual Insights with Computer Vision",
+      "description": "Computer vision enables machines to interpret and analyze visual data for various applications.",
+      "items": [
+        {
+          "icon": "assets/techstack/ComputerVision.png",
+          "alt": "Computer Vision Detection",
+          "title": "Computer Vision + Object Detection",
+          "content": "Detect and classify objects in images and videos."
+        },
+        {
+          "icon": "assets/techstack/ComputerVision.png",
+          "alt": "Computer Vision Recognition",
+          "title": "Computer Vision + Face Recognition",
+          "content": "Implement face recognition systems with computer vision."
+        },
+        {
+          "icon": "assets/techstack/ComputerVision.png",
+          "alt": "Computer Vision AR",
+          "title": "Computer Vision + AR",
+          "content": "Enhance augmented reality applications with computer vision."
+        }
+      ]
+    },
+    "semantic-kernel": {
+      "title": "Enhance AI Applications with Semantic Kernel",
+      "description": "Semantic Kernel enables advanced AI applications by combining semantic understanding with generative capabilities.",
+      "items": [
+        {
+          "icon": "assets/techstack/SemanticKernel.png",
+          "alt": "Semantic Kernel AI",
+          "title": "Semantic Kernel + AI",
+          "content": "Integrate Semantic Kernel for intelligent AI-driven applications."
+        },
+        {
+          "icon": "assets/techstack/SemanticKernel.png",
+          "alt": "Semantic Kernel NLP",
+          "title": "Semantic Kernel + NLP",
+          "content": "Enhance NLP tasks with Semantic Kernel's semantic understanding."
+        },
+        {
+          "icon": "assets/techstack/SemanticKernel.png",
+          "alt": "Semantic Kernel Automation",
+          "title": "Semantic Kernel + Automation",
+          "content": "Automate workflows with Semantic Kernel's advanced capabilities."
+        }
+      ]
+    },
+    "machine-learning": {
+      "title": "Build Intelligent Systems with Machine Learning",
+      "description": "Machine Learning enables the creation of predictive models and intelligent systems for various industries.",
+      "items": [
+        {
+          "icon": "assets/techstack/MachineLearning.png",
+          "alt": "Machine Learning Models",
+          "title": "Machine Learning + Models",
+          "content": "Develop predictive models with advanced machine learning techniques."
+        },
+        {
+          "icon": "assets/techstack/MachineLearning.png",
+          "alt": "Machine Learning Data",
+          "title": "Machine Learning + Data",
+          "content": "Leverage data to train and optimize machine learning models."
+        },
+        {
+          "icon": "assets/techstack/MachineLearning.png",
+          "alt": "Machine Learning AI",
+          "title": "Machine Learning + AI",
+          "content": "Combine machine learning with AI for intelligent applications."
+        }
+      ]
+    },
+    "html-css": {
+      "title": "Craft Stunning Web Interfaces with HTML & CSS",
+      "description": "HTML and CSS are the building blocks of modern web design, enabling responsive and visually appealing interfaces.",
+      "items": [
+        {
+          "icon": "assets/techstack/HTMLCSS.png",
+          "alt": "HTML CSS Design",
+          "title": "HTML + CSS Design",
+          "content": "Create responsive and visually stunning web designs."
+        },
+        {
+          "icon": "assets/techstack/HTMLCSS.png",
+          "alt": "HTML CSS Animation",
+          "title": "HTML + CSS Animation",
+          "content": "Add dynamic animations to your web pages with CSS."
+        },
+        {
+          "icon": "assets/techstack/HTMLCSS.png",
+          "alt": "HTML CSS Frameworks",
+          "title": "HTML + CSS Frameworks",
+          "content": "Leverage frameworks like Bootstrap for faster development."
+        }
+      ]
+    },
+    "svelte": {
+      "title": "Build Reactive Web Applications with Svelte",
+      "description": "Svelte simplifies web development with its reactive framework and efficient compilation.",
+      "items": [
+        {
+          "icon": "assets/techstack/Svelte.png",
+          "alt": "Svelte Components",
+          "title": "Svelte + Components",
+          "content": "Develop reusable components with Svelte's reactive framework."
+        },
+        {
+          "icon": "assets/techstack/Svelte.png",
+          "alt": "Svelte Performance",
+          "title": "Svelte + Performance",
+          "content": "Optimize web applications with Svelte's efficient compilation."
+        },
+        {
+          "icon": "assets/techstack/Svelte.png",
+          "alt": "Svelte Integration",
+          "title": "Svelte + Integration",
+          "content": "Integrate Svelte with existing projects for enhanced functionality."
+        }
+      ]
+    },
+    "tailwind": {
+      "title": "Streamline Web Design with Tailwind CSS",
+      "description": "Tailwind CSS provides utility-first classes for rapid and consistent web design.",
+      "items": [
+        {
+          "icon": "assets/techstack/Tailwind.png",
+          "alt": "Tailwind Design",
+          "title": "Tailwind + Design",
+          "content": "Create consistent designs with Tailwind's utility-first approach."
+        },
+        {
+          "icon": "assets/techstack/Tailwind.png",
+          "alt": "Tailwind Customization",
+          "title": "Tailwind + Customization",
+          "content": "Customize designs easily with Tailwind's configuration options."
+        },
+        {
+          "icon": "assets/techstack/Tailwind.png",
+          "alt": "Tailwind Frameworks",
+          "title": "Tailwind + Frameworks",
+          "content": "Integrate Tailwind with frameworks like React and Vue."
+        }
+      ]
+    },
+    "nodejs": {
+      "title": "Build Scalable Applications with Node.js",
+      "description": "Node.js enables the development of fast and scalable server-side applications.",
+      "items": [
+        {
+          "icon": "assets/techstack/NodeJS.png",
+          "alt": "Node.js APIs",
+          "title": "Node.js + APIs",
+          "content": "Develop robust APIs with Node.js for seamless integration."
+        },
+        {
+          "icon": "assets/techstack/NodeJS.png",
+          "alt": "Node.js Microservices",
+          "title": "Node.js + Microservices",
+          "content": "Build microservices with Node.js for scalable architectures."
+        },
+        {
+          "icon": "assets/techstack/NodeJS.png",
+          "alt": "Node.js Real-time",
+          "title": "Node.js + Real-time",
+          "content": "Create real-time applications with Node.js and WebSocket."
+        }
+      ]
+    },
+    "java": {
+      "title": "Develop Enterprise Applications with Java",
+      "description": "Java is a versatile language for building secure and scalable enterprise applications.",
+      "items": [
+        {
+          "icon": "assets/techstack/Java.png",
+          "alt": "Java Spring",
+          "title": "Java + Spring",
+          "content": "Leverage Spring Framework for robust Java applications."
+        },
+        {
+          "icon": "assets/techstack/Java.png",
+          "alt": "Java Hibernate",
+          "title": "Java + Hibernate",
+          "content": "Use Hibernate for efficient database management in Java."
+        },
+        {
+          "icon": "assets/techstack/Java.png",
+          "alt": "Java Microservices",
+          "title": "Java + Microservices",
+          "content": "Build scalable microservices with Java."
+        }
+      ]
+    },
+    "ruby": {
+      "title": "Build Elegant Applications with Ruby",
+      "description": "Ruby is a dynamic language known for its simplicity and productivity.",
+      "items": [
+        {
+          "icon": "assets/techstack/Ruby.png",
+          "alt": "Ruby Rails",
+          "title": "Ruby + Rails",
+          "content": "Develop web applications rapidly with Ruby on Rails."
+        },
+        {
+          "icon": "assets/techstack/Ruby.png",
+          "alt": "Ruby APIs",
+          "title": "Ruby + APIs",
+          "content": "Create RESTful APIs with Ruby for seamless integration."
+        },
+        {
+          "icon": "assets/techstack/Ruby.png",
+          "alt": "Ruby Automation",
+          "title": "Ruby + Automation",
+          "content": "Automate tasks efficiently with Ruby scripts."
+        }
+      ]
+    },
+    "php": {
+      "title": "Develop Dynamic Websites with PHP",
+      "description": "PHP is a popular language for building dynamic and interactive web applications.",
+      "items": [
+        {
+          "icon": "assets/techstack/PHP.png",
+          "alt": "PHP Laravel",
+          "title": "PHP + Laravel",
+          "content": "Build modern web applications with PHP and Laravel."
+        },
+        {
+          "icon": "assets/techstack/PHP.png",
+          "alt": "PHP CMS",
+          "title": "PHP + CMS",
+          "content": "Develop CMS solutions with PHP for content management."
+        },
+        {
+          "icon": "assets/techstack/PHP.png",
+          "alt": "PHP APIs",
+          "title": "PHP + APIs",
+          "content": "Create APIs with PHP for seamless backend integration."
+        }
+      ]
+    },
+    "rust": {
+      "title": "Build High-Performance Applications with Rust",
+      "description": "Rust is a systems programming language focused on safety and performance.",
+      "items": [
+        {
+          "icon": "assets/techstack/Rust.png",
+          "alt": "Rust Systems",
+          "title": "Rust + Systems",
+          "content": "Develop high-performance systems with Rust."
+        },
+        {
+          "icon": "assets/techstack/Rust.png",
+          "alt": "Rust WebAssembly",
+          "title": "Rust + WebAssembly",
+          "content": "Leverage Rust for WebAssembly applications."
+        },
+        {
+          "icon": "assets/techstack/Rust.png",
+          "alt": "Rust Microservices",
+          "title": "Rust + Microservices",
+          "content": "Build efficient microservices with Rust."
+        }
+      ]
+    },
+    "kotlin": {
+      "title": "Develop Modern Applications with Kotlin",
+      "description": "Kotlin is a modern programming language for building Android and server-side applications.",
+      "items": [
+        {
+          "icon": "assets/techstack/Kotlin.png",
+          "alt": "Kotlin Android",
+          "title": "Kotlin + Android",
+          "content": "Develop Android applications with Kotlin for better performance."
+        },
+        {
+          "icon": "assets/techstack/Kotlin.png",
+          "alt": "Kotlin Spring",
+          "title": "Kotlin + Spring",
+          "content": "Leverage Kotlin with Spring for modern server-side applications."
+        },
+        {
+          "icon": "assets/techstack/Kotlin.png",
+          "alt": "Kotlin APIs",
+          "title": "Kotlin + APIs",
+          "content": "Create APIs with Kotlin for seamless integration."
+        }
+      ]
+    },
+    "spring-boot": {
+      "title": "Build Enterprise Applications with Spring Boot",
+      "description": "Spring Boot simplifies Java application development with its powerful framework.",
+      "items": [
+        {
+          "icon": "assets/techstack/SpringBoot.png",
+          "alt": "Spring Boot Microservices",
+          "title": "Spring Boot + Microservices",
+          "content": "Develop scalable microservices with Spring Boot."
+        },
+        {
+          "icon": "assets/techstack/SpringBoot.png",
+          "alt": "Spring Boot APIs",
+          "title": "Spring Boot + APIs",
+          "content": "Create robust APIs with Spring Boot for enterprise applications."
+        },
+        {
+          "icon": "assets/techstack/SpringBoot.png",
+          "alt": "Spring Boot Cloud",
+          "title": "Spring Boot + Cloud",
+          "content": "Integrate Spring Boot with cloud platforms for scalability."
+        }
+      ]
     }
   }
 }

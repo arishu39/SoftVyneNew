@@ -23,6 +23,214 @@
       "upgradeServiceText": "Vue.js Integration Service",
       "costSavingText": "Save Up to 35% On Development Cost",
       "imageUrl": "assets/insights.jpg"
+    },
+    "typescript": {
+      "heroTitle": "Hire TypeScript Developers",
+      "heroDescription": "Hire TypeScript developers to build type-safe, scalable applications. Our experts deliver robust solutions with enhanced code quality and maintainability.",
+      "experienceYears": "9+ Years",
+      "upgradeServiceText": "TypeScript Migration Service",
+      "costSavingText": "Save Up to 40% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "nextjs": {
+      "heroTitle": "Hire Next.js Developers",
+      "heroDescription": "Hire Next.js developers for server-side rendered React applications. Our team delivers optimized, SEO-friendly solutions with excellent performance.",
+      "experienceYears": "7+ Years",
+      "upgradeServiceText": "Next.js Implementation Service",
+      "costSavingText": "Save Up to 42% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "python": {
+      "heroTitle": "Hire Python Developers",
+      "heroDescription": "Hire Python developers for versatile backend solutions and data science applications. Our experts deliver scalable, efficient code with rapid development.",
+      "experienceYears": "12+ Years",
+      "upgradeServiceText": "Python Integration Service",
+      "costSavingText": "Save Up to 45% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "javascript": {
+      "heroTitle": "Hire JavaScript Developers",
+      "heroDescription": "Hire JavaScript developers to create interactive and dynamic web applications. Our experts deliver efficient, cross-browser compatible solutions.",
+      "experienceYears": "15+ Years",
+      "upgradeServiceText": "JavaScript Modernization Service",
+      "costSavingText": "Save Up to 38% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "nuxtjs": {
+      "heroTitle": "Hire Nuxt.js Developers",
+      "heroDescription": "Hire Nuxt.js developers for SSR-enabled Vue.js applications. Our team creates fast, SEO-friendly web applications with optimal performance.",
+      "experienceYears": "6+ Years",
+      "upgradeServiceText": "Nuxt.js Migration Service",
+      "costSavingText": "Save Up to 35% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "dotnet": {
+      "heroTitle": "Hire .NET Developers",
+      "heroDescription": "Hire .NET developers for enterprise-grade applications. Our specialists build secure, scalable solutions with modern .NET technologies.",
+      "experienceYears": "14+ Years",
+      "upgradeServiceText": ".NET Core Migration Service",
+      "costSavingText": "Save Up to 42% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "golang": {
+      "heroTitle": "Hire Go Developers",
+      "heroDescription": "Hire Go developers for high-performance backend services. Our experts create efficient, concurrent systems with Go's powerful features.",
+      "experienceYears": "8+ Years",
+      "upgradeServiceText": "Go Implementation Service",
+      "costSavingText": "Save Up to 40% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "rag": {
+      "heroTitle": "Hire RAG Experts",
+      "heroDescription": "Hire RAG experts to build intelligent systems that combine retrieval and generation for context-aware applications.",
+      "experienceYears": "5+ Years",
+      "upgradeServiceText": "RAG Integration Service",
+      "costSavingText": "Save Up to 30% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "generative-ai": {
+      "heroTitle": "Hire Generative AI Experts",
+      "heroDescription": "Hire Generative AI experts to create innovative solutions for content generation, design, and more.",
+      "experienceYears": "6+ Years",
+      "upgradeServiceText": "Generative AI Implementation Service",
+      "costSavingText": "Save Up to 35% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "llm": {
+      "heroTitle": "Hire LLM Experts",
+      "heroDescription": "Hire LLM experts to build advanced natural language processing applications with large language models.",
+      "experienceYears": "7+ Years",
+      "upgradeServiceText": "LLM Optimization Service",
+      "costSavingText": "Save Up to 40% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "transformers": {
+      "heroTitle": "Hire Transformer Model Experts",
+      "heroDescription": "Hire experts in transformer models to develop state-of-the-art AI applications for NLP, vision, and more.",
+      "experienceYears": "8+ Years",
+      "upgradeServiceText": "Transformer Model Integration Service",
+      "costSavingText": "Save Up to 38% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "deep-learning": {
+      "heroTitle": "Hire Deep Learning Experts",
+      "heroDescription": "Hire deep learning experts to build advanced AI models for tasks like image recognition, NLP, and more.",
+      "experienceYears": "10+ Years",
+      "upgradeServiceText": "Deep Learning Optimization Service",
+      "costSavingText": "Save Up to 42% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "nlp": {
+      "heroTitle": "Hire NLP Experts",
+      "heroDescription": "Hire NLP experts to create intelligent systems for language understanding, sentiment analysis, and more.",
+      "experienceYears": "9+ Years",
+      "upgradeServiceText": "NLP Enhancement Service",
+      "costSavingText": "Save Up to 40% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "computer-vision": {
+      "heroTitle": "Hire Computer Vision Experts",
+      "heroDescription": "Hire computer vision experts to develop applications for object detection, face recognition, and more.",
+      "experienceYears": "8+ Years",
+      "upgradeServiceText": "Computer Vision Implementation Service",
+      "costSavingText": "Save Up to 37% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "semantic-kernel": {
+      "heroTitle": "Hire Semantic Kernel Experts",
+      "heroDescription": "Hire Semantic Kernel experts to build intelligent AI-driven applications with semantic understanding and generative capabilities.",
+      "experienceYears": "5+ Years",
+      "upgradeServiceText": "Semantic Kernel Integration Service",
+      "costSavingText": "Save Up to 30% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "machine-learning": {
+      "heroTitle": "Hire Machine Learning Experts",
+      "heroDescription": "Hire Machine Learning experts to develop predictive models and intelligent systems for various industries.",
+      "experienceYears": "8+ Years",
+      "upgradeServiceText": "Machine Learning Optimization Service",
+      "costSavingText": "Save Up to 35% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "html-css": {
+      "heroTitle": "Hire HTML & CSS Developers",
+      "heroDescription": "Hire HTML & CSS developers to create responsive and visually stunning web interfaces with modern design principles.",
+      "experienceYears": "10+ Years",
+      "upgradeServiceText": "HTML & CSS Modernization Service",
+      "costSavingText": "Save Up to 25% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "svelte": {
+      "heroTitle": "Hire Svelte Developers",
+      "heroDescription": "Hire Svelte developers to build reactive and high-performance web applications with Svelte's efficient framework.",
+      "experienceYears": "6+ Years",
+      "upgradeServiceText": "Svelte Integration Service",
+      "costSavingText": "Save Up to 30% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "tailwind": {
+      "heroTitle": "Hire Tailwind CSS Developers",
+      "heroDescription": "Hire Tailwind CSS developers to streamline your web design process with utility-first CSS classes.",
+      "experienceYears": "5+ Years",
+      "upgradeServiceText": "Tailwind CSS Implementation Service",
+      "costSavingText": "Save Up to 20% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "nodejs": {
+      "heroTitle": "Hire Node.js Developers",
+      "heroDescription": "Hire Node.js developers to build scalable and high-performance server-side applications.",
+      "experienceYears": "10+ Years",
+      "upgradeServiceText": "Node.js Optimization Service",
+      "costSavingText": "Save Up to 40% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "java": {
+      "heroTitle": "Hire Java Developers",
+      "heroDescription": "Hire Java developers to create secure and scalable enterprise-grade applications.",
+      "experienceYears": "12+ Years",
+      "upgradeServiceText": "Java Modernization Service",
+      "costSavingText": "Save Up to 38% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "ruby": {
+      "heroTitle": "Hire Ruby Developers",
+      "heroDescription": "Hire Ruby developers to build elegant and productive web applications with Ruby on Rails.",
+      "experienceYears": "8+ Years",
+      "upgradeServiceText": "Ruby Optimization Service",
+      "costSavingText": "Save Up to 35% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "php": {
+      "heroTitle": "Hire PHP Developers",
+      "heroDescription": "Hire PHP developers to create dynamic and interactive web applications with modern PHP frameworks.",
+      "experienceYears": "10+ Years",
+      "upgradeServiceText": "PHP Modernization Service",
+      "costSavingText": "Save Up to 30% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "rust": {
+      "heroTitle": "Hire Rust Developers",
+      "heroDescription": "Hire Rust developers to build high-performance and safe systems with Rust's modern programming capabilities.",
+      "experienceYears": "6+ Years",
+      "upgradeServiceText": "Rust Optimization Service",
+      "costSavingText": "Save Up to 35% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "kotlin": {
+      "heroTitle": "Hire Kotlin Developers",
+      "heroDescription": "Hire Kotlin developers to create modern Android and server-side applications with Kotlin's concise syntax.",
+      "experienceYears": "7+ Years",
+      "upgradeServiceText": "Kotlin Integration Service",
+      "costSavingText": "Save Up to 30% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
+    },
+    "spring-boot": {
+      "heroTitle": "Hire Spring Boot Developers",
+      "heroDescription": "Hire Spring Boot developers to build enterprise-grade applications with Spring Boot's powerful framework.",
+      "experienceYears": "10+ Years",
+      "upgradeServiceText": "Spring Boot Optimization Service",
+      "costSavingText": "Save Up to 40% On Development Cost",
+      "imageUrl": "assets/insights.jpg"
     }
   },
   "trialButtonText": "START 15 DAYS RISK-FREE TRIAL",
