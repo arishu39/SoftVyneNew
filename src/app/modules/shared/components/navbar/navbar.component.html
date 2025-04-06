@@ -33,36 +33,19 @@
             Services
           </a>
           <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" [routerLink]="['/services', 'angular']"
-                >Angular</a
+            <li *ngFor="let service of services">
+              <a
+                class="dropdown-item"
+                [routerLink]="['/services', service.route]"
               >
-            </li>
-            <li>
-              <a class="dropdown-item" [routerLink]="['/services', 'vue']"
-                >Vue</a
-              >
-            </li>
-            <li>
-              <a class="dropdown-item" [routerLink]="['/services', 'react']"
-                >React</a
-              >
-            </li>
-            <li>
-              <a class="dropdown-item" [routerLink]="['/services', 'frontend']"
-                >Fronet end</a
-              >
-            </li>
-            <li>
-              <a class="dropdown-item" [routerLink]="['/services', 'ai-ml']"
-                >AI & ML</a
-              >
+                {{ service.name }}
+              </a>
             </li>
           </ul>
         </li>
 
         <!-- Industries Dropdown -->
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
             href="#"
@@ -81,7 +64,7 @@
 
         <li class="nav-item">
           <a class="nav-link" href="#">Portfolio</a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="#">Contact Us</a>
         </li>
