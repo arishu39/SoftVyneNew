@@ -6,7 +6,7 @@
       "experienceYears": "13+ Years",
       "upgradeServiceText": "Angular Upgrade Service",
       "costSavingText": "Save Up to 40% On Development Cost",
-      "imageUrl": "assets/insights-angular.jpg"
+      "imageUrl": "assets/insights.jpg"
     },
     "react": {
       "heroTitle": "Hire React Developers",
@@ -14,7 +14,7 @@
       "experienceYears": "10+ Years",
       "upgradeServiceText": "React Migration Service",
       "costSavingText": "Save Up to 45% On Development Cost",
-      "imageUrl": "assets/insights-react.jpg"
+      "imageUrl": "assets/insights.jpg"
     },
     "vue": {
       "heroTitle": "Hire Vue Developers",
@@ -22,7 +22,7 @@
       "experienceYears": "8+ Years",
       "upgradeServiceText": "Vue.js Integration Service",
       "costSavingText": "Save Up to 35% On Development Cost",
-      "imageUrl": "assets/insights-vue.jpg"
+      "imageUrl": "assets/insights.jpg"
     }
   },
   "trialButtonText": "START 15 DAYS RISK-FREE TRIAL",

@@ -11,17 +11,19 @@
       <div class="col-md-4">
         <div class="card custom-card">
           <img
-            [src]="hiredevContent!.imageUrl"
+            [src]="hiredevContent!.sections.trial.imageUrl"
             class="card-img-top"
             alt="Dedicated Developers"
           />
           <div class="card-body text-center">
-            <h5 class="card-title">{{ hiredevContent!.trialButtonText }}</h5>
+            <h5 class="card-title">
+              {{ hiredevContent!.sections.trial.title }}
+            </h5>
             <p class="card-text">
-              {{ hiredevContent!.callButtonText }}
+              {{ hiredevContent!.sections.trial.description }}
             </p>
             <a href="#" class="btn custom-btn">{{
-              hiredevContent!.trialButtonText
+              hiredevContent!.sections.trial.buttonText
             }}</a>
           </div>
         </div>
@@ -30,17 +32,19 @@
       <div class="col-md-4">
         <div class="card custom-card">
           <img
-            [src]="hiredevContent!.imageUrl"
+            [src]="hiredevContent!.sections.experience.imageUrl"
             class="card-img-top"
             alt="Dedicated Developers"
           />
           <div class="card-body text-center">
-            <h5 class="card-title">{{ hiredevContent!.experienceYears }}</h5>
+            <h5 class="card-title">
+              {{ hiredevContent!.sections.experience.title }}
+            </h5>
             <p class="card-text">
-              {{ hiredevContent!.upgradeServiceText }}
+              {{ hiredevContent!.sections.experience.description }}
             </p>
             <a href="#" class="btn custom-btn">{{
-              hiredevContent!.callButtonText
+              hiredevContent!.sections.experience.buttonText
             }}</a>
           </div>
         </div>
@@ -49,17 +53,19 @@
       <div class="col-md-4">
         <div class="card custom-card">
           <img
-            [src]="hiredevContent!.imageUrl"
+            [src]="hiredevContent!.sections.costSaving.imageUrl"
             class="card-img-top"
             alt="Dedicated Developers"
           />
           <div class="card-body text-center">
-            <h5 class="card-title">{{ hiredevContent!.costSavingText }}</h5>
+            <h5 class="card-title">
+              {{ hiredevContent!.sections.costSaving.title }}
+            </h5>
             <p class="card-text">
-              {{ hiredevContent!.costSavingText }}
+              {{ hiredevContent!.sections.costSaving.description }}
             </p>
             <a href="#" class="btn custom-btn">{{
-              hiredevContent!.callButtonText
+              hiredevContent!.sections.costSaving.buttonText
             }}</a>
           </div>
         </div>

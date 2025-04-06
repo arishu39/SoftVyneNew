@@ -1,12 +1,26 @@
 {
   "heroTitle": "Hire Dedicated Developers",
   "heroDescription": "Supercharge your projects with our expert developers. We offer flexible hiring models to fit your needs. Scale your team with top talent and achieve your goals faster.",
-  "trialButtonText": "START 15 DAYS RISK-FREE TRIAL",
-  "callButtonText": "SCHEDULE A CALL",
-  "experienceYears": "10+ Years",
-  "upgradeServiceText": "Custom Development Solutions",
-  "costSavingText": "Reduce Development Costs by 50%",
-  "imageUrl": "assets/dedicated-developers.jpg",
+  "sections": {
+    "trial": {
+      "title": "Free Trial",
+      "description": "Start with a risk-free trial period",
+      "buttonText": "START 15 DAYS RISK-FREE TRIAL",
+      "imageUrl": "assets/collaborate.jpg"
+    },
+    "experience": {
+      "title": "10+ Years",
+      "description": "Custom Development Solutions",
+      "buttonText": "SCHEDULE A CALL",
+      "imageUrl": "assets/enterprise.jpg"
+    },
+    "costSaving": {
+      "title": "50% Cost Reduction",
+      "description": "Reduce Development Costs by 50%",
+      "buttonText": "SCHEDULE A CALL",
+      "imageUrl": "assets/consulting.jpg"
+    }
+  },
   "positions": [
     {
       "title": "Frontend Developer",

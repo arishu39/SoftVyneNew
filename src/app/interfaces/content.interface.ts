@@ -51,13 +51,19 @@ export interface FullstackItem {
 export interface HireDevContent {
   heroTitle: string;
   heroDescription: string;
-  trialButtonText: string;
-  callButtonText: string;
-  experienceYears: string;
-  upgradeServiceText: string;
-  costSavingText: string;
-  imageUrl: string;
+  sections: {
+    trial: HireDevSection;
+    experience: HireDevSection;
+    costSaving: HireDevSection;
+  };
   positions: HireDevPosition[];
+}
+
+export interface HireDevSection {
+  title: string;
+  description: string;
+  buttonText: string;
+  imageUrl: string;
 }
 
 export interface HireDevPosition {
