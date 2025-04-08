@@ -13,7 +13,7 @@
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--primary-color), #00ff88);
+    background: var(--primary-color);
   }
 
   .contact-form {
@@ -49,16 +49,22 @@
     }
 
     .btn-form {
-      @extend .btn-primary !optional;
+      background: var(--primary-color);
+      color: white;
       border-radius: 12px;
-      padding: 14px 30px;
+      padding: 12px 30px;
       font-weight: 600;
       letter-spacing: 0.5px;
-      transition: all 0.3s ease;
+      border: none;
+      width: auto !important;
+      margin: 0 auto;
+      display: block;
+      min-width: 200px;
 
       &:hover {
+        background: var(--primary-dark);
         transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+        box-shadow: 0 5px 15px rgba(101, 88, 245, 0.3);
       }
     }
   }
@@ -81,7 +87,7 @@
         display: block;
         width: 50px;
         height: 3px;
-        background: linear-gradient(90deg, #007bff, #00ff88);
+        background: var(--secondary-color);
         margin: 10px auto 0;
       }
     }
@@ -100,7 +106,7 @@
 
       i {
         font-size: 1.2rem;
-        color: var(--primary-color);
+        color: var(--secondary-color);
         margin-right: var(--spacing-sm);
       }
 
@@ -110,13 +116,13 @@
       }
 
       a {
-        color: #007bff;
+        color: var(--primary-color);
         text-decoration: none;
         font-weight: 500;
         transition: color 0.3s ease;
 
         &:hover {
-          color: #0056b3;
+          color: var(--primary-dark);
         }
       }
     }
@@ -137,7 +143,7 @@
       display: block;
       width: 80px;
       height: 4px;
-      background: linear-gradient(90deg, #007bff, #00ff88);
+      background: var(--secondary-color);
       margin: 15px auto 0;
       border-radius: 2px;
     }

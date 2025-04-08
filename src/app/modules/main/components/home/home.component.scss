@@ -10,6 +10,44 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  .content {
+    color: var(--text-primary);
+    text-align: center;
+    position: relative;
+    top: -232px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  h1 {
+    margin: 10px 0;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+  }
+
+  .btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: "Poppins", sans-serif;
+
+    &:hover {
+      background-color: var(--secondary-dark);
+    }
+  }
 }
 
 /* Content styling */
@@ -118,36 +156,74 @@ p {
     padding: var(--spacing-md);
 
     h1 {
-      font-size: clamp(2.5rem, 5vw, 4.5rem);
-      font-weight: 800;
+      font-size: clamp(3.5rem, 7vw, 6rem);
+      font-weight: 900;
+      font-family: "Poppins", sans-serif;
       margin-bottom: var(--spacing-md);
       background: linear-gradient(
         to right,
         #ffffff 0%,
-        #00f2fe 50%,
-        #4facfe 100%
+        #f0f8ff 30%,
+        #e6f3ff 70%,
+        #ffffff 100%
       );
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      opacity: 0;
       animation: slideInTop 1s ease-out forwards;
 
       span {
-        display: block;
         font-size: 0.6em;
+        display: block;
+        margin-top: 15px;
+        background: linear-gradient(
+          to right,
+          #36d1dc 0%,
+          #5b86e5 50%,
+          #36d1dc 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        opacity: 0;
+        animation: fadeIn 1s ease-out 0.5s forwards;
       }
     }
 
     p {
-      font-size: clamp(1.2rem, 2vw, 1.8rem);
-      margin-bottom: var(--spacing-lg);
-      animation: fadeIn 1.5s ease-out 0.5s forwards;
+      font-size: clamp(1.4rem, 2vw, 1.8rem);
+      line-height: 1.6;
+      color: #ffffff;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
       opacity: 0;
+      animation: fadeIn 1s ease-out 0.8s forwards;
+      max-width: 800px;
+      margin: 2rem auto;
     }
 
     .btn {
       @extend .btn-primary !optional;
-      animation: bounceIn 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s forwards;
+      animation: bounceIn 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1.2s
+        forwards;
       opacity: 0;
+      background: var(--secondary-color);
+      color: white;
+      padding: var(--spacing-sm) var(--spacing-lg);
+      border-radius: 25px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: var(--secondary-dark);
+        transform: translateY(-2px);
+      }
     }
   }
 
@@ -172,22 +248,24 @@ p {
 }
 
 @keyframes slideInTop {
-  from {
-    transform: translateY(-100px);
+  0% {
+    transform: translateY(-50px);
     opacity: 0;
   }
-  to {
+  100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
 
 @keyframes fadeIn {
-  from {
+  0% {
     opacity: 0;
+    transform: translateY(20px);
   }
-  to {
+  100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -223,6 +301,16 @@ p {
   }
   100% {
     box-shadow: 0 0 0 0 rgba(255, 77, 77, 0);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5), 0 0 10px rgba(0, 255, 255, 0.3);
+  }
+  to {
+    text-shadow: 0 0 10px rgba(0, 153, 255, 0.5),
+      0 0 20px rgba(0, 153, 255, 0.3);
   }
 }
 
