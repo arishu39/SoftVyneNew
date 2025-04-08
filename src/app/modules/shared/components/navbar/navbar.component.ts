@@ -1,3 +1,5 @@
+declare const Calendly: any;
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -75,5 +77,11 @@ export class NavbarComponent {
 
   isSubmenuActive(route: string): boolean {
     return this.activeSubmenu === route;
+  }
+
+  openCalendly(): void {
+    Calendly.initPopupWidget({
+      url: 'https://calendly.com/arishu39/30min', // Replace 'yourusername' with your Calendly username
+    });
   }
 }
