@@ -1,6 +1,7 @@
 /* Contact Section Styling */
 .contact-section {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  @extend %section !optional;
+  background: linear-gradient(135deg, var(--bg-light) 0%, #e9ecef 100%);
   padding: 80px 0;
   position: relative;
   overflow: hidden;
@@ -12,7 +13,113 @@
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #007bff, #00ff88);
+    background: linear-gradient(90deg, var(--primary-color), #00ff88);
+  }
+
+  .contact-form {
+    @extend %card !optional;
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    label {
+      font-weight: 500;
+      color: #495057;
+      margin-bottom: 8px;
+    }
+
+    .form-control,
+    .form-select {
+      border: 2px solid #e9ecef;
+      padding: var(--spacing-sm) var(--spacing-md);
+      border-radius: var(--border-radius);
+      transition: all 0.3s ease;
+      background: var(--bg-light);
+
+      &:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 4px rgba(101, 88, 245, 0.1);
+      }
+    }
+
+    .btn-form {
+      @extend .btn-primary !optional;
+      border-radius: 12px;
+      padding: 14px 30px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+      }
+    }
+  }
+
+  .contact-info {
+    @extend %card !optional;
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    h4 {
+      color: #2d4059;
+      font-size: 1.5rem;
+      margin-bottom: 25px;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: linear-gradient(90deg, #007bff, #00ff88);
+        margin: 10px auto 0;
+      }
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: var(--spacing-md);
+      padding: var(--spacing-sm);
+      border-radius: var(--border-radius);
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: var(--bg-light);
+      }
+
+      i {
+        font-size: 1.2rem;
+        color: var(--primary-color);
+        margin-right: var(--spacing-sm);
+      }
+
+      p {
+        margin: 0;
+        color: #495057;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #0056b3;
+        }
+      }
+    }
   }
 }
 
@@ -41,110 +148,6 @@
     font-size: 1.1rem;
     max-width: 600px;
     margin: 0 auto;
-  }
-}
-
-.contact-form {
-  background: white;
-  border-radius: 20px;
-  padding: 40px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
-
-  &:hover {
-    transform: translateY(-5px);
-  }
-
-  label {
-    font-weight: 500;
-    color: #495057;
-    margin-bottom: 8px;
-  }
-
-  .form-control,
-  .form-select {
-    border: 2px solid #e9ecef;
-    padding: 12px 15px;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-    background: #f8f9fa;
-
-    &:focus {
-      border-color: #007bff;
-      box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
-    }
-  }
-
-  .btn-form {
-    background: linear-gradient(45deg, #007bff, #00ff88);
-    border-radius: 12px;
-    padding: 14px 30px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
-
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
-    }
-  }
-}
-
-.contact-info {
-  background: white;
-  border-radius: 20px;
-  padding: 40px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-
-  h4 {
-    color: #2d4059;
-    font-size: 1.5rem;
-    margin-bottom: 25px;
-    position: relative;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 50px;
-      height: 3px;
-      background: linear-gradient(90deg, #007bff, #00ff88);
-      margin: 10px auto 0;
-    }
-  }
-
-  .info-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-
-    &:hover {
-      background: #f8f9fa;
-    }
-
-    i {
-      font-size: 1.2rem;
-      color: #007bff;
-      margin-right: 15px;
-    }
-
-    p {
-      margin: 0;
-      color: #495057;
-    }
-
-    a {
-      color: #007bff;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s ease;
-
-      &:hover {
-        color: #0056b3;
-      }
-    }
   }
 }
 

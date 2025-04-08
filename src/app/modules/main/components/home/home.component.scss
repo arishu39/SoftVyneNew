@@ -78,7 +78,7 @@ p {
     to bottom,
     rgba(0, 0, 0, 0.4),
     rgba(0, 0, 0, 0.7)
-  ); // Enhanced gradient overlay
+  );
 
   &::before {
     content: "";
@@ -111,20 +111,16 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #ffffff;
+    color: var(--bg-light);
     z-index: 2;
     width: 90%;
     max-width: 1200px;
-    padding: 2rem;
+    padding: var(--spacing-md);
 
     h1 {
-      font-size: clamp(3.5rem, 6vw, 5.5rem);
-      margin-bottom: 1.5rem;
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
       font-weight: 800;
-      letter-spacing: 0.05em;
-      line-height: 1.1;
-      text-transform: uppercase;
-      font-family: "Montserrat", sans-serif;
+      margin-bottom: var(--spacing-md);
       background: linear-gradient(
         to right,
         #ffffff 0%,
@@ -133,114 +129,23 @@ p {
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-shadow: 3px 3px 20px rgba(0, 242, 254, 0.3),
-        -3px -3px 20px rgba(79, 172, 254, 0.3);
+      animation: slideInTop 1s ease-out forwards;
+
       span {
         display: block;
         font-size: 0.6em;
-        background: linear-gradient(to right, #ffffff 0%, #eeeeee 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.3);
       }
-    }
-
-    p {
-      font-size: clamp(1.4rem, 2.2vw, 2rem);
-      margin-bottom: 3rem;
-      font-weight: 500;
-      color: #f0f0f0;
-      line-height: 1.4;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-      font-family: "Poppins", sans-serif;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
-      letter-spacing: 0.5px;
-    }
-
-    .btn {
-      padding: 1.3rem 3.5rem;
-      font-size: 1.3rem;
-      background: linear-gradient(135deg, #ff4d4d 0%, #ff1a1a 100%);
-      border: none;
-      color: white;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.4s ease;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-family: "Montserrat", sans-serif;
-      box-shadow: 0 4px 15px rgba(255, 77, 77, 0.3);
-
-      &:hover {
-        background: linear-gradient(135deg, #ff1a1a 0%, #ff4d4d 100%);
-        transform: translateY(-3px) scale(1.02);
-        box-shadow: 0 6px 25px rgba(255, 77, 77, 0.5);
-      }
-    }
-
-    h1 {
-      font-size: clamp(2.5rem, 5vw, 4.5rem);
-      margin-bottom: 2rem;
-      font-weight: 800;
-      color: #ffffff;
-      letter-spacing: -0.02em;
-      line-height: 1.2;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     }
 
     p {
       font-size: clamp(1.2rem, 2vw, 1.8rem);
-      margin-bottom: 3rem;
-      font-weight: 400;
-      color: #ffffff;
-      line-height: 1.6;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-    }
-
-    .btn {
-      padding: 1.2rem 3rem;
-      font-size: 1.2rem;
-      background-color: #ff4d4d;
-      border: 2px solid transparent;
-      color: white;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-
-      &:hover {
-        background-color: transparent;
-        border-color: #ff4d4d;
-        transform: translateY(-2px) scale(1.05);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2),
-          0 0 20px rgba(255, 77, 77, 0.4);
-      }
-
-      &.bounce-in {
-        animation: bounceIn 1.2s cubic-bezier(0.36, 0, 0.66, 1) 0.5s forwards,
-          glowPulse 2s ease-in-out infinite 1.7s;
-        opacity: 0;
-      }
-    }
-
-    h1.slide-in-top {
-      animation: slideInTop 1s ease-out forwards;
-    }
-
-    p.fade-in {
+      margin-bottom: var(--spacing-lg);
       animation: fadeIn 1.5s ease-out 0.5s forwards;
       opacity: 0;
     }
 
-    .btn.bounce-in {
+    .btn {
+      @extend .btn-primary !optional;
       animation: bounceIn 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s forwards;
       opacity: 0;
     }

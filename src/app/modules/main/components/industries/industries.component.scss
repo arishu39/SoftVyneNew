@@ -1,8 +1,33 @@
 /* Background Styling */
 .industry-section {
-  background: linear-gradient(to right, #f9f9f9, #eef1f6);
+  @extend %section !optional;
+  background: linear-gradient(to right, var(--bg-light), #eef1f6);
   padding: 60px 20px;
-  border-radius: 15px;
+  border-radius: var(--border-radius);
+
+  .industry-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+  }
+
+  .industry-item {
+    @extend %card !optional;
+    background: white;
+    padding: var(--spacing-md);
+    text-align: center;
+  }
+
+  .industry-icon {
+    font-size: 42px;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .industry-btn {
+    @extend .btn-primary !optional;
+    margin-top: var(--spacing-lg);
+  }
 }
 
 /* Section Title & Description */

@@ -8,6 +8,7 @@
 
 /* Description Styling */
 .services-description {
+  @extend .section-description !optional;
   color: #5a5a8e;
   font-size: 20px;
   max-width: 700px;
@@ -22,50 +23,53 @@
 }
 
 /* Card Styling */
-.services-section .card {
-  display: flex;
-  flex-direction: column;
-  height: 100%; /* Ensures equal height */
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-}
+.services-section {
+  @extend %section !optional;
 
-.services-section .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
+  .card {
+    @extend %card !optional;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensures equal height */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
 
-/* Image Styling */
-.services-section .card img {
-  width: 100%;
-  height: 200px; /* Fixed height for images */
-  object-fit: cover;
-}
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
 
-/* Card Content */
-.services-section .card-body {
-  flex-grow: 1; /* Pushes button to the bottom */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-}
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
 
-/* Ensures button is at the bottom */
-.learn-more-btn {
-  background: #6558f5;
-  color: #ffffff;
-  padding: 10px 30px;
-  font-weight: 600;
-  text-transform: uppercase;
-  border-radius: 6px;
-  transition: background 0.3s ease;
-  align-self: center;
-  margin-top: auto; /* Pushes button to the bottom */
-}
+  .card-body {
+    padding: var(--spacing-md);
+    flex-grow: 1; /* Pushes button to the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-.learn-more-btn:hover {
-  background: #4c44c0;
+  .learn-more-btn {
+    @extend .btn-primary !optional;
+    background: #6558f5;
+    color: #ffffff;
+    padding: 10px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+    align-self: center;
+    margin-top: auto; /* Pushes button to the bottom */
+  }
+
+  .learn-more-btn:hover {
+    background: #4c44c0;
+  }
 }
