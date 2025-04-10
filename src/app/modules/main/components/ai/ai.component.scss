@@ -1,8 +1,8 @@
 /* General AI Section Styling */
 .ai-section {
   @extend %section !optional;
-  background: var(--bg-light);
-  padding: 50px 0;
+  padding: 80px 0;
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
 
   .feature-card {
     @extend %card !optional;
@@ -53,47 +53,50 @@
 
 /* CTA Button */
 .ai-btn {
-  border: 2px solid transparent;
-  padding: 12px 35px;
-  font-size: 16px;
+  padding: 12px 24px;
+  color: #fff;
   font-weight: 600;
-  cursor: pointer;
-  background: #8685ef;
-  color: #ffffff;
-  text-transform: uppercase;
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
-}
+  border-radius: 30px;
+  background: linear-gradient(45deg, #6c5ce7, #74b9ff);
+  box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+  border: none;
+  transition: all 0.3s ease;
 
-.ai-btn:hover {
-  background: #6f6ce6;
-  box-shadow: 0px 5px 15px rgba(134, 133, 239, 0.4);
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(108, 92, 231, 0.4);
+  }
 }
 
 /* Feature Cards */
 .feature-card {
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
   background: #ffffff;
-  border-radius: 8px;
-  transition: all 0.3s ease-in-out;
-}
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
 
-.feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
 
-.feature-card h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
 
-.feature-card p {
-  font-size: 14px;
-  color: #555;
+  p {
+    color: #636e72;
+    font-size: 14px;
+  }
+
+  i {
+    color: #6c5ce7;
+    margin-right: 15px;
+  }
 }
 
 /* Icons */
@@ -131,17 +134,16 @@
 
 /* Section Header & Subheading */
 .section-title {
-  font-size: 55px;
-  color: #373b3e;
+  font-size: 45px;
   font-weight: 700;
+  color: #373b3e;
   margin-bottom: 10px;
 }
 
 .section-subtitle {
-  color: #5a5a8e;
+  color: #636e72;
   font-size: 20px;
-  margin-bottom: 40px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
 }
