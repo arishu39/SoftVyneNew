@@ -11,333 +11,48 @@
     id="techTabs"
     role="tablist"
   >
-    <li class="nav-item">
+    <li class="nav-item" *ngFor="let tab of tabs">
       <a
-        class="nav-link active"
-        id="machine-learning-tab"
+        class="nav-link"
+        [class.active]="tab.isActive"
+        [id]="tab.id + '-tab'"
         data-bs-toggle="tab"
-        href="#machine-learning"
+        [href]="'#' + tab.id"
         role="tab"
-        aria-controls="machine-learning"
-        aria-selected="true"
-        >Next-Gen AI & Cognitive Technologies</a
+        [attr.aria-controls]="tab.id"
+        [attr.aria-selected]="tab.isActive"
       >
+        {{ tab.title }}
+      </a>
     </li>
-    <li class="nav-item">
-      <a
-        class="nav-link"
-        id="web-tab"
-        data-bs-toggle="tab"
-        href="#web"
-        role="tab"
-        aria-controls="web"
-        aria-selected="false"
-        >Modern App & Integration Solutions</a
-      >
-    </li>
-    <!-- <li class="nav-item">
-      <a
-        class="nav-link"
-        id="mobile-tab"
-        data-bs-toggle="tab"
-        href="#mobile"
-        role="tab"
-        aria-controls="mobile"
-        aria-selected="false"
-        >Mobile</a
-      >
-    </li> -->
-    <!-- <li class="nav-item">
-      <a
-        class="nav-link"
-        id="devops-tab"
-        data-bs-toggle="tab"
-        href="#devops"
-        role="tab"
-        aria-controls="devops"
-        aria-selected="false"
-        >DevOps</a
-      >
-    </li> -->
-    <li class="nav-item">
-      <a
-        class="nav-link"
-        id="cloud-tab"
-        data-bs-toggle="tab"
-        href="#cloud"
-        role="tab"
-        aria-controls="cloud"
-        aria-selected="false"
-        >Cloud, DevOps & Automation</a
-      >
-    </li>
-    <!-- <li class="nav-item">
-      <a
-        class="nav-link"
-        id="platforms-tab"
-        data-bs-toggle="tab"
-        href="#platforms"
-        role="tab"
-        aria-controls="platforms"
-        aria-selected="false"
-        >Platforms</a
-      >
-    </li> -->
-    <li class="nav-item">
-      <a
-        class="nav-link"
-        id="relational-databases-tab"
-        data-bs-toggle="tab"
-        href="#relational-databases"
-        role="tab"
-        aria-controls="relational-databases"
-        aria-selected="false"
-        >Data Engineering & Analytics</a
-      >
-    </li>
-    <!-- <li class="nav-item">
-      <a
-        class="nav-link"
-        id="big-data-tab"
-        data-bs-toggle="tab"
-        href="#big-data"
-        role="tab"
-        aria-controls="big-data"
-        aria-selected="false"
-        >Big Data</a
-      >
-    </li> -->
-    <!-- <li class="nav-item">
-      <a
-        class="nav-link"
-        id="automation-tools-tab"
-        data-bs-toggle="tab"
-        href="#automation-tools"
-        role="tab"
-        aria-controls="automation-tools"
-        aria-selected="false"
-        >Automation Tools</a
-      >
-    </li> -->
   </ul>
 
   <div class="tab-content" id="techTabsContent">
     <div
-      class="tab-pane fade  show active"
-      id="machine-learning"
-      role="tabpanel"
-      aria-labelledby="machine-learning-tab">
-      <div class="container tech-category">
-        <h5 class="tech-heading">Driving impact with next-gen AI and cognitive solutions.</h5>
-        <div class="d-flex flex-wrap justify-content-center tech-icons">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" />          
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" alt="scikit-learn" />          
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" alt="Keras" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="MLlib" />
-          <img src="assets/techstack/open_ai_150_60.png" alt="OpenAI"  style="width: 150px;"/>
-          <img src="assets/techstack/anthropic_150_60.png" alt="Anthropic"   style="width: 150px;"/>
-          <img src="assets/techstack/perplexity_180x60.png" alt="Perplexity" style="width: 180px;"/>
-          <img src="assets/techstack/gemini_90_60.png" alt="Google Gemini" style="width: 90px;"/>
-          <img src="assets/techstack/deepseek_150_60.png" alt="Deepseek" style="width: 150px;"/> 
-          <img src="assets/techstack/amazonq_120_60.png" alt="AWS AI" style="width: 120px;"/>
-          <img src="assets/techstack/vertex_ai_120_60.png" alt="AWS AI" style="width: 120px;"/>
-          <img src="assets/techstack/hugging_face.png" alt="AWS AI" style="width: 160px;"/>
-        </div>
-      </div>
-    </div>    
-    <div
       class="tab-pane fade"
-      id="web"
+      [class.show]="tab.isActive"
+      [class.active]="tab.isActive"
+      *ngFor="let tab of tabs"
+      [id]="tab.id"
       role="tabpanel"
-      aria-labelledby="web-tab"
+      [attr.aria-labelledby]="tab.id + '-tab'"
     >
-      <!-- Technology Categories -->
-      <div class="container tech-category">
-        <h5 class="tech-heading">BACK END</h5>
-        <div class="d-flex flex-wrap justify-content-center tech-icons">
-          <img src="assets/techstack/RubyRails.png" alt="Ruby on Rails" />
-          <img src="assets/techstack/NET.png" alt=".NET" />
-          <img src="assets/techstack/NETcore.png" alt=".NET Core" />
-          <img src="assets/techstack/Node.js.png" alt="NodeJS" />
-          <img src="assets/techstack/Python.png" alt="Python" />
-          <img src="assets/techstack/Java.png" alt="JAVA" />
-          <img src="assets/techstack/Go.png" alt="Go" />
-          <img src="assets/techstack/PHP.png" alt="PHP" />
-          <img src="assets/techstack/Laravel.png" alt="Laravel" />
-        </div>
-      </div>
-
-      <div class="container tech-category">
-        <h5 class="tech-heading">FRONT END</h5>
-        <div class="d-flex flex-wrap justify-content-center tech-icons">
-          <img src="assets/techstack/Angular.png" alt="Angular" />
-          <img src="assets/techstack/React.png" alt="React" />
-          <img src="assets/techstack/Vue.js.png" alt="Veu.js" />
-          <img src="assets/techstack/JavaScript.png" alt="JavaScript" />
-          <img src="assets/techstack/HTML5.png" alt="HTML5" />
-          <img src="assets/techstack/TypeScript.png" alt="TypeScript" />
-        </div>
-      </div>
-      <div class="container tech-category">
-        <h5 class="tech-heading">Mobile</h5>
+      <div
+        class="container tech-category"
+        *ngFor="let category of techContent[tab.id]"
+      >
+        <h5 class="tech-heading">{{ category.heading }}</h5>
         <div class="d-flex flex-wrap justify-content-center tech-icons">
           <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-            alt="React"
+            *ngFor="let icon of category.icons"
+            [src]="icon.src"
+            [alt]="icon.alt"
+            [title]="icon.alt"
+            [style.width]="icon.width"
+            loading="lazy"
           />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg"
-            alt="Flutter"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apple/apple-original.svg"
-            alt="Apple"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-plain.svg"
-            alt="Android"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xamarin/xamarin-original.svg"
-            alt="Xamarin"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
-            alt="Firebase"
-          />
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ionic/ionic-original.svg"
-            alt="Ionic"
-          />
-        </div>
-      </div>      
-    </div>
-    <!-- <div
-      class="tab-pane fade"
-      id="mobile"
-      role="tabpanel"
-      aria-labelledby="mobile-tab"
-    >
-
-    </div> -->
-    <!-- <div
-      class="tab-pane fade"
-      id="devops"
-      role="tabpanel"
-      aria-labelledby="devops-tab"
-    >
-      <div class="container tech-category">
-        <div class="d-flex flex-wrap justify-content-center tech-icons">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg"/>
-          <img src="assets/techstack/openshift.svg" alt="OpenShift" />
-          <img src="assets/techstack/mesos_logo.png" alt="MESOS"  style="width: 150px;"/>
-        </div>
-      </div>
-    </div> -->
-    <div
-      class="tab-pane fade"
-      id="cloud"
-      role="tabpanel"
-      aria-labelledby="cloud-tab"
-    >
-      <div class="container tech-category">
-        <h5 class="tech-heading">Accelerating Innovation with Cloud-Powered DevOps & Automation</h5>
-        <div class="d-flex flex-wrap justify-content-center tech-icons">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ibm/ibm-original.svg" alt="IBM Cloud" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle Cloud" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg"/>
-          <img src="assets/techstack/openshift.svg" alt="OpenShift" />
-          <img src="assets/techstack/mesos_logo.png" alt="MESOS"  style="width: 150px;"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" alt="Ansible" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chef/chef-original.svg" alt="Chef" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/puppet/puppet-original.svg" alt="Puppet" />
         </div>
       </div>
     </div>
-    <!-- <div
-      class="tab-pane fade"
-      id="platforms"
-      role="tabpanel"
-      aria-labelledby="platforms-tab"
-    >
-      <div class="container tech-category">
-        <h5 class="tech-heading">PLATFORMS</h5>
-        <div class="d-flex flex-wrap justify-content-center tech-icons">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg" alt="Salesforce" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sharepoint/sharepoint-original.svg" alt="SharePoint" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/servicenow/servicenow-original.svg" alt="ServiceNow" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoft/microsoft-original.svg" alt="Microsoft Dynamics" />
-        </div>
-      </div>
-    </div> -->
-    <div
-      class="tab-pane fade"
-      id="relational-databases"
-      role="tabpanel"
-      aria-labelledby="relational-databases-tab"
-    >
-      <div class="container tech-category">
-        <h5 class="tech-heading">Empowering Growth with Engineered Data Intelligence</h5>
-        <div class="d-flex flex-wrap justify-content-center tech-icons">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hadoop/hadoop-original.svg" alt="Hadoop" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Kafka" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Spark" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cassandra/cassandra-original.svg" alt="Cassandra" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg" alt="Elasticsearch" />          
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL Server" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle DB" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" alt="MariaDB" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg" alt="Salesforce" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sharepoint/sharepoint-original.svg" alt="SharePoint" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/servicenow/servicenow-original.svg" alt="ServiceNow" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoft/microsoft-original.svg" alt="Microsoft Dynamics" />
-        </div>
-      </div>
-    </div>
-    <!-- <div
-      class="tab-pane fade"
-      id="big-data"
-      role="tabpanel"
-      aria-labelledby="big-data-tab"
-    >
-      <div class="container tech-category">
-        <h5 class="tech-heading">BIG DATA</h5>
-        <div class="d-flex flex-wrap justify-content-center tech-icons">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hadoop/hadoop-original.svg" alt="Hadoop" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Kafka" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Spark" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cassandra/cassandra-original.svg" alt="Cassandra" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg" alt="Elasticsearch" />
-        </div>
-      </div>
-    </div> -->
-
-    <!-- <div
-      class="tab-pane fade"
-      id="automation-tools"
-      role="tabpanel"
-      aria-labelledby="automation-tools-tab"
-    >
-      <div class="container tech-category">
-        <h5 class="tech-heading">AUTOMATION TOOLS</h5>
-        <div class="d-flex flex-wrap justify-content-center tech-icons">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" alt="Ansible" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chef/chef-original.svg" alt="Chef" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/puppet/puppet-original.svg" alt="Puppet" />
-        </div>
-      </div>
-    </div> -->
   </div>
 </div>
