@@ -12,8 +12,8 @@
       <!-- Contact Form Section -->
       <div class="col-lg-6">
         <form
-          action="https://formspree.io/f/meoopbwa"
-          method="POST"
+          [formGroup]="contactForm"
+          (ngSubmit)="onSubmit()"
           class="contact-form"
         >
           <div class="mb-4">
@@ -23,10 +23,13 @@
             <input
               type="text"
               class="form-control"
-              name="name"
+              formControlName="name"
               placeholder="John Doe"
-              required
+              [class.is-invalid]="isFieldInvalid('name')"
             />
+            <div class="invalid-feedback" *ngIf="isFieldInvalid('name')">
+              Name is required
+            </div>
           </div>
 
           <div class="mb-4">
@@ -36,10 +39,13 @@
             <input
               type="email"
               class="form-control"
-              name="email"
+              formControlName="email"
               placeholder="john@example.com"
-              required
+              [class.is-invalid]="isFieldInvalid('email')"
             />
+            <div class="invalid-feedback" *ngIf="isFieldInvalid('email')">
+              {{ getEmailErrorMessage() }}
+            </div>
           </div>
 
           <div class="mb-4">
@@ -48,9 +54,9 @@
             </label>
             <select
               id="select-where"
-              name="select-where"
+              formControlName="source"
               class="form-select"
-              required
+              [class.is-invalid]="isFieldInvalid('source')"
             >
               <option value="">Select an option</option>
               <option value="friends">Friends and Family</option>
@@ -59,6 +65,9 @@
               <option value="ad">Social Media</option>
               <option value="others">Other Sources</option>
             </select>
+            <div class="invalid-feedback" *ngIf="isFieldInvalid('source')">
+              Please select how you found us
+            </div>
           </div>
 
           <div class="mb-4">
@@ -67,7 +76,7 @@
             </label>
             <textarea
               id="comments"
-              name="comments"
+              formControlName="comments"
               class="form-control"
               rows="4"
               placeholder="Share any additional thoughts or requirements..."
@@ -75,8 +84,18 @@
           </div>
 
           <div class="text-center">
-            <button type="submit" class="btn-form">
-              <i class="fas fa-paper-plane me-2"></i>Send Message
+            <button
+              type="submit"
+              class="btn-form"
+              [disabled]="!isFormValid() || isLoading"
+            >
+              <i
+                class="fas"
+                [class.fa-paper-plane]="!isLoading"
+                [class.fa-spinner]="isLoading"
+                [class.fa-spin]="isLoading"
+              ></i>
+              {{ isLoading ? "Sending..." : "Send Message" }}
             </button>
           </div>
         </form>
@@ -121,3 +140,5 @@
     </div>
   </div>
 </div>
+
+<app-toast></app-toast>

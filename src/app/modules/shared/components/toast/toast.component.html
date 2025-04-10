@@ -1,0 +1,15 @@
+<div
+  *ngIf="toast$ | async as toast"
+  class="toast-container"
+  [class]="toast.type"
+  [@toastAnimation]
+>
+  <div class="toast-content">
+    <i
+      class="fas"
+      [class.fa-check-circle]="toast.type === 'success'"
+      [class.fa-exclamation-circle]="toast.type === 'error'"
+    ></i>
+    <span class="toast-message">{{ toast.message }}</span>
+  </div>
+</div>
