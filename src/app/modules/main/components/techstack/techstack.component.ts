@@ -121,7 +121,7 @@ export class TechstackComponent implements OnInit {
     ],
     web: [
       {
-        heading: 'Back End',
+        heading: 'Backend Services and API Integration',
         icons: [
           { src: 'assets/techstack/RubyRails.png', alt: 'Ruby on Rails' },
           { src: 'assets/techstack/NET.png', alt: '.NET' },
@@ -135,7 +135,7 @@ export class TechstackComponent implements OnInit {
         ],
       },
       {
-        heading: 'Front End',
+        heading: 'Web Frontend and UI',
         icons: [
           { src: 'assets/techstack/Angular.png', alt: 'Angular' },
           { src: 'assets/techstack/React.png', alt: 'React' },
@@ -146,7 +146,7 @@ export class TechstackComponent implements OnInit {
         ],
       },
       {
-        heading: 'Mobile',
+        heading: 'Mobile Apps and Experiences',
         icons: [
           {
             src: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
@@ -185,7 +185,7 @@ export class TechstackComponent implements OnInit {
           'Accelerating Innovation with Cloud-Powered DevOps & Automation',
         icons: [
           {
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg',
+            src: 'assets/techstack/Amazon_Web_Services_Logo.svg.png',
             alt: 'AWS',
           },
           {
@@ -197,8 +197,9 @@ export class TechstackComponent implements OnInit {
             alt: 'Google Cloud',
           },
           {
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ibm/ibm-original.svg',
+            src: 'assets/techstack/ibm_cloud_120_60.png',
             alt: 'IBM Cloud',
+            width: '120px',
           },
           {
             src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg',
@@ -231,12 +232,14 @@ export class TechstackComponent implements OnInit {
             alt: 'Ansible',
           },
           {
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chef/chef-original.svg',
+            src: 'assets/techstack/chef_120_60.png',
             alt: 'Chef',
+            width: '120px',
           },
           {
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/puppet/puppet-original.svg',
+            src: 'assets/techstack/puppet_120_60.png',
             alt: 'Puppet',
+            width: '150px',
           },
         ],
       },
@@ -290,17 +293,24 @@ export class TechstackComponent implements OnInit {
             alt: 'Salesforce',
           },
           {
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sharepoint/sharepoint-original.svg',
+            src: 'assets/techstack/sharepoint_120_60.png',
             alt: 'SharePoint',
           },
           {
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/servicenow/servicenow-original.svg',
+            src: 'assets/techstack/servicenow_150_60.png',
             alt: 'ServiceNow',
+            width: '150px',
           },
           {
-            src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoft/microsoft-original.svg',
+            src: 'assets/techstack/dynamics_120_60.png',
             alt: 'Microsoft Dynamics',
+            width: '120px',
           },
+          {
+            src: 'assets/techstack/powerbi_120_60.png',
+            alt: 'Microsoft PowerBI',
+            width: '120px',
+          }          
         ],
       },
     ],
