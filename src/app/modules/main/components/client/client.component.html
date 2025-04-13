@@ -1,47 +1,24 @@
-<div class="container client-section mt-5 text-center">
-  <h2>Trusted by Top-Tier Enterprises</h2>
-  <p class="client-description">
-    Empowering Digital Excellence—Pioneering IT Innovations and Accelerating Business Transformation Since 2011
-  </p>
+<div class="container mt-5">
+  <div class="client-section text-center">
+    <h2>Trusted by Top-Tier Enterprises</h2>
+    <p class="client-description">
+      Empowering Digital Excellence—Pioneering IT Innovations and Accelerating
+      Business Transformation Since 2011
+    </p>
 
-  <div class="row justify-content-center client-logos">
-    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-      <img src="assets/part/client_1_120_60.png" alt="Client 1" />
+    <div class="client-logos">
+      <div class="logo-container">
+        <!-- First set of logos -->
+        <div class="logo-item" *ngFor="let logo of logos">
+          <img [src]="logo.src" [alt]="logo.alt" />
+        </div>
+        <!-- Duplicate set for seamless scrolling -->
+        <div class="logo-item" *ngFor="let logo of logos">
+          <img [src]="logo.src" [alt]="logo.alt" />
+        </div>
+      </div>
     </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-      <img src="assets/part/client_2_120_60.png" alt="Client 2" />
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-      <img src="assets/part/client_3_90_60.png" alt="Client 3" />
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-      <img src="assets/part/client_4_120_60.png" alt="Client 4" />
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-      <img src="assets/part/client_5_120_60.png" alt="Client 5" />
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-      <img src="assets/part/client_6_120_60.png" alt="Client 6" />
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-      <img src="assets/part/client_7_120_60.png" alt="Client 7" />
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-      <img src="assets/part/client_8_120_60.png" alt="Client 8" />
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-      <img src="assets/part/client_9_120_60.png" alt="Client 9" />
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-      <img src="assets/part/client_10_120_60.png" alt="Client 10" />
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-      <img src="assets/part/client_11_120_60.png" alt="Client 11" />
-    </div>
-    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-      <img src="assets/part/client_12_120_60.png" alt="Client 12" />
-    </div>
+
+    <a href="#contact" class="btn client-btn">Explore Our Clients</a>
   </div>
-
-  <a href="#contact" class="btn client-btn mt-4">Explore Our Clients</a>
 </div>
