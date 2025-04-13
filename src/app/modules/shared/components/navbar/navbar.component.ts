@@ -81,7 +81,7 @@ export class NavbarComponent {
 
   openCalendly(): void {
     Calendly.initPopupWidget({
-      url: 'https://calendly.com/arishu39/30min', // Replace 'yourusername' with your Calendly username
+      url: 'https://calendly.com/contact-fynore/30min', // Replace 'yourusername' with your Calendly username
     });
   }
 }
