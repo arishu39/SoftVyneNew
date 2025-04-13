@@ -73,7 +73,7 @@ export class ContactComponent implements OnInit {
       ...this.contactForm.value,
     };
 
-    fetch('https://formspree.io/f/meoopbwa', {
+    fetch('https://formspree.io/f/xwplyykz', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
