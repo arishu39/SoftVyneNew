@@ -39,7 +39,7 @@
     border: none;
     font-size: 1.2rem;
     font-weight: 600;
-    border-radius: 25px;
+    border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     font-family: "Poppins", sans-serif;
@@ -82,7 +82,7 @@ p {
   border: none;
   font-size: 1.2rem;
   font-weight: 600;
-  border-radius: 25px;
+  border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   font-family: "Poppins", sans-serif;
@@ -216,7 +216,7 @@ p {
       background: var(--secondary-color);
       color: white;
       padding: var(--spacing-sm) var(--spacing-lg);
-      border-radius: 25px;
+      border-radius: 5px;
       font-weight: 600;
       transition: all 0.3s ease;
 
@@ -228,20 +228,56 @@ p {
   }
 
   @media (max-width: 768px) {
+    height: calc(100vh - 60px); // Adjust for mobile header
+
+    video {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+
     .content-overlay {
       padding: 1rem;
+      width: 100%;
 
       h1 {
-        margin-bottom: 1.5rem;
+        font-size: clamp(2rem, 5vw, 3rem);
+        margin-bottom: 1rem;
+
+        span {
+          font-size: 0.7em;
+          margin-top: 8px;
+        }
       }
 
       p {
-        margin-bottom: 2rem;
+        font-size: clamp(1rem, 3vw, 1.4rem);
+        margin: 1rem auto;
+        padding: 0 15px;
       }
 
       .btn {
-        padding: 1rem 2.5rem;
+        padding: 0.8rem 2rem;
         font-size: 1rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .content-overlay {
+      h1 {
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.4;
+      }
+
+      .btn {
+        padding: 0.7rem 1.8rem;
+        font-size: 0.9rem;
       }
     }
   }
