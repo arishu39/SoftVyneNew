@@ -1,130 +1,196 @@
 .tech-section {
-  padding: 80px 0;
-  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+  padding: 60px 0;
+  background: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-.section-title {
-  font-size: 45px;
-  font-weight: 700;
-  color: #373b3e;
-  margin-bottom: 10px;
-  background: none;
-  -webkit-background-clip: initial;
-  -webkit-text-fill-color: initial;
-}
+.section-header {
+  text-align: center;
+  margin: 0 auto 50px;
 
-.tech-description {
-  color: #636e72;
-  font-size: 20px;
-  max-width: 800px;
-  margin: 0 auto 40px;
-  line-height: 1.6;
-}
+  .section-title {
+    font-size: 50px;
+    color: #373b3e;
+    font-weight: 700;
+    margin-bottom: 15px;
+    background: none;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+  }
 
-.nav-tabs {
-  border: none;
-  margin-bottom: 40px;
-  gap: 15px;
-  flex-wrap: wrap;
-
-  .nav-link {
-    border: none;
-    padding: 12px 24px;
-    color: #2d3436;
-    font-weight: 600;
-    border-radius: 30px;
-    transition: all 0.3s ease;
-    background: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    &.active {
-      background: linear-gradient(45deg, #6c5ce7, #74b9ff);
-      color: #fff;
-      box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
-    }
+  .tech-description {
+    color: #5a5a8e;
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto 40px;
   }
 }
 
-.tech-category {
-  margin-bottom: 60px;
-  animation: fadeIn 0.5s ease-in-out;
+.tech-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.tech-heading {
-  font-size: 24px;
-  font-weight: 700;
-  text-align: center;
-  margin: 50px 0 30px; // Increased top margin from default to 50px
-  color: #2d3436;
+.tech-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 
-  &:after {
+  &::before {
     content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
     background: linear-gradient(45deg, #6c5ce7, #74b9ff);
-    margin: 15px auto 0;
-    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(108, 92, 231, 0.2);
+
+    &::before {
+      transform: scaleX(1);
+    }
+  }
+
+  &.active {
+    border-color: #6c5ce7;
+    box-shadow: 0 10px 20px rgba(108, 92, 231, 0.2);
+
+    &::before {
+      transform: scaleX(1);
+    }
+  }
+
+  .card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 25px;
+    min-height: auto;
+    line-height: 1.4;
   }
 }
 
 .tech-icons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 30px;
-  padding: 20px;
+  grid-template-columns: repeat(
+    3,
+    minmax(0, 1fr)
+  ); // Add minmax to prevent overflow
+  gap: 15px; // Reduced gap
 
-  img {
-    width: 70px;
-    height: auto;
-    transition: all 0.3s ease;
-    filter: grayscale(20%);
+  .tech-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
 
     &:hover {
-      transform: translateY(-10px) scale(1.1);
-      filter: grayscale(0%);
+      transform: translateY(-5px);
+
+      img {
+        transform: scale(1.1);
+        filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+      }
+
+      .icon-name {
+        color: #6c5ce7;
+      }
+    }
+
+    img {
+      height: 35px; // Reduced height
+      width: auto;
+      transition: all 0.3s ease;
+      margin-bottom: 8px;
+      object-fit: contain;
+      max-width: 100%; // Ensure image doesn't overflow container
+
+      &[style*="width"] {
+        height: 25px !important; // Reduced height for wider logos
+        width: auto !important;
+        max-width: 100% !important; // Constrain to container width
+      }
+    }
+
+    .icon-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #2d3436;
+      transition: color 0.3s ease;
+      margin-top: 10px;
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+    }
+
+    &:hover .icon-name {
+      color: #6c5ce7;
     }
   }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+@media (max-width: 1200px) {
+  .tech-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
-  .section-title {
-    font-size: 36px;
+  .tech-section {
+    padding: 40px 0;
+    min-height: auto;
   }
 
-  .tech-description {
-    font-size: 18px;
-    padding: 0 20px;
+  .section-header {
+    margin-bottom: 30px;
+
+    .section-title {
+      font-size: 32px;
+    }
   }
 
-  .nav-tabs .nav-link {
-    padding: 8px 16px;
-    font-size: 14px;
+  .tech-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .tech-card {
+    padding: 20px;
+
+    .card-title {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
   }
 
   .tech-icons {
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    gap: 20px;
+    gap: 15px;
 
-    img {
-      width: 50px;
+    .tech-icon img {
+      height: 35px;
+
+      &[style*="width"] {
+        width: 70px !important;
+      }
     }
   }
 }

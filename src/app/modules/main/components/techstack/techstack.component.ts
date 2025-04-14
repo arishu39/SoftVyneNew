@@ -1,5 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { trigger, transition, style, animate } from '@angular/animations';
+import {
+  trigger,
+  transition,
+  style,
+  animate,
+  query,
+  stagger,
+} from '@angular/animations';
 
 interface TechTab {
   id: string;
@@ -24,11 +31,28 @@ interface TechIcon {
   styleUrl: './techstack.component.scss',
   standalone: false,
   animations: [
-    trigger('tabAnimation', [
+    trigger('staggerAnimation', [
+      transition('* => *', [
+        query(
+          ':enter',
+          [
+            style({ opacity: 0, transform: 'translateY(30px)' }),
+            stagger(100, [
+              animate(
+                '0.6s cubic-bezier(0.35, 0, 0.25, 1)',
+                style({ opacity: 1, transform: 'translateY(0)' })
+              ),
+            ]),
+          ],
+          { optional: true }
+        ),
+      ]),
+    ]),
+    trigger('cardAnimation', [
       transition(':enter', [
-        style({ opacity: 0, transform: 'translateY(20px)' }),
+        style({ opacity: 0, transform: 'translateY(30px)' }),
         animate(
-          '0.5s ease-out',
+          '0.5s cubic-bezier(0.35, 0, 0.25, 1)',
           style({ opacity: 1, transform: 'translateY(0)' })
         ),
       ]),
@@ -310,7 +334,7 @@ export class TechstackComponent implements OnInit {
             src: 'assets/techstack/powerbi_120_60.png',
             alt: 'Microsoft PowerBI',
             width: '120px',
-          }          
+          },
         ],
       },
     ],
@@ -318,5 +342,9 @@ export class TechstackComponent implements OnInit {
 
   ngOnInit() {
     // Initialize any required functionality
+  }
+
+  selectTab(selectedTab: TechTab) {
+    this.tabs.forEach((tab) => (tab.isActive = tab.id === selectedTab.id));
   }
 }

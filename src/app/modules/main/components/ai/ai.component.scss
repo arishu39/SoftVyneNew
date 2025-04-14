@@ -108,26 +108,70 @@
 
 /* Responsive Fixes */
 @media (max-width: 768px) {
-  .ai-heading {
+  .ai-section {
+    padding: 40px 0;
+
+    .container {
+      padding: 0 15px;
+    }
+
+    .feature-card {
+      text-align: center;
+    }
+  }
+
+  .section-title {
     font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .ai-heading {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .ai-description {
+    font-size: 16px;
+    margin-bottom: 25px;
   }
 
   .ai-btn {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto 30px;
+    display: block;
     font-size: 14px;
-    padding: 10px 30px;
+    padding: 12px 20px;
   }
 
   .feature-card {
-    text-align: center;
-  }
+    padding: 15px;
+    margin-bottom: 15px;
 
-  .feature-card i {
-    margin-bottom: 10px;
-  }
-
-  .ai-section {
-    .feature-card {
+    .d-flex {
+      flex-direction: column;
       text-align: center;
+    }
+
+    i {
+      margin: 0 0 10px 0;
+      font-size: 28px;
+    }
+
+    h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.4;
+      margin-bottom: 0;
     }
   }
 }
