@@ -17,17 +17,25 @@ export class HomeComponent implements AfterViewInit {
 
   setupVideo() {
     const video = this.myVideo.nativeElement;
-    video.muted = true; // Ensure the video is muted
+    video.muted = true;
+    video.classList.add('loading');
 
     video.addEventListener('loadeddata', () => {
       this.tryPlayVideo(video);
+    });
+
+    video.addEventListener('playing', () => {
+      video.classList.remove('loading');
     });
 
     video.addEventListener('canplay', () => {
       this.tryPlayVideo(video);
     });
 
-    video.addEventListener('error', (error: any) => {});
+    video.addEventListener('error', (error: any) => {
+      console.error('Video error:', error);
+      video.classList.add('loading');
+    });
   }
 
   tryPlayVideo(video: HTMLVideoElement) {
