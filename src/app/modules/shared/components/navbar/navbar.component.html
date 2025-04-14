@@ -4,15 +4,22 @@
       <img src="assets/Fynore_logo_4.png" alt="Logo" />
     </a>
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      (click)="toggleMainDropdown(!isMainDropdownOpen)"
-    >
-      <span class="navbar-toggler-icon white-toggler"></span>
-    </button>
+    <div class="d-flex align-items-center">
+      <!-- CTA Button - visible on mobile -->
+      <button class="btn btn-primary d-lg-none" (click)="openCalendly()">
+        Book Call
+      </button>
+
+      <button
+        class="navbar-toggler ms-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        (click)="toggleMainDropdown(!isMainDropdownOpen)"
+      >
+        <span class="navbar-toggler-icon white-toggler"></span>
+      </button>
+    </div>
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
@@ -76,8 +83,11 @@
         </li>
       </ul>
 
-      <!-- CTA Button -->
-      <button class="btn btn-primary ms-3" (click)="openCalendly()">
+      <!-- Desktop CTA Button -->
+      <button
+        class="btn btn-primary ms-3 d-none d-lg-block"
+        (click)="openCalendly()"
+      >
         Book A 30 Min Call
       </button>
     </div>
