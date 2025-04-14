@@ -11,26 +11,50 @@
     color: white !important;
     font-size: var(--body-size);
     font-weight: 500;
-    transition: all 0.2s ease-in-out;
+    transition: color 0.3s ease;
     position: relative;
+    padding: 0.5rem 1rem;
+    text-decoration: none !important;
 
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      width: 0;
-      height: 2px;
-      background: var(--secondary-color);
-      transition: all 0.2s ease-in-out;
-      transform: translateX(-50%);
+    &.dropdown-toggle {
+      &:after {
+        content: "";
+        position: static;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 0.5rem;
+        vertical-align: middle;
+        border-top: 0.3em solid;
+        border-right: 0.3em solid transparent;
+        border-left: 0.3em solid transparent;
+        transform: none;
+        background: none;
+        pointer-events: none;
+      }
+
+      &:hover:after {
+        width: 0;
+        background: none;
+      }
     }
 
-    &:hover {
-      color: var(--secondary-color) !important;
-
+    &:not(.dropdown-toggle) {
       &:after {
-        width: 100%;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background: var(--secondary-color);
+        transition: width 0.3s ease;
+        pointer-events: none;
+      }
+
+      &:hover:after {
+        width: 80%;
       }
     }
   }
