@@ -1,16 +1,15 @@
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <!-- <img src="assets/Fynore_logo.png" alt="Logo" /> -->
       <img src="assets/Fynore_logo_4.png" alt="Logo" />
     </a>
 
-    <!-- Toggler for Mobile -->
     <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarNav"
+      (click)="toggleMainDropdown(!isMainDropdownOpen)"
     >
       <span class="navbar-toggler-icon white-toggler"></span>
     </button>
@@ -18,19 +17,23 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="#" (click)="onMenuItemClick()">About Us</a>
         </li>
 
         <!-- Services Dropdown -->
         <li
           class="nav-item dropdown"
-          (mouseenter)="toggleMainDropdown(true)"
-          (mouseleave)="toggleMainDropdown(false)"
+          (mouseenter)="!isMobile && toggleMainDropdown(true)"
+          (mouseleave)="!isMobile && toggleMainDropdown(false)"
         >
           <a
             class="nav-link dropdown-toggle"
             href="javascript:void(0)"
             id="servicesDropdown"
+            (click)="
+              $event.preventDefault();
+              isMobile && toggleMainDropdown(!isMainDropdownOpen)
+            "
           >
             Services
           </a>
@@ -41,7 +44,11 @@
               (mouseenter)="setActiveSubmenu(service.route, $event)"
               [class.active]="activeSubmenu === service.route"
             >
-              <a class="dropdown-item dropdown-toggle">
+              <a
+                class="dropdown-item dropdown-toggle"
+                href="javascript:void(0)"
+                (click)="isMobile && toggleSubmenu(service.route, $event)"
+              >
                 {{ service.name }}
               </a>
               <ul
@@ -52,6 +59,7 @@
                   <a
                     class="dropdown-item"
                     [routerLink]="['/services', subitem.route]"
+                    (click)="onMenuItemClick()"
                   >
                     {{ subitem.name }}
                   </a>
@@ -62,7 +70,9 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact Us</a>
+          <a class="nav-link" href="#contact" (click)="onMenuItemClick()"
+            >Contact Us</a
+          >
         </li>
       </ul>
 

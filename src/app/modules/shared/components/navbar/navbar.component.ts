@@ -62,17 +62,52 @@ export class NavbarComponent {
 
   isMainDropdownOpen = false;
   activeSubmenu: string | null = null;
+  isMobile = window.innerWidth < 992;
+
+  constructor() {
+    window.addEventListener('resize', () => {
+      this.isMobile = window.innerWidth < 992;
+      if (!this.isMobile) {
+        this.isMainDropdownOpen = false;
+        this.activeSubmenu = null;
+      }
+    });
+  }
 
   toggleMainDropdown(state: boolean) {
-    this.isMainDropdownOpen = state;
-    if (!state) {
-      this.activeSubmenu = null;
+    if (this.isMobile) {
+      this.isMainDropdownOpen = state;
+      // Reset active submenu only when closing main dropdown
+      if (!state) {
+        this.activeSubmenu = null;
+      }
+    } else {
+      this.isMainDropdownOpen = state;
+      if (!state) {
+        this.activeSubmenu = null;
+      }
     }
   }
 
   setActiveSubmenu(route: string | null, event: MouseEvent) {
+    if (!this.isMobile) {
+      event.stopPropagation();
+      this.activeSubmenu = route;
+    }
+  }
+
+  toggleSubmenu(route: string, event: MouseEvent) {
     event.stopPropagation();
-    this.activeSubmenu = route;
+    event.preventDefault();
+
+    // Always toggle on mobile
+    if (this.isMobile) {
+      if (this.activeSubmenu === route) {
+        this.activeSubmenu = null;
+      } else {
+        this.activeSubmenu = route;
+      }
+    }
   }
 
   isSubmenuActive(route: string): boolean {
@@ -83,5 +118,22 @@ export class NavbarComponent {
     Calendly.initPopupWidget({
       url: 'https://calendly.com/contact-fynore/30min', // Replace 'yourusername' with your Calendly username
     });
+  }
+
+  closeMenu() {
+    this.isMainDropdownOpen = false;
+    this.activeSubmenu = null;
+  }
+
+  onMenuItemClick() {
+    this.closeMenu();
+    if (this.isMobile) {
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+      navbarCollapse?.classList.remove('show');
+      const toggler = document.querySelector('.navbar-toggler');
+      if (navbarCollapse?.classList.contains('show')) {
+        (toggler as HTMLElement)?.click();
+      }
+    }
   }
 }
