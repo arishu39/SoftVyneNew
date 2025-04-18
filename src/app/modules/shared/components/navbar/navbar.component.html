@@ -68,7 +68,8 @@
                     [routerLink]="['/services', subitem.route]"
                     (click)="onMenuItemClick()"
                   >
-                    {{ subitem.name }}
+                    <strong>{{ subitem.name }}</strong>
+                    <p class="submenu-description">{{ subitem.description }}</p>
                   </a>
                 </li>
               </ul>

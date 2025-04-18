@@ -340,6 +340,10 @@ export class TechstackComponent implements OnInit {
     ],
   };
 
+  getMachineLearningIcons(): TechIcon[] {
+    return this.techContent['machine-learning'][0].icons;
+  }
+
   ngOnInit() {
     // Initialize any required functionality
   }

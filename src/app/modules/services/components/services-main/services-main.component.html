@@ -1,10 +1,24 @@
+<div class="hero" style="background-image: url('assets/AI_AGent_1980_800_2.png');">
+  <div class="hero-content">
+    <h1>Empower Your Business with Next-Generation AI</h1>
+    <p>Harness the transformative power of Generative AI and Intelligent Agents to automate workflows, enhance decision-making, and deliver personalized user experiences at scale.</p>
+    <button class="cta-button">Get Started</button>
+  </div>
+</div>
+
+<div class="banner">
+  <div class="banner-icons">
+    <img *ngFor="let icon of techstack.getMachineLearningIcons()" [src]="icon.src" [alt]="icon.alt" [style.width]="icon.width || 'auto'" />
+  </div>
+</div>
+
 <div class="content" [class.loading-state]="loading">
   <app-hiring [serviceType]="serviceType"></app-hiring>
   <app-hiredev [serviceType]="serviceType"></app-hiredev>
   <app-fullstack [serviceType]="serviceType"></app-fullstack>
   <app-pricing [serviceType]="serviceType"></app-pricing>
   <app-services></app-services>
-  <!-- <app-connect></app-connect> -->
+
   <app-contactlocations></app-contactlocations>
   <app-contact></app-contact>
 </div>
