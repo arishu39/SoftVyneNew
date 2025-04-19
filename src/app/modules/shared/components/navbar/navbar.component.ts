@@ -12,7 +12,6 @@ export class NavbarComponent {
   services = [
     {
       name: 'AI & Machine Learning',
-      description: 'Generative AI Solutions & AI Agents',
       route: 'ai-machine-learning',
       submenu: [
         { name: 'Generative AI Solutions & AI Agents', description: 'Unlock productivity with powerful language models and intelligent automation.', route: 'ai-agents' },
@@ -24,7 +23,6 @@ export class NavbarComponent {
     },
     {
       name: 'Full-Stack Engineering (UI • API • Data)',
-      description: 'Modern Web & Mobile Application Development (React, Angular, Vue, Next.js)',
       route: 'full-stack-engineering',
       submenu: [
         { name: 'Modern Web & Mobile Application Development (React, Angular, Vue, Next.js)', description: 'Seamless, responsive, and feature-rich apps optimized for all devices.', route: 'web-mobile-development' },
@@ -36,7 +34,6 @@ export class NavbarComponent {
     },
     {
       name: 'Cloud, DevOps & Automation',
-      description: 'Multi-Cloud Strategy & Migration (AWS, Azure, GCP, Oracle, IBM)',
       route: 'cloud-devops-automation',
       submenu: [
         { name: 'Multi-Cloud Strategy & Migration (AWS, Azure, GCP, Oracle, IBM)', description: 'Seamlessly migrate, optimize, and manage workloads across leading cloud providers.', route: 'multi-cloud' },

@@ -31,12 +31,11 @@
         <div class="col-md-4" *ngFor="let service of services">
           <div class="mega-menu-section">
             <div class="mega-menu-title">{{ service.name }}</div>
-            <div class="mega-menu-desc">{{ service.description }}</div>
             <ul class="mega-menu-list">
               <li *ngFor="let subitem of service.submenu">
                 <a [routerLink]="['/services', subitem.route]" (click)="onMenuItemClick(); closeMegaMenu()">
-                  <strong>{{ subitem.name }}</strong>
-                  <span class="submenu-description">{{ subitem.description }}</span>
+                  <div class="submenu-title">{{ subitem.name }}</div>
+                  <div class="submenu-description">{{ subitem.description }}</div>
                 </a>
               </li>
             </ul>
