@@ -50,6 +50,7 @@ export class NavbarComponent {
   isMainDropdownOpen = false;
   activeSubmenu: string | null = null;
   isMobile = window.innerWidth < 992;
+  isMegaMenuOpen = false;
 
   constructor() {
     window.addEventListener('resize', () => {
@@ -123,4 +124,37 @@ export class NavbarComponent {
       }
     }
   }
+
+  toggleMegaMenu(event: Event) {
+    event.preventDefault();
+    event.stopPropagation();
+    this.isMegaMenuOpen = !this.isMegaMenuOpen;
+    if (this.isMegaMenuOpen) {
+      document.body.classList.add('mega-menu-open');
+      setTimeout(() => {
+        window.addEventListener('click', this.handleOutsideClick, true);
+      });
+    } else {
+      this.closeMegaMenu();
+    }
+  }
+
+  closeMegaMenu = () => {
+    this.isMegaMenuOpen = false;
+    document.body.classList.remove('mega-menu-open');
+    window.removeEventListener('click', this.handleOutsideClick, true);
+  };
+
+  handleOutsideClick = (event: Event) => {
+    const menuPanel = document.querySelector('.mega-menu-panel');
+    const toggle = document.querySelector('.mega-menu-toggle');
+    if (
+      menuPanel &&
+      !menuPanel.contains(event.target as Node) &&
+      toggle &&
+      !toggle.contains(event.target as Node)
+    ) {
+      this.closeMegaMenu();
+    }
+  };
 }

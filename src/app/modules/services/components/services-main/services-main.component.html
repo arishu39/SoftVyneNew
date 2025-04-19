@@ -1,14 +1,19 @@
-<div class="hero" style="background-image: url('assets/AI_AGent_1980_800_2.png');">
+<div class="hero" style="background-image: url('assets/front_end_1980_800_3.png');">
   <div class="hero-content">
-    <h1>Empower Your Business with Next-Generation AI</h1>
-    <p>Harness the transformative power of Generative AI and Intelligent Agents to automate workflows, enhance decision-making, and deliver personalized user experiences at scale.</p>
-    <button class="cta-button">Get Started</button>
+    <h1 class="hero-title">Empower Your Business with <span class="highlight">Next-Generation AI</span></h1>
+    <p class="hero-description">Leverage the power of Generative AI and Intelligent Agents to automate workflows, enhance decision-making, and deliver personalized user experiences at scale.</p>
+    <button class="cta-button">Start Your Journey</button>
   </div>
 </div>
 
 <div class="banner">
   <div class="banner-icons">
-    <img *ngFor="let icon of techstack.getMachineLearningIcons()" [src]="icon.src" [alt]="icon.alt" [style.width]="icon.width || 'auto'" />
+    <ng-container *ngIf="techstack.getMachineLearningIcons().length; else noIcons">
+      <img *ngFor="let icon of techstack.getMachineLearningIcons()" [src]="icon.src" [alt]="icon.alt" [style.width]="icon.width || 'auto'" />
+    </ng-container>
+    <ng-template #noIcons>
+      <p>No icons available at the moment.</p>
+    </ng-template>
   </div>
 </div>
 

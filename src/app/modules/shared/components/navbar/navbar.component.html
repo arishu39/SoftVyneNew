@@ -1,96 +1,49 @@
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="assets/Fynore_logo_4.png" alt="Logo" />
+      <img src="assets/Fynore_logo_4.png" alt="Logo" class="navbar-logo" />
     </a>
-
     <div class="d-flex align-items-center">
-      <!-- CTA Button - visible on mobile -->
-      <button class="btn btn-primary d-lg-none" (click)="openCalendly()">
-        Book Call
-      </button>
-
-      <button
-        class="navbar-toggler ms-2"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        (click)="toggleMainDropdown(!isMainDropdownOpen)"
-      >
+      <button class="btn btn-primary d-lg-none" (click)="openCalendly()">Book Call</button>
+      <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" (click)="toggleMainDropdown(!isMainDropdownOpen)">
         <span class="navbar-toggler-icon white-toggler"></span>
       </button>
     </div>
-
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <a class="nav-link" href="#" (click)="onMenuItemClick()">About Us</a>
         </li>
-
-        <!-- Services Dropdown -->
-        <li
-          class="nav-item dropdown"
-          (mouseenter)="!isMobile && toggleMainDropdown(true)"
-          (mouseleave)="!isMobile && toggleMainDropdown(false)"
-        >
-          <a
-            class="nav-link dropdown-toggle"
-            href="javascript:void(0)"
-            id="servicesDropdown"
-            (click)="
-              $event.preventDefault();
-              isMobile && toggleMainDropdown(!isMainDropdownOpen)
-            "
-          >
-            Services
-          </a>
-          <ul class="dropdown-menu" [class.show]="isMainDropdownOpen">
-            <li
-              *ngFor="let service of services"
-              class="dropdown"
-              (mouseenter)="setActiveSubmenu(service.route, $event)"
-              [class.active]="activeSubmenu === service.route"
-            >
-              <a
-                class="dropdown-item dropdown-toggle"
-                href="javascript:void(0)"
-                (click)="isMobile && toggleSubmenu(service.route, $event)"
-              >
-                {{ service.name }}
-              </a>
-              <ul
-                class="dropdown-menu dropdown-submenu"
-                [class.show]="activeSubmenu === service.route"
-              >
-                <li *ngFor="let subitem of service.submenu">
-                  <a
-                    class="dropdown-item"
-                    [routerLink]="['/services', subitem.route]"
-                    (click)="onMenuItemClick()"
-                  >
-                    <strong>{{ subitem.name }}</strong>
-                    <p class="submenu-description">{{ subitem.description }}</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+        <li class="nav-item mega-menu-parent" [class.active]="isMegaMenuOpen" (click)="toggleMegaMenu($event)">
+          <a class="nav-link mega-menu-toggle" href="#" tabindex="0">Services</a>
         </li>
-
         <li class="nav-item">
-          <a class="nav-link" href="#contact" (click)="onMenuItemClick()"
-            >Contact Us</a
-          >
+          <a class="nav-link" href="#contact" (click)="onMenuItemClick()">Contact Us</a>
         </li>
       </ul>
-
-      <!-- Desktop CTA Button -->
-      <button
-        class="btn btn-primary ms-3 d-none d-lg-block"
-        (click)="openCalendly()"
-      >
-        Book A 30 Min Call
-      </button>
+      <button class="btn btn-primary ms-3 d-none d-lg-block" (click)="openCalendly()">Book A 30 Min Call</button>
     </div>
+  </div>
+  <div class="mega-menu-overlay" *ngIf="isMegaMenuOpen" (click)="closeMegaMenu()"></div>
+  <div class="mega-menu-panel" *ngIf="isMegaMenuOpen">
+    <div class="container-fluid mega-menu-content">
+      <div class="row">
+        <div class="col-md-4" *ngFor="let service of services">
+          <div class="mega-menu-section">
+            <div class="mega-menu-title">{{ service.name }}</div>
+            <div class="mega-menu-desc">{{ service.description }}</div>
+            <ul class="mega-menu-list">
+              <li *ngFor="let subitem of service.submenu">
+                <a [routerLink]="['/services', subitem.route]" (click)="onMenuItemClick(); closeMegaMenu()">
+                  <strong>{{ subitem.name }}</strong>
+                  <span class="submenu-description">{{ subitem.description }}</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="mega-menu-close" (click)="closeMegaMenu()" aria-label="Close Mega Menu">&times;</button>
   </div>
 </nav>

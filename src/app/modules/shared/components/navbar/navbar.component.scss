@@ -295,3 +295,84 @@
 .collapsing {
   transition: none !important;
 }
+
+/* Mega Menu Styles */
+.mega-menu-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 1040;
+}
+.mega-menu-panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  background: #fff;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  z-index: 1050;
+  padding: 2rem 0 2rem 0;
+  animation: fadeIn 0.3s cubic-bezier(.4,0,.2,1);
+}
+.mega-menu-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.mega-menu-section {
+  margin-bottom: 2rem;
+}
+.mega-menu-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--secondary-color, #ff5a2c);
+  margin-bottom: 0.5rem;
+}
+.mega-menu-desc {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+.mega-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mega-menu-list li {
+  margin-bottom: 0.75rem;
+}
+.mega-menu-list a {
+  color: #222;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+.mega-menu-list a:hover {
+  background: var(--secondary-color, #ff5a2c);
+  color: #fff;
+}
+.mega-menu-close {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #888;
+  cursor: pointer;
+  z-index: 1060;
+}
+
+/* Hide scroll on body when mega menu is open */
+body.mega-menu-open {
+  overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .mega-menu-panel, .mega-menu-overlay {
+    display: none !important;
+  }
+}
