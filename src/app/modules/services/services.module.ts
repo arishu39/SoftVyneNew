@@ -10,6 +10,7 @@ import { DataService } from '../../services/data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ServicesRoutingModule } from './services-main-routing.module';
 import { ServicesMainComponent } from './components/services-main/services-main.component';
+import { TechBannerComponent } from './components/tech-banner/tech-banner.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ServicesMainComponent } from './components/services-main/services-main.
     FullstackComponent,
     PricingComponent,
     ServicesMainComponent,
+    TechBannerComponent,
   ],
   imports: [
     HttpClientModule,

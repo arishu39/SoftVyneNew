@@ -1,8 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { TechstackService } from '../../../../services/techstack.service'; // Adjust the path as needed
-
 @Component({
   selector: 'app-services-main',
   templateUrl: './services-main.component.html',
@@ -14,11 +12,8 @@ export class ServicesMainComponent implements OnInit, OnDestroy {
   serviceType: string = '';
   componentKey = 0; // Add this to force refresh
   loading: boolean = true; // Add loading property
-  techstack: TechstackService;
 
-  constructor(private route: ActivatedRoute, techstack: TechstackService) {
-    this.techstack = techstack;
-  }
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.routeSub = this.route.params.subscribe((params) => {

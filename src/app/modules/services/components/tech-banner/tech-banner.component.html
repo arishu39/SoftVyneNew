@@ -1,0 +1,17 @@
+<div class="tech-banner-container">
+  <div class="tech-banner">
+    <div class="scroll-container">
+      <div class="icons-wrapper">
+        <ng-container *ngFor="let icon of duplicateIcons">
+          <div class="icon-item">
+            <img
+              [src]="icon.src"
+              [alt]="icon.alt"
+              [style.width]="icon.width || '60px'"
+            />
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

@@ -104,6 +104,161 @@ p {
   object-fit: cover;
 }
 
+.hiring-hero-section {
+  min-height: 60vh;
+  background-color: var(--bg-dark);
+}
+
+.hiring-hero {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-lg) 8%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      to right,
+      rgba(4, 1, 13, 0.75) 0%,
+      rgba(4, 1, 13, 0.6) 60%,
+      rgba(4, 1, 13, 0.2) 100%
+    );
+  }
+}
+
+.hiring-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  animation: slideUp 0.8s ease-out;
+
+  header {
+    margin-bottom: var(--spacing-md);
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: var(--spacing-sm);
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.9);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.hiring-cta-buttons {
+  .btn {
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+
+    &.btn-primary {
+      background: var(--primary-color);
+      color: white;
+      box-shadow: 0 4px 15px rgba(101, 88, 245, 0.3);
+
+      &:hover {
+        background: var(--primary-dark);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(101, 88, 245, 0.4);
+      }
+    }
+  }
+}
+
+.hiring-features {
+  display: flex;
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: white;
+
+    i {
+      color: var(--primary-color);
+    }
+
+    span {
+      font-size: 16px;
+      strong {
+        color: var(--secondary-color);
+      }
+    }
+  }
+}
+
+.hiring-banner {
+  background: white;
+  padding: var(--spacing-lg) 8%;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+
+  .banner-icons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    opacity: 0.7;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hiring-hero {
+    padding: 0 5%;
+    text-align: center;
+
+    &::before {
+      background: linear-gradient(
+        to bottom,
+        rgba(4, 1, 13, 0.7) 0%,
+        rgba(4, 1, 13, 0.5) 100%
+      );
+    }
+  }
+
+  .hiring-content {
+    header {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .subtitle {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .hiring-features {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+  }
+
+  .hiring-cta-buttons {
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .hero-section {
     flex-direction: column;

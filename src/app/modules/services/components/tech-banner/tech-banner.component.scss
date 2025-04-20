@@ -1,0 +1,69 @@
+.tech-banner-container {
+  width: 100%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px 0;
+}
+
+.tech-banner {
+  position: relative;
+  width: 100%;
+}
+
+.scroll-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.icons-wrapper {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  gap: 40px;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+.icon-item {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+
+  img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+// Media query for smaller screens
+@media (max-width: 768px) {
+  .icons-wrapper {
+    animation-duration: 30s;
+  }
+
+  .icon-item {
+    padding: 0 5px;
+
+    img {
+      height: 30px;
+    }
+  }
+}

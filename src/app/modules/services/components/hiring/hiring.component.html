@@ -1,34 +1,18 @@
-<section class="hero-section" *ngIf="hiringContent">
-  <div class="content">
-    <h1>{{ hiringContent!.heroTitle }}</h1>
-    <p>
-      {{ hiringContent!.heroDescription }}
-    </p>
-    <div class="cta-buttons">
-      <a href="#" class="btn primary">{{ hiringContent!.trialButtonText }}</a>
-      <a href="#" class="btn secondary">{{ hiringContent!.callButtonText }}</a>
-    </div>
-    <div class="features">
-      <div class="feature-item">
-        <i _ngcontent-ng-c3993503101="" class="fas fa-code fa-2x"></i>
-        <p>
-          <strong>{{ hiringContent!.experienceYears }}</strong> of Experience
-        </p>
-      </div>
-      <div class="feature-item">
-        <i _ngcontent-ng-c3993503101="" class="fas fa-code fa-2x"></i>
-        <p>{{ hiringContent!.upgradeServiceText }}</p>
-      </div>
-      <div class="feature-item">
-        <i _ngcontent-ng-c3993503101="" class="fas fa-code fa-2x"></i>
-        <p>{{ hiringContent!.costSavingText }}</p>
+<div class="hiring-hero-section" *ngIf="hiringContent">
+  <section
+    class="hiring-hero"
+    [style.backgroundImage]="'url(' + hiringContent!.imageUrl + ')'"
+  >
+    <div class="hiring-content">
+      <header>
+        <h1>{{ hiringContent!.heroTitle }}</h1>
+        <p class="subtitle">{{ hiringContent!.heroDescription }}</p>
+      </header>
+      <div class="hiring-cta-buttons">
+        <a href="#" class="btn btn-primary">
+          {{ hiringContent!.trialButtonText }}
+        </a>
       </div>
     </div>
-  </div>
-
-  <div class="image-container">
-    <div class="image-frame">
-      <img [src]="hiringContent!.imageUrl" alt="Angular Developer" />
-    </div>
-  </div>
-</section>
+  </section>
+</div>
