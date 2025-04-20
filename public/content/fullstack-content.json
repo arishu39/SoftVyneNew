@@ -1,26 +1,20 @@
 {
   "languages": {
     "ai-machine-learning": {
-      "title": "Build Intelligent Solutions with AI & Machine Learning",
-      "description": "Leverage cutting-edge AI and ML technologies to create smart, data-driven applications that deliver real business value.",
+      "title": "Transform Your Business with AI & ML",
+      "description": "Harness the power of artificial intelligence and machine learning to create innovative solutions that drive business growth and automation excellence.",
       "items": [
         {
-          "icon": "assets/techstack/AI.png",
-          "alt": "AI Deep Learning",
-          "title": "AI + Deep Learning",
-          "content": "Create advanced neural networks and models for complex problem-solving and pattern recognition."
+          "title": "Advanced Deep Learning Solutions",
+          "content": "Unlock the potential of neural networks to solve complex problems with our state-of-the-art deep learning implementations. From image recognition to predictive analytics, we build systems that learn and adapt."
         },
         {
-          "icon": "assets/techstack/AI.png",
-          "alt": "AI NLP",
-          "title": "AI + Natural Language Processing",
-          "content": "Develop intelligent systems that can understand, process, and generate human language."
+          "title": "Natural Language AI",
+          "content": "Create intelligent conversational experiences with our advanced NLP solutions. We develop sophisticated systems that understand context, sentiment, and human intent with remarkable accuracy."
         },
         {
-          "icon": "assets/techstack/AI.png",
-          "alt": "AI Computer Vision",
-          "title": "AI + Computer Vision",
-          "content": "Build systems that can analyze and interpret visual information from images and videos."
+          "title": "Intelligent Computer Vision",
+          "content": "Transform visual data into actionable insights with our computer vision solutions. From real-time object detection to advanced image analysis, we bring vision intelligence to your applications."
         }
       ]
     },

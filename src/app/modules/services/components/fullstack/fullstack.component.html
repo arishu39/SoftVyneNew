@@ -1,19 +1,15 @@
 <section class="full-stack" *ngIf="content">
-  <h1>{{ content.title }}</h1>
-  <p>
-    {{ content.description }}
-  </p>
+  <div class="container text-center">
+    <h2 class="section-title">{{ content.title }}</h2>
+    <p class="about-subheading">{{ content.description }}</p>
+  </div>
 
-  <div class="grid-container">
-    <div class="grid-item" *ngFor="let item of content.items">
-      <div class="icon">
-        <img [src]="item.icon" [alt]="item.alt" />
-      </div>
-      <div class="content">
+  <div class="container">
+    <div class="grid-container">
+      <div class="grid-item" *ngFor="let item of content.items; let i = index">
+        <div class="number">{{ i + 1 }}</div>
         <h2>{{ item.title }}</h2>
-        <p>
-          {{ item.content }}
-        </p>
+        <p>{{ item.content }}</p>
       </div>
     </div>
   </div>
