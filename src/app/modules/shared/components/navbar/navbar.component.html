@@ -4,45 +4,83 @@
       <img src="assets/Fynore_logo_4.png" alt="Logo" class="navbar-logo" />
     </a>
     <div class="d-flex align-items-center">
-      <button class="btn btn-primary d-lg-none" (click)="openCalendly()">Book Call</button>
-      <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" (click)="toggleMainDropdown(!isMainDropdownOpen)">
+      <button class="btn btn-primary d-lg-none me-2" (click)="openCalendly()">
+        Book Call
+      </button>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        (click)="toggleMainDropdown(!isMainDropdownOpen)"
+        [attr.aria-expanded]="isMainDropdownOpen"
+      >
         <span class="navbar-toggler-icon white-toggler"></span>
       </button>
     </div>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div
+      class="collapse navbar-collapse"
+      id="navbarNav"
+      [class.show]="isMainDropdownOpen"
+    >
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <a class="nav-link" href="#" (click)="onMenuItemClick()">About Us</a>
         </li>
-        <li class="nav-item mega-menu-parent" [class.active]="isMegaMenuOpen" (click)="toggleMegaMenu($event)">
-          <a class="nav-link mega-menu-toggle" href="#" tabindex="0">Services</a>
+        <li class="nav-item mega-menu-parent" [class.active]="isMegaMenuOpen">
+          <a
+            class="nav-link mega-menu-toggle"
+            href="#"
+            (click)="toggleMegaMenu($event)"
+            tabindex="0"
+          >
+            Services <i class="fas fa-chevron-down ms-1"></i>
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact" (click)="onMenuItemClick()">Contact Us</a>
+          <a class="nav-link" href="#contact" (click)="onMenuItemClick()"
+            >Contact Us</a
+          >
+        </li>
+        <li class="nav-item d-none d-lg-block ms-3">
+          <button class="btn btn-primary" (click)="openCalendly()">
+            Book A 30 Min Call
+          </button>
         </li>
       </ul>
-      <button class="btn btn-primary ms-3 d-none d-lg-block" (click)="openCalendly()">Book A 30 Min Call</button>
     </div>
   </div>
-  <div class="mega-menu-overlay" *ngIf="isMegaMenuOpen" (click)="closeMegaMenu()"></div>
+
+  <div
+    class="mega-menu-overlay"
+    *ngIf="isMegaMenuOpen"
+    (click)="closeMegaMenu()"
+  ></div>
   <div class="mega-menu-panel" *ngIf="isMegaMenuOpen">
-    <div class="container-fluid mega-menu-content">
-      <div class="row">
-        <div class="col-md-4" *ngFor="let service of services">
-          <div class="mega-menu-section">
-            <div class="mega-menu-title">{{ service.name }}</div>
-            <ul class="mega-menu-list">
-              <li *ngFor="let subitem of service.submenu">
-                <a [routerLink]="['/services', subitem.route]" (click)="onMenuItemClick(); closeMegaMenu()">
-                  <div class="submenu-title">{{ subitem.name }}</div>
-                  <div class="submenu-description">{{ subitem.description }}</div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+    <button
+      class="mega-menu-close"
+      (click)="closeMegaMenu()"
+      aria-label="Close Mega Menu"
+    >
+      &times;
+    </button>
+    <div class="mega-menu-content">
+      <div class="mega-menu-section" *ngFor="let service of services">
+        <div class="mega-menu-title">{{ service.name }}</div>
+        <ul class="mega-menu-list">
+          <li *ngFor="let subitem of service.submenu">
+            <a
+              [routerLink]="['/services', subitem.route]"
+              (click)="onMenuItemClick(); closeMegaMenu()"
+            >
+              <div class="submenu-title">{{ subitem.name }}</div>
+              <div class="submenu-description">
+                {{ subitem.description }}
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    <button class="mega-menu-close" (click)="closeMegaMenu()" aria-label="Close Mega Menu">&times;</button>
   </div>
 </nav>

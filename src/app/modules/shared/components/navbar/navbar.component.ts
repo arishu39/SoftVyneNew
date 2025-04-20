@@ -14,32 +14,138 @@ export class NavbarComponent {
       name: 'AI & Machine Learning',
       route: 'ai-machine-learning',
       submenu: [
-        { name: 'Generative AI Solutions & AI Agents', description: 'Unlock productivity with powerful language models and intelligent automation.', route: 'ai-agents' },
-        { name: 'Retrieval-Augmented Generation (RAG)', description: 'Enhance knowledge management by combining AI with your data.', route: 'rag' },
-        { name: 'Conversational AI & Voice Interfaces', description: 'Engage users naturally with NLP-driven chatbots and voice-enabled experiences.', route: 'conversational-ai' },
-        { name: 'ML & Deep Learning Model Development (TensorFlow, PyTorch)', description: 'Tailored ML solutions built for accuracy, speed, and innovation.', route: 'ml-development' },
-        { name: 'MLOps & AI Model Governance', description: 'Operationalize, monitor, and scale your AI models with confidence.', route: 'mlops' },
+        {
+          name: 'Generative AI Solutions & AI Agents',
+          description:
+            'Unlock productivity with powerful language models and intelligent automation.',
+          route: 'ai-agents',
+        },
+        {
+          name: 'Retrieval-Augmented Generation (RAG)',
+          description:
+            'Enhance knowledge management by combining AI with your data.',
+          route: 'rag',
+        },
+        {
+          name: 'Conversational AI & Voice Interfaces',
+          description:
+            'Engage users naturally with NLP-driven chatbots and voice-enabled experiences.',
+          route: 'conversational-ai',
+        },
+        {
+          name: 'ML & Deep Learning Model Development (TensorFlow, PyTorch)',
+          description:
+            'Tailored ML solutions built for accuracy, speed, and innovation.',
+          route: 'ml-development',
+        },
+        {
+          name: 'MLOps & AI Model Governance',
+          description:
+            'Operationalize, monitor, and scale your AI models with confidence.',
+          route: 'mlops',
+        },
       ],
     },
     {
-      name: 'Full-Stack Engineering (UI • API • Data)',
+      name: 'Full-Stack Engineering',
       route: 'full-stack-engineering',
       submenu: [
-        { name: 'Modern Web & Mobile Application Development (React, Angular, Vue, Next.js)', description: 'Seamless, responsive, and feature-rich apps optimized for all devices.', route: 'web-mobile-development' },
-        { name: 'Design Systems, Accessibility & UX Excellence', description: 'Delight users with intuitive, accessible interfaces that boost engagement.', route: 'design-systems' },
-        { name: 'Microservices & API Engineering (.NET, Java/Spring, Node, Python, Go, Rust)', description: 'Scalable, robust, and maintainable back-end services powering your applications.', route: 'microservices' },
-        { name: 'Event-Driven & Serverless Architectures', description: 'Build highly responsive applications with modern serverless solutions.', route: 'serverless-architectures' },
-        { name: 'Performance, Security & Scalability Optimization', description: 'Ensure reliability and speed at scale, protecting your users and your brand.', route: 'performance-optimization' },
+        {
+          name: 'Modern Web & Mobile Application Development (React, Angular, Vue, Next.js)',
+          description:
+            'Seamless, responsive, and feature-rich apps optimized for all devices.',
+          route: 'web-mobile-development',
+        },
+        {
+          name: 'Design Systems, Accessibility & UX Excellence',
+          description:
+            'Delight users with intuitive, accessible interfaces that boost engagement.',
+          route: 'design-systems',
+        },
+        {
+          name: 'Microservices & API Engineering (.NET, Java/Spring, Node, Python, Go, Rust)',
+          description:
+            'Scalable, robust, and maintainable back-end services powering your applications.',
+          route: 'microservices',
+        },
+        {
+          name: 'Event-Driven & Serverless Architectures',
+          description:
+            'Build highly responsive applications with modern serverless solutions.',
+          route: 'serverless-architectures',
+        },
+        {
+          name: 'Performance, Security & Scalability Optimization',
+          description:
+            'Ensure reliability and speed at scale, protecting your users and your brand.',
+          route: 'performance-optimization',
+        },
       ],
     },
     {
       name: 'Cloud, DevOps & Automation',
       route: 'cloud-devops-automation',
       submenu: [
-        { name: 'Multi-Cloud Strategy & Migration (AWS, Azure, GCP, Oracle, IBM)', description: 'Seamlessly migrate, optimize, and manage workloads across leading cloud providers.', route: 'multi-cloud' },
-        { name: 'Containers & Kubernetes Orchestration (Docker, Kubernetes, OpenShift)', description: 'Rapid deployment, scaling, and management of applications in containerized environments.', route: 'containers-kubernetes' },
-        { name: 'Continuous Integration/Delivery (CI/CD) & Infrastructure-as-Code (IaC)', description: 'Accelerate development cycles with automated pipelines and reproducible infrastructure.', route: 'ci-cd' },
-        { name: 'Observability & Site Reliability Engineering (SRE)', description: 'Proactively manage and improve service reliability, performance, and uptime.', route: 'sre' },
+        {
+          name: 'Multi-Cloud Strategy & Migration (AWS, Azure, GCP, Oracle, IBM)',
+          description:
+            'Seamlessly migrate, optimize, and manage workloads across leading cloud providers.',
+          route: 'multi-cloud',
+        },
+        {
+          name: 'Containers & Kubernetes Orchestration (Docker, Kubernetes, OpenShift)',
+          description:
+            'Rapid deployment, scaling, and management of applications in containerized environments.',
+          route: 'containers-kubernetes',
+        },
+        {
+          name: 'Continuous Integration/Delivery (CI/CD) & Infrastructure-as-Code (IaC)',
+          description:
+            'Accelerate development cycles with automated pipelines and reproducible infrastructure.',
+          route: 'ci-cd',
+        },
+        {
+          name: 'Observability & Site Reliability Engineering (SRE)',
+          description:
+            'Proactively manage and improve service reliability, performance, and uptime.',
+          route: 'sre',
+        },
+      ],
+    },
+    {
+      name: 'Data Engineering & Analytics',
+      route: 'data-engineering-analytics',
+      submenu: [
+        {
+          name: 'Data Warehousing & ETL Pipelines',
+          description:
+            'Design, build, and optimize scalable data pipelines and warehouses for actionable insights.',
+          route: 'data-warehousing-etl',
+        },
+        {
+          name: 'Business Intelligence & Dashboarding',
+          description:
+            'Empower decision-making with interactive dashboards and advanced analytics.',
+          route: 'business-intelligence',
+        },
+        {
+          name: 'Data Lake & Big Data Solutions',
+          description:
+            'Leverage big data platforms for storage, processing, and analytics at scale.',
+          route: 'data-lake-bigdata',
+        },
+        {
+          name: 'Data Governance & Quality',
+          description:
+            'Ensure data accuracy, consistency, and compliance across your organization.',
+          route: 'data-governance',
+        },
+        {
+          name: 'Real-Time Data Streaming & Analytics',
+          description:
+            'Unlock value from real-time data with streaming analytics and event processing.',
+          route: 'real-time-analytics',
+        },
       ],
     },
   ];

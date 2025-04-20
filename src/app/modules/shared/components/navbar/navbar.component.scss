@@ -182,6 +182,8 @@
   .navbar {
     padding: 0.5rem 1rem;
     min-height: 70px;
+    background-color: var(--bg-dark) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
     .container-fluid {
       padding: 0;
@@ -196,14 +198,24 @@
       font-size: 0.9rem;
       margin: 0;
       white-space: nowrap;
+      background: var(--secondary-color);
+      color: #fff;
+      border-radius: 5px;
+      box-shadow: none;
 
       &.d-lg-none {
         max-width: fit-content;
       }
+
+      &:hover {
+        background: var(--secondary-dark);
+        color: #fff;
+        box-shadow: none;
+      }
     }
 
     .navbar-collapse {
-      background-color: var(--bg-dark);
+      background-color: var(--bg-dark) !important;
       position: fixed;
       top: 70px;
       left: 0;
@@ -213,7 +225,7 @@
       padding: 1rem;
       z-index: 1000;
       transform: translateX(100%);
-      transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
       &.show {
         transform: translateX(0);
@@ -221,10 +233,26 @@
     }
 
     .navbar-nav {
+      align-items: flex-start !important;
       padding: 1rem 0;
 
       .nav-item {
         margin: 0.5rem 0;
+      }
+
+      .nav-link {
+        color: #fff !important;
+        background: transparent !important;
+        border-radius: 6px;
+        padding: 0.75rem 1rem;
+        font-size: 1.05rem;
+        transition: background 0.15s;
+
+        &:hover,
+        &:focus {
+          background: rgba(255, 255, 255, 0.07) !important;
+          color: #fff !important;
+        }
       }
     }
 
@@ -280,6 +308,129 @@
       padding: 0.75rem 1rem;
       color: white;
     }
+
+    // Mega menu mobile fixes
+    .mega-menu-panel {
+      top: 65px;
+      width: 100vw;
+      max-width: 100vw;
+      left: 0;
+      transform: none;
+      border-radius: 0;
+      padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+      max-height: calc(100vh - 65px);
+      height: auto !important; // let panel height be based on content
+      max-height: none !important; // remove max-height restriction
+      background: #fff;
+      color: initial;
+      box-shadow: 0 8px 32px rgba(40, 40, 60, 0.18),
+        0 1.5px 6px rgba(0, 0, 0, 0.06);
+      border: 1px solid #ececec;
+      padding-bottom: 0.5rem !important; // reduce bottom padding of the panel
+      overflow-y: auto !important; // enable vertical scrolling for overflow content
+      -webkit-overflow-scrolling: touch; // smooth scrolling on iOS
+      max-height: 90vh !important; // limit panel height to viewport, enable scroll if needed
+      position: fixed;
+    }
+
+    .mega-menu-content {
+      background: transparent !important;
+      display: block !important; // <-- force block layout on mobile
+      flex-direction: unset !important;
+      gap: 0 !important; // already present, keep as is
+      row-gap: 0 !important; // ensure no extra vertical gap between sections
+      max-height: 100%;
+      min-height: 0;
+      overflow-y: visible !important; // allow content to grow
+      max-height: none !important; // remove max-height restriction
+      padding: 0 0.5rem 1.5rem 0.5rem;
+      align-items: unset !important;
+    }
+
+    .mega-menu-section {
+      background: transparent !important;
+      min-width: 0 !important;
+      max-width: 100% !important;
+      width: 100% !important;
+      margin-bottom: 0.2rem !important; // further reduce vertical gap between sections
+      padding-bottom: 0 !important; // remove any extra padding at the end
+      flex: unset !important;
+      display: block !important;
+    }
+
+    .mega-menu-title {
+      color: var(--secondary-color);
+      background: transparent !important;
+      font-size: 1rem;
+      margin-bottom: 0.4rem; // reduce gap below header
+      padding-left: 0.5rem;
+    }
+
+    .mega-menu-list {
+      gap: 0.15rem; // further reduce vertical gap between submenu items
+      padding-bottom: 0 !important; // remove extra space at the end of the list
+      margin-bottom: 0 !important;
+    }
+
+    .mega-menu-list a {
+      background: #f7f8fa !important;
+      color: var(--text-primary) !important;
+      border: 1px solid transparent;
+      box-shadow: 0 1px 4px rgba(100, 100, 130, 0.04);
+      margin-bottom: 0 !important; // ensure no extra margin
+      padding: 0.6rem 0.9rem 0.6rem 0.9rem; // further reduce vertical padding
+      font-size: 0.97rem;
+      transition: background 0.16s cubic-bezier(0.4, 0, 0.2, 1),
+        color 0.16s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.16s cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 0.16s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.16s cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        background: #fff4f0 !important;
+        color: var(--secondary-color) !important;
+        box-shadow: 0 2px 8px rgba(255, 90, 44, 0.07);
+        border-color: var(--secondary-color);
+        transform: none;
+        outline: none;
+      }
+    }
+
+    .submenu-title {
+      color: var(--text-primary) !important;
+      font-size: 0.97rem;
+    }
+
+    .submenu-description {
+      color: #6c6c8e !important;
+      opacity: 0.88;
+      font-size: 0.83rem;
+    }
+
+    .mega-menu-close {
+      background: #f7f8fa !important;
+      color: #888 !important;
+      box-shadow: 0 1px 4px rgba(100, 100, 130, 0.06);
+      border: none;
+      top: 70px !important; // just below navbar (adjust as needed)
+      right: 1.3rem !important;
+      width: 32px;
+      height: 32px;
+      font-size: 1.2rem;
+      position: fixed !important; // always fixed to viewport
+      z-index: 1100 !important; // above the panel
+
+      &:hover {
+        background: var(--secondary-color) !important;
+        color: #fff !important;
+      }
+    }
+
+    // Fix navbar nav alignment on mobile
+    .navbar-nav {
+      align-items: flex-start !important;
+    }
   }
 }
 
@@ -296,99 +447,270 @@
   transition: none !important;
 }
 
-/* Mega Menu Styles */
+/* Elegant Mega Menu Redesign */
 .mega-menu-overlay {
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.3);
+  inset: 0;
+  background: rgba(30, 34, 45, 0.25);
   z-index: 1040;
+  transition: background 0.2s;
 }
+
 .mega-menu-panel {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 100%;
+  position: fixed;
+  left: 50%;
+  top: 80px;
+  transform: translateX(-50%);
+  width: 90vw;
+  max-width: 1000px;
   background: #fff;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(40, 40, 60, 0.18), 0 1.5px 6px rgba(0, 0, 0, 0.06);
   z-index: 1050;
-  padding: 2rem 0 2rem 0;
-  animation: fadeIn 0.3s cubic-bezier(.4,0,.2,1);
+  padding: 2.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+  animation: fadeInMenu 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #ececec;
 }
+
+@keyframes fadeInMenu {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
 .mega-menu-content {
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex;
+  gap: 1.5rem; // reduced gap for more columns
+  justify-content: flex-start;
+  flex-wrap: nowrap; // force single row
+  flex: 1 1 auto;
+  overflow-y: auto;
+  min-height: 0;
+  max-height: 100%;
+  align-items: stretch; // ensure all columns/cards start from same height
 }
+
 .mega-menu-section {
-  margin-bottom: 2.5rem;
+  flex: 1 1 0;
+  min-width: 0; // allow shrinking
+  max-width: 240px; // further reduced for 4 columns
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%; // ensure section fills parent height
 }
+
 .mega-menu-title {
-  font-size: 1.2rem;
+  font-size: 1.08rem;
   font-weight: 700;
-  color: var(--secondary-color, #ff5a2c);
-  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.01em;
+  border-left: 3px solid var(--secondary-color);
+  padding-left: 0.7rem;
+  min-height: 48px; // set a fixed min-height for header row
+  display: flex;
+  align-items: center; // vertically center text
 }
-.mega-menu-desc {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 1rem;
-}
+
 .mega-menu-list {
-  list-style: none;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.mega-menu-list li {
-  margin-bottom: 0.5rem;
-}
+
 .mega-menu-list a {
-  color: #222;
-  font-weight: 500;
-  text-decoration: none;
   display: block;
-  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
-  border-radius: 6px;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-  margin-bottom: 0.5rem;
-  background: #f8f9fa;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  background: #f7f8fa;
+  border-radius: 12px;
+  padding: 1rem 1.1rem 0.9rem 1.1rem;
+  box-shadow: 0 1px 4px rgba(100, 100, 130, 0.04);
+  text-decoration: none;
+  color: var(--text-primary);
+  border: 1px solid transparent;
+  transition: background 0.18s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.18s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.18s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.18s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background: #fff4f0;
+    color: var(--secondary-color);
+    box-shadow: 0 4px 16px rgba(255, 90, 44, 0.08);
+    border-color: var(--secondary-color);
+    transform: none;
+    outline: none;
+  }
 }
-.mega-menu-list a:hover {
-  background: var(--secondary-color, #ff5a2c);
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(255,90,44,0.10);
-}
+
 .submenu-title {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 0.15rem;
-  color: #222;
+  margin-bottom: 0.18rem;
+  letter-spacing: 0.01em;
 }
+
 .submenu-description {
-  font-size: 0.95rem;
-  color: #666;
+  font-size: 0.88rem;
+  color: #6c6c8e;
+  opacity: 0.88;
   margin-bottom: 0;
-  line-height: 1.3;
+  line-height: 1.35;
 }
+
 .mega-menu-close {
   position: absolute;
-  top: 1rem;
-  right: 2rem;
-  background: none;
+  top: 1.1rem;
+  right: 1.3rem;
+  background: #f7f8fa;
   border: none;
-  font-size: 2rem;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
   color: #888;
+  font-size: 1.5rem;
   cursor: pointer;
-  z-index: 1060;
+  box-shadow: 0 1px 4px rgba(100, 100, 130, 0.06);
+  transition: background 0.18s, color 0.18s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: var(--secondary-color);
+    color: #fff;
+  }
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .mega-menu-panel {
+    top: 65px;
+    width: 100vw;
+    max-width: 100vw;
+    left: 0;
+    transform: none;
+    border-radius: 0;
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    height: auto !important; // let panel height be based on content
+    max-height: none !important; // remove max-height restriction
+    background: #fff;
+    color: initial;
+    box-shadow: 0 8px 32px rgba(40, 40, 60, 0.18),
+      0 1.5px 6px rgba(0, 0, 0, 0.06);
+    border: 1px solid #ececec;
+    padding-bottom: 0.5rem !important; // reduce bottom padding of the panel
+    overflow-y: auto !important; // enable vertical scrolling for overflow content
+    -webkit-overflow-scrolling: touch; // smooth scrolling on iOS
+    max-height: 90vh !important; // limit panel height to viewport, enable scroll if needed
+    position: fixed;
+  }
+  .mega-menu-content {
+    display: block !important; // <-- force block layout on mobile
+    flex-direction: unset !important;
+    gap: 0 !important; // already present, keep as is
+    row-gap: 0 !important; // ensure no extra vertical gap between sections
+    max-height: 100%;
+    min-height: 0;
+    overflow-y: visible !important; // allow content to grow
+    max-height: none !important; // remove max-height restriction
+    padding: 0 0.5rem 1.5rem 0.5rem;
+    align-items: unset !important;
+    background: transparent !important;
+  }
+  .mega-menu-section {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-bottom: 0.2rem !important; // further reduce vertical gap between sections
+    padding-bottom: 0 !important; // remove any extra padding at the end
+    flex: unset !important;
+    display: block !important;
+    background: transparent !important;
+  }
+  .mega-menu-title {
+    font-size: 1rem;
+    margin-bottom: 0.4rem; // reduce gap below header
+    padding-left: 0.5rem;
+    color: var(--secondary-color);
+    background: transparent !important;
+  }
+  .mega-menu-list {
+    gap: 0.15rem; // further reduce vertical gap between submenu items
+    padding-bottom: 0 !important; // remove extra space at the end of the list
+    margin-bottom: 0 !important;
+  }
+  .mega-menu-list a {
+    padding: 0.6rem 0.9rem 0.6rem 0.9rem; // further reduce vertical padding
+    font-size: 0.97rem;
+    background: #f7f8fa !important;
+    color: var(--text-primary) !important;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 4px rgba(100, 100, 130, 0.04);
+    margin-bottom: 0 !important; // ensure no extra margin
+    transition: background 0.16s cubic-bezier(0.4, 0, 0.2, 1),
+      color 0.16s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.16s cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 0.16s cubic-bezier(0.4, 0, 0.2, 1),
+      transform 0.16s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background: #fff4f0 !important;
+      color: var(--secondary-color) !important;
+      box-shadow: 0 2px 8px rgba(255, 90, 44, 0.07);
+      border-color: var(--secondary-color);
+      transform: none;
+      outline: none;
+    }
+  }
+  .submenu-title {
+    font-size: 0.97rem;
+    color: var(--text-primary) !important;
+  }
+  .submenu-description {
+    font-size: 0.83rem;
+    color: #6c6c8e !important;
+    opacity: 0.88;
+  }
+  .mega-menu-close {
+    top: 70px !important; // just below navbar (adjust as needed)
+    right: 1.3rem !important;
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+    background: #f7f8fa !important;
+    color: #888 !important;
+    box-shadow: 0 1px 4px rgba(100, 100, 130, 0.06);
+    border: none;
+    position: fixed !important; // always fixed to viewport
+    z-index: 1100 !important; // above the panel
+
+    &:hover {
+      background: var(--secondary-color) !important;
+      color: #fff !important;
+    }
+  }
+  // Fix navbar nav alignment on mobile
+  .navbar-nav {
+    align-items: flex-start !important;
+  }
 }
 
 /* Hide scroll on body when mega menu is open */
 body.mega-menu-open {
   overflow: hidden;
-}
-
-/* Responsive */
-@media (max-width: 991px) {
-  .mega-menu-panel, .mega-menu-overlay {
-    display: none !important;
-  }
 }
