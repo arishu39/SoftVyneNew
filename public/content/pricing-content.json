@@ -1,293 +1,43 @@
 {
   "languages": {
-    "angular": {
-      "heroTitle": "Hire Angular Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$2",
-      "monthlyPriceIndividual": "$2",
-      "monthlyPriceTeam": "$1",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Angular Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "react": {
-      "heroTitle": "Hire React Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$2.5",
-      "monthlyPriceIndividual": "$2.2",
-      "monthlyPriceTeam": "$1.2",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior React Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "vue": {
-      "heroTitle": "Hire Vue Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$1.8",
-      "monthlyPriceIndividual": "$1.9",
-      "monthlyPriceTeam": "$0.9",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Vue Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "typescript": {
-      "heroTitle": "Hire TypeScript Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$2.2",
-      "monthlyPriceIndividual": "$2.0",
-      "monthlyPriceTeam": "$1.1",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior TypeScript Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "nextjs": {
-      "heroTitle": "Hire Next.js Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$2.3",
-      "monthlyPriceIndividual": "$2.1",
-      "monthlyPriceTeam": "$1.2",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Next.js Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "python": {
-      "heroTitle": "Hire Python Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$2.4",
-      "monthlyPriceIndividual": "$2.2",
-      "monthlyPriceTeam": "$1.3",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Python Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "javascript": {
-      "heroTitle": "Hire JavaScript Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$2.1",
-      "monthlyPriceIndividual": "$1.9",
-      "monthlyPriceTeam": "$1.0",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior JavaScript Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "nuxtjs": {
-      "heroTitle": "Hire Nuxt.js Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$2.2",
-      "monthlyPriceIndividual": "$2.0",
-      "monthlyPriceTeam": "$1.1",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Nuxt.js Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "dotnet": {
-      "heroTitle": "Hire .NET Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$2.5",
-      "monthlyPriceIndividual": "$2.3",
-      "monthlyPriceTeam": "$1.4",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior .NET Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "golang": {
-      "heroTitle": "Hire Go Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$2.6",
-      "monthlyPriceIndividual": "$2.4",
-      "monthlyPriceTeam": "$1.5",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Go Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "rag": {
-      "heroTitle": "Hire RAG Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$3.0",
-      "monthlyPriceIndividual": "$2.8",
-      "monthlyPriceTeam": "$1.5",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior RAG Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "generative-ai": {
-      "heroTitle": "Hire Generative AI Developer As Per Your Need",
+    "ai-machine-learning": {
+      "heroTitle": "Hire AI & Machine Learning Experts As Per Your Need",
       "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
       "hourlyPrice": "$3.2",
       "monthlyPriceIndividual": "$3.0",
       "monthlyPriceTeam": "$1.6",
       "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Generative AI Developer <br />160 hours per month.",
+      "monthlyDescriptionIndividual": "Senior AI & ML Expert <br />160 hours per month.",
       "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
     },
-    "llm": {
-      "heroTitle": "Hire LLM Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$3.1",
-      "monthlyPriceIndividual": "$2.9",
-      "monthlyPriceTeam": "$1.7",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior LLM Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "transformers": {
-      "heroTitle": "Hire Transformer Model Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$3.3",
-      "monthlyPriceIndividual": "$3.1",
-      "monthlyPriceTeam": "$1.8",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Transformer Model Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "deep-learning": {
-      "heroTitle": "Hire Deep Learning Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$3.4",
-      "monthlyPriceIndividual": "$3.2",
-      "monthlyPriceTeam": "$1.9",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Deep Learning Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "nlp": {
-      "heroTitle": "Hire NLP Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$3.0",
-      "monthlyPriceIndividual": "$2.8",
-      "monthlyPriceTeam": "$1.6",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior NLP Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "computer-vision": {
-      "heroTitle": "Hire Computer Vision Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$3.5",
-      "monthlyPriceIndividual": "$3.3",
-      "monthlyPriceTeam": "$2.0",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Computer Vision Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "semantic-kernel": {
-      "heroTitle": "Hire Semantic Kernel Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$3.0",
-      "monthlyPriceIndividual": "$2.8",
-      "monthlyPriceTeam": "$1.5",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Semantic Kernel Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "machine-learning": {
-      "heroTitle": "Hire Machine Learning Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$3.2",
-      "monthlyPriceIndividual": "$3.0",
-      "monthlyPriceTeam": "$1.6",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Machine Learning Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "html-css": {
-      "heroTitle": "Hire HTML & CSS Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$2.0",
-      "monthlyPriceIndividual": "$1.8",
-      "monthlyPriceTeam": "$1.0",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior HTML & CSS Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "svelte": {
-      "heroTitle": "Hire Svelte Developer As Per Your Need",
+    "full-stack-engineering": {
+      "heroTitle": "Hire Full-Stack Engineering Experts As Per Your Need",
       "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
       "hourlyPrice": "$2.5",
-      "monthlyPriceIndividual": "$2.3",
+      "monthlyPriceIndividual": "$2.2",
       "monthlyPriceTeam": "$1.2",
       "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Svelte Developer <br />160 hours per month.",
+      "monthlyDescriptionIndividual": "Senior Full-Stack Engineer <br />160 hours per month.",
       "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
     },
-    "tailwind": {
-      "heroTitle": "Hire Tailwind CSS Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$2.2",
-      "monthlyPriceIndividual": "$2.0",
-      "monthlyPriceTeam": "$1.1",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Tailwind CSS Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "nodejs": {
-      "heroTitle": "Hire Node.js Developer As Per Your Need",
+    "cloud-devops-automation": {
+      "heroTitle": "Hire Cloud & DevOps Experts As Per Your Need",
       "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
       "hourlyPrice": "$2.8",
       "monthlyPriceIndividual": "$2.6",
       "monthlyPriceTeam": "$1.4",
       "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Node.js Developer <br />160 hours per month.",
+      "monthlyDescriptionIndividual": "Senior Cloud & DevOps Expert <br />160 hours per month.",
       "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
     },
-    "java": {
-      "heroTitle": "Hire Java Developer As Per Your Need",
+    "data-engineering-analytics": {
+      "heroTitle": "Hire Data Engineering Experts As Per Your Need",
       "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
       "hourlyPrice": "$3.0",
       "monthlyPriceIndividual": "$2.8",
       "monthlyPriceTeam": "$1.5",
       "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Java Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "ruby": {
-      "heroTitle": "Hire Ruby Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$2.7",
-      "monthlyPriceIndividual": "$2.5",
-      "monthlyPriceTeam": "$1.3",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Ruby Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "php": {
-      "heroTitle": "Hire PHP Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$2.6",
-      "monthlyPriceIndividual": "$2.4",
-      "monthlyPriceTeam": "$1.2",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior PHP Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "rust": {
-      "heroTitle": "Hire Rust Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$3.1",
-      "monthlyPriceIndividual": "$2.9",
-      "monthlyPriceTeam": "$1.7",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Rust Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "kotlin": {
-      "heroTitle": "Hire Kotlin Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$2.9",
-      "monthlyPriceIndividual": "$2.7",
-      "monthlyPriceTeam": "$1.5",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Kotlin Developer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
-    },
-    "spring-boot": {
-      "heroTitle": "Hire Spring Boot Developer As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$3.2",
-      "monthlyPriceIndividual": "$3.0",
-      "monthlyPriceTeam": "$1.8",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Spring Boot Developer <br />160 hours per month.",
+      "monthlyDescriptionIndividual": "Senior Data Engineer <br />160 hours per month.",
       "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
     }
   },
