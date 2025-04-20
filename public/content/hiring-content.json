@@ -6,7 +6,7 @@
       "experienceYears": "5+ Years",
       "upgradeServiceText": "AI Implementation Service",
       "costSavingText": "Save Up to 40% On Development Cost",
-      "imageUrl": "assets/AI_AGent_1980_600.png"
+      "imageUrl": "assets/AI_AGent_1980_800_4.png"
     },
     "rag": {
       "heroTitle": "Hire RAG Developers",
@@ -14,7 +14,7 @@
       "experienceYears": "4+ Years",
       "upgradeServiceText": "RAG Integration Service",
       "costSavingText": "Save Up to 35% On Development Cost",
-      "imageUrl": "assets/AI_AGent_1980_600.png"
+      "imageUrl": "assets/AI_AGent_1980_600_5.png"
     },
     "conversational-ai": {
       "heroTitle": "Hire Conversational AI Experts",
@@ -22,7 +22,7 @@
       "experienceYears": "6+ Years",
       "upgradeServiceText": "Conversational AI Implementation",
       "costSavingText": "Save Up to 38% On Development Cost",
-      "imageUrl": "assets/AI_AGent_1980_600.png"
+      "imageUrl": "assets/AI_AGent_1980_800_3.png"
     },
     "ml-development": {
       "heroTitle": "Hire ML & Deep Learning Experts",
@@ -30,7 +30,7 @@
       "experienceYears": "8+ Years",
       "upgradeServiceText": "ML Model Optimization",
       "costSavingText": "Save Up to 42% On Development Cost",
-      "imageUrl": "assets/AI_AGent_1980_600.png"
+      "imageUrl": "assets/brain.png"
     },
     "mlops": {
       "heroTitle": "Hire MLOps Engineers",
@@ -38,7 +38,7 @@
       "experienceYears": "5+ Years",
       "upgradeServiceText": "MLOps Implementation",
       "costSavingText": "Save Up to 35% On Development Cost",
-      "imageUrl": "assets/AI_AGent_1980_600.png"
+      "imageUrl": "assets/brain.png"
     },
     "web-mobile-development": {
       "heroTitle": "Hire Full-Stack Web & Mobile Developers",
