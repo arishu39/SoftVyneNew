@@ -105,17 +105,19 @@ p {
 }
 
 .hiring-hero-section {
-  min-height: 60vh;
+  height: 60vh;
+  width: 100%;
   background-color: var(--bg-dark);
+  position: relative;
 }
 
 .hiring-hero {
   position: relative;
   width: 100%;
-  min-height: 60vh;
+  height: 100%;
   display: flex;
   align-items: center;
-  padding: var(--spacing-lg) 8%;
+  justify-content: flex-start; // Changed from center
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -123,15 +125,12 @@ p {
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     background: linear-gradient(
-      to right,
-      rgba(4, 1, 13, 0.75) 0%,
-      rgba(4, 1, 13, 0.6) 60%,
-      rgba(4, 1, 13, 0.2) 100%
+      90deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.7) 50%,
+      rgba(0, 0, 0, 0.5) 100%
     );
   }
 }
@@ -139,73 +138,66 @@ p {
 .hiring-content {
   position: relative;
   z-index: 2;
-  max-width: 650px;
-  animation: slideUp 0.8s ease-out;
+  max-width: 900px; // Increased from 750px
+  margin: 0;
+  padding: 0 8%;
+  text-align: left;
 
   header {
-    margin-bottom: var(--spacing-md);
-
     h1 {
-      font-size: 3rem;
+      font-size: clamp(2rem, 5vw, 3.5rem);
       font-weight: 700;
       line-height: 1.2;
-      margin-bottom: var(--spacing-sm);
+      margin-bottom: 1rem;
       color: white;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      max-width: 800px; // Added to control heading width
     }
 
     .subtitle {
-      font-size: 1.25rem;
+      font-size: clamp(1rem, 2vw, 1.25rem);
       line-height: 1.6;
       color: rgba(255, 255, 255, 0.9);
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      margin-bottom: 2rem;
+      max-width: 650px; // Increased from 500px
     }
   }
 }
 
 .hiring-cta-buttons {
   .btn {
-    padding: 12px 30px;
-    border-radius: 30px;
-    font-size: 1.1rem;
-    font-weight: 500;
-    letter-spacing: 0.5px;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
 
     &.btn-primary {
       background: var(--primary-color);
       color: white;
-      box-shadow: 0 4px 15px rgba(101, 88, 245, 0.3);
+      border: none;
 
       &:hover {
-        background: var(--primary-dark);
         transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(101, 88, 245, 0.4);
+        background: var(--primary-dark);
       }
     }
   }
 }
 
-.hiring-features {
-  display: flex;
-  gap: var(--spacing-xl);
-  margin-top: var(--spacing-xl);
+@media screen and (max-width: 768px) {
+  .hiring-hero {
+    height: 100%;
+    text-align: left; // Changed from center
+  }
 
-  .feature-item {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    color: white;
+  .hiring-content {
+    padding: 0 5%;
+    text-align: left; // Added to ensure left alignment
+  }
 
-    i {
-      color: var(--primary-color);
-    }
-
-    span {
-      font-size: 16px;
-      strong {
-        color: var(--secondary-color);
-      }
-    }
+  .hiring-cta-buttons {
+    justify-content: flex-start; // Changed from center
   }
 }
 
@@ -224,28 +216,20 @@ p {
 
 @media screen and (max-width: 768px) {
   .hiring-hero {
-    padding: 0 5%;
+    padding: var(--spacing-lg) 5%;
     text-align: center;
 
     &::before {
       background: linear-gradient(
         to bottom,
-        rgba(4, 1, 13, 0.7) 0%,
-        rgba(4, 1, 13, 0.5) 100%
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.7) 100%
       );
     }
   }
 
   .hiring-content {
-    header {
-      h1 {
-        font-size: 2.5rem;
-      }
-
-      .subtitle {
-        font-size: 1.1rem;
-      }
-    }
+    width: 90%;
   }
 
   .hiring-features {
