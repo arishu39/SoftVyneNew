@@ -9,7 +9,8 @@ import { Subscription } from 'rxjs';
 })
 export class ServicesMainComponent implements OnInit, OnDestroy {
   private routeSub!: Subscription;
-  serviceType: string = '';
+  mainRoute: string = '';
+  subRoute: string = '';
   componentKey = 0; // Add this to force refresh
   loading: boolean = true; // Add loading property
 
@@ -17,11 +18,13 @@ export class ServicesMainComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.routeSub = this.route.params.subscribe((params) => {
-      const oldServiceType = this.serviceType;
-      this.serviceType = params['serviceType'];
+      const oldMainRoute = this.mainRoute;
+      const oldSubRoute = this.subRoute;
+      this.mainRoute = params['mainRoute'];
+      this.subRoute = params['subRoute'];
 
-      // Only show loader when service type actually changes
-      if (oldServiceType !== this.serviceType) {
+      // Only show loader when route parameters actually change
+      if (oldMainRoute !== this.mainRoute || oldSubRoute !== this.subRoute) {
         this.loading = true;
         // Keep old content visible while loading
         setTimeout(() => {

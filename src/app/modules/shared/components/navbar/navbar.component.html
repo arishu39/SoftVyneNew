@@ -70,7 +70,7 @@
         <ul class="mega-menu-list">
           <li *ngFor="let subitem of service.submenu">
             <a
-              [routerLink]="['/services', subitem.route]"
+              [routerLink]="['/services', service.route, subitem.route]"
               (click)="onMenuItemClick(); closeMegaMenu()"
             >
               <div class="submenu-title">{{ subitem.name }}</div>

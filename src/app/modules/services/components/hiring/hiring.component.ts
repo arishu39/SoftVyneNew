@@ -19,6 +19,8 @@ import {
 })
 export class HiringComponent implements OnInit, OnChanges {
   @Input() serviceType: string = '';
+  @Input() mainRoute: string = '';
+  @Input() subRoute: string = '';
   hiringContent:
     | (LanguageSpecificContent & {
         trialButtonText: string;
@@ -29,12 +31,10 @@ export class HiringComponent implements OnInit, OnChanges {
   constructor(private dataService: DataService) {}
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes['serviceType'] && this.serviceType) {
-      this.dataService
-        .getHiringContent(this.serviceType)
-        .subscribe((content) => {
-          this.hiringContent = content;
-        });
+    if ((changes['mainRoute'] || changes['subRoute']) && this.subRoute) {
+      this.dataService.getHiringContent(this.subRoute).subscribe((content) => {
+        this.hiringContent = content;
+      });
     }
   }
 

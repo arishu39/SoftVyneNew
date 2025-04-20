@@ -20,41 +20,8 @@ interface TechIcon {
   standalone: false,
 })
 export class TechBannerComponent implements OnInit, OnChanges, OnDestroy {
-  @Input() serviceType: string = '';
-
-  // Map submenu routes to tech categories
-  private routeToCategory: Record<string, string> = {
-    // AI & Machine Learning main route and subroutes
-    'ai-machine-learning': 'ai-machine-learning',
-    'ai-agents': 'ai-machine-learning',
-    rag: 'ai-machine-learning',
-    'conversational-ai': 'ai-machine-learning',
-    'ml-development': 'ai-machine-learning',
-    mlops: 'ai-machine-learning',
-
-    // Full-Stack Engineering main route and subroutes
-    'full-stack-engineering': 'full-stack-engineering',
-    'web-mobile-development': 'full-stack-engineering',
-    'design-systems': 'full-stack-engineering',
-    microservices: 'full-stack-engineering',
-    'serverless-architectures': 'full-stack-engineering',
-    'performance-optimization': 'full-stack-engineering',
-
-    // Cloud & DevOps main route and subroutes
-    'cloud-devops-automation': 'cloud-devops-automation',
-    'multi-cloud': 'cloud-devops-automation',
-    'containers-kubernetes': 'cloud-devops-automation',
-    'ci-cd': 'cloud-devops-automation',
-    sre: 'cloud-devops-automation',
-
-    // Data Engineering main route and subroutes
-    'data-engineering-analytics': 'data-engineering-analytics',
-    'data-warehousing-etl': 'data-engineering-analytics',
-    'business-intelligence': 'data-engineering-analytics',
-    'data-lake-bigdata': 'data-engineering-analytics',
-    'data-governance': 'data-engineering-analytics',
-    'real-time-analytics': 'data-engineering-analytics',
-  };
+  @Input() mainRoute: string = '';
+  @Input() subRoute: string = '';
 
   techIcons: Record<string, TechIcon[]> = {
     'ai-machine-learning': [
@@ -270,7 +237,7 @@ export class TechBannerComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    if (changes['serviceType']) {
+    if (changes['mainRoute']) {
       this.updateIcons();
     }
   }
@@ -282,9 +249,7 @@ export class TechBannerComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   private updateIcons() {
-    const category = this.routeToCategory[this.serviceType] || this.serviceType;
-    this.currentIcons = this.techIcons[category] || [];
-    // Duplicate icons for seamless scrolling
+    this.currentIcons = this.techIcons[this.mainRoute] || [];
     this.duplicateIcons = [...this.currentIcons, ...this.currentIcons];
   }
 

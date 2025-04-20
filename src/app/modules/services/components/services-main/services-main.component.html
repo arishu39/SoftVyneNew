@@ -1,9 +1,12 @@
 <div class="content" [class.loading-state]="loading">
-  <app-hiring [serviceType]="serviceType"></app-hiring>
-  <app-tech-banner [serviceType]="serviceType"></app-tech-banner>
-  <app-hiredev [serviceType]="serviceType"></app-hiredev>
-  <app-fullstack [serviceType]="serviceType"></app-fullstack>
-  <app-pricing [serviceType]="serviceType"></app-pricing>
+  <app-hiring [mainRoute]="mainRoute" [subRoute]="subRoute"></app-hiring>
+  <app-tech-banner
+    [mainRoute]="mainRoute"
+    [subRoute]="subRoute"
+  ></app-tech-banner>
+  <app-hiredev [mainRoute]="mainRoute" [subRoute]="subRoute"></app-hiredev>
+  <app-fullstack [mainRoute]="mainRoute" [subRoute]="subRoute"></app-fullstack>
+  <app-pricing [mainRoute]="mainRoute" [subRoute]="subRoute"></app-pricing>
   <app-services></app-services>
 
   <app-contactlocations></app-contactlocations>

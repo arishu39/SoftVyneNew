@@ -14,12 +14,14 @@ import { DataService } from '../../../../services/data.service';
 })
 export class HiredevComponent implements OnInit {
   @Input() serviceType: string = '';
+  @Input() mainRoute: string = '';
+  @Input() subRoute: string = '';
   hiredevContent: HireDevContent | null = null;
 
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
-    if (this.serviceType) {
+    if (this.mainRoute) {
       this.dataService.getHiredevContent().subscribe((content) => {
         this.hiredevContent = content;
       });

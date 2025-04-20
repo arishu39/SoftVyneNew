@@ -18,18 +18,17 @@ import {
   standalone: false,
 })
 export class FullstackComponent implements OnInit, OnChanges {
-  @Input() serviceType: string = '';
+  @Input() mainRoute: string = '';
+  @Input() subRoute: string = '';
   content: FullstackLanguageContent | undefined;
 
   constructor(private dataService: DataService) {}
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes['serviceType'] && this.serviceType) {
-      this.dataService
-        .getFullstackContent(this.serviceType)
-        .subscribe((data) => {
-          this.content = data;
-        });
+    if ((changes['mainRoute'] || changes['subRoute']) && this.mainRoute) {
+      this.dataService.getFullstackContent(this.mainRoute).subscribe((data) => {
+        this.content = data;
+      });
     }
   }
 

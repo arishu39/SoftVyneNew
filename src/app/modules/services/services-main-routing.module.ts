@@ -4,12 +4,32 @@ import { ServicesMainComponent } from './components/services-main/services-main.
 
 const routes: Routes = [
   {
-    path: ':serviceType',
+    path: ':mainRoute/:subRoute',
     component: ServicesMainComponent,
   },
   {
+    path: 'ai-machine-learning',
+    redirectTo: 'ai-machine-learning/ai-agents',
+    pathMatch: 'full',
+  },
+  {
+    path: 'full-stack-engineering',
+    redirectTo: 'full-stack-engineering/web-mobile-development',
+    pathMatch: 'full',
+  },
+  {
+    path: 'cloud-devops-automation',
+    redirectTo: 'cloud-devops-automation/multi-cloud',
+    pathMatch: 'full',
+  },
+  {
+    path: 'data-engineering-analytics',
+    redirectTo: 'data-engineering-analytics/data-warehousing-etl',
+    pathMatch: 'full',
+  },
+  {
     path: '',
-    redirectTo: 'frontend',
+    redirectTo: 'ai-machine-learning/ai-agents',
     pathMatch: 'full',
   },
 ];

@@ -16,6 +16,8 @@ import { LanguageSpecificContent } from '../../../../interfaces/content.interfac
 })
 export class PricingComponent implements OnInit, OnChanges {
   @Input() serviceType: string = '';
+  @Input() mainRoute: string = '';
+  @Input() subRoute: string = '';
   content:
     | (LanguageSpecificContent & {
         trialButtonText: string;
@@ -26,8 +28,8 @@ export class PricingComponent implements OnInit, OnChanges {
   constructor(private dataService: DataService) {}
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes['serviceType'] && this.serviceType) {
-      this.dataService.getPricingContent(this.serviceType).subscribe((data) => {
+    if ((changes['mainRoute'] || changes['subRoute']) && this.mainRoute) {
+      this.dataService.getPricingContent(this.mainRoute).subscribe((data) => {
         this.content = data;
       });
     }
