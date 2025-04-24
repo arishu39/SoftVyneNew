@@ -12,139 +12,139 @@ export class NavbarComponent {
   services = [
     {
       name: 'AI & Machine Learning',
-      route: 'ai-machine-learning',
+      route: 'ai-machine-learning-experts',
       submenu: [
         {
           name: 'Generative AI Solutions & AI Agents',
           description:
             'Unlock productivity with powerful language models and intelligent automation.',
-          route: 'ai-agents',
+          route: 'hire-generative-ai-developers-agents',
         },
         {
           name: 'Retrieval-Augmented Generation (RAG)',
           description:
             'Enhance knowledge management by combining AI with your data.',
-          route: 'rag',
+          route: 'hire-retrieval-augmented-generation-rag-developers',
         },
         {
           name: 'Conversational AI & Voice Interfaces',
           description:
             'Engage users naturally with NLP-driven chatbots and voice-enabled experiences.',
-          route: 'conversational-ai',
+          route: 'hire-conversational-ai-voice-bots-developers',
         },
         {
           name: 'ML & Deep Learning Model Development (TensorFlow, PyTorch)',
           description:
             'Tailored ML solutions built for accuracy, speed, and innovation.',
-          route: 'ml-development',
+          route: 'hire-ml-deep-learning-developers',
         },
         {
           name: 'MLOps & AI Model Governance',
           description:
             'Operationalize, monitor, and scale your AI models with confidence.',
-          route: 'mlops',
+          route: 'hire-mlops-model-ai-governance-experts',
         },
       ],
     },
     {
       name: 'Full-Stack Engineering',
-      route: 'full-stack-engineering',
+      route: 'full-stack-developers',
       submenu: [
         {
           name: 'Modern Web & Mobile Application Development (React, Angular, Vue, Next.js)',
           description:
             'Seamless, responsive, and feature-rich apps optimized for all devices.',
-          route: 'web-mobile-development',
+          route: 'hire-web-mobile-app-developers',
         },
         {
           name: 'Design Systems, Accessibility & UX Excellence',
           description:
             'Delight users with intuitive, accessible interfaces that boost engagement.',
-          route: 'design-systems',
+          route: 'hire-ux-ui-design-experts',
         },
         {
           name: 'Microservices & API Engineering (.NET, Java/Spring, Node, Python, Go, Rust)',
           description:
             'Scalable, robust, and maintainable back-end services powering your applications.',
-          route: 'microservices',
+          route: 'hire-microservices-api-developers',
         },
         {
           name: 'Event-Driven & Serverless Architectures',
           description:
             'Build highly responsive applications with modern serverless solutions.',
-          route: 'serverless-architectures',
+          route: 'hire-serverless-architectures-experts',
         },
         {
           name: 'Performance, Security & Scalability Optimization',
           description:
             'Ensure reliability and speed at scale, protecting your users and your brand.',
-          route: 'performance-optimization',
+          route: 'hire-performance-security-optimization',
         },
       ],
     },
     {
       name: 'Cloud, DevOps & Automation',
-      route: 'cloud-devops-automation',
+      route: 'cloud-devops-engineers',
       submenu: [
         {
           name: 'Multi-Cloud Strategy & Migration (AWS, Azure, GCP, Oracle, IBM)',
           description:
             'Seamlessly migrate, optimize, and manage workloads across leading cloud providers.',
-          route: 'multi-cloud',
+          route: 'hire-multi-cloud-migration-experts',
         },
         {
           name: 'Containers & Kubernetes Orchestration (Docker, Kubernetes, OpenShift)',
           description:
             'Rapid deployment, scaling, and management of applications in containerized environments.',
-          route: 'containers-kubernetes',
+          route: 'hire-kubernetes-docker-orchestration-experts',
         },
         {
           name: 'Continuous Integration/Delivery (CI/CD) & Infrastructure-as-Code (IaC)',
           description:
             'Accelerate development cycles with automated pipelines and reproducible infrastructure.',
-          route: 'ci-cd',
+          route: 'hire-cicd-infrastructure-code-experts',
         },
         {
           name: 'Observability & Site Reliability Engineering (SRE)',
           description:
             'Proactively manage and improve service reliability, performance, and uptime.',
-          route: 'sre',
+          route: 'hire-sre-observability-engineers',
         },
       ],
     },
     {
       name: 'Data Engineering & Analytics',
-      route: 'data-engineering-analytics',
+      route: 'data-engineering-analytics-experts',
       submenu: [
         {
           name: 'Data Warehousing & ETL Pipelines',
           description:
             'Design, build, and optimize scalable data pipelines and warehouses for actionable insights.',
-          route: 'data-warehousing-etl',
+          route: 'hire-data-warehousing-etl-developers',
         },
         {
           name: 'Business Intelligence & Dashboarding',
           description:
             'Empower decision-making with interactive dashboards and advanced analytics.',
-          route: 'business-intelligence',
+          route: 'hire-business-intelligence-developers',
         },
         {
           name: 'Data Lake & Big Data Solutions',
           description:
             'Leverage big data platforms for storage, processing, and analytics at scale.',
-          route: 'data-lake-bigdata',
+          route: 'hire-big-data-lake-experts',
         },
         {
           name: 'Data Governance & Quality',
           description:
             'Ensure data accuracy, consistency, and compliance across your organization.',
-          route: 'data-governance',
+          route: 'hire-data-governance-quality-experts',
         },
         {
           name: 'Real-Time Data Streaming & Analytics',
           description:
             'Unlock value from real-time data with streaming analytics and event processing.',
-          route: 'real-time-analytics',
+          route: 'hire-real-time-analytics-developers',
         },
       ],
     },
