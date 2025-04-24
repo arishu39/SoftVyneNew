@@ -6,19 +6,19 @@
       "title": "Free Trial",
       "description": "Start with a risk-free trial period",
       "buttonText": "START 15 DAYS RISK-FREE TRIAL",
-      "imageUrl": "assets/collaborate.jpg"
+      "imageUrl": "assets/risk_free_500_200.png"
     },
     "experience": {
       "title": "10+ Years",
       "description": "Custom Development Solutions",
       "buttonText": "SCHEDULE A CALL",
-      "imageUrl": "assets/enterprise.jpg"
+      "imageUrl": "assets/enterprise_500_200.png"
     },
     "costSaving": {
       "title": "50% Cost Reduction",
       "description": "Reduce Development Costs by 50%",
       "buttonText": "SCHEDULE A CALL",
-      "imageUrl": "assets/consulting.jpg"
+      "imageUrl": "assets/consulting_500_200.png"
     }
   },
   "positions": [
