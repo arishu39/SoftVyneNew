@@ -7,15 +7,10 @@ import { filter } from 'rxjs/operators';
 })
 export class ScrollService {
   constructor(private router: Router) {
-    // Subscribe to router events for automatic scroll to top
     this.router.events
-      .pipe(
-        // Filter only NavigationEnd events
-        filter((event) => event instanceof NavigationEnd)
-      )
+      .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => {
-        // Scroll to top on navigation end
-        window.scrollTo(0, 0);
+        this.scrollToTop();
       });
   }
 
@@ -23,7 +18,41 @@ export class ScrollService {
   scrollToElement(elementId: string): void {
     const element = document.getElementById(elementId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      // Try modern smooth scroll first
+      try {
+        element.scrollIntoView({ behavior: 'smooth' });
+      } catch (e) {
+        // Fallback for older browsers
+        element.scrollIntoView();
+      }
     }
+  }
+
+  // Improved scroll to top method with iOS support
+  private scrollToTop(): void {
+    try {
+      // Try modern smooth scroll first
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
+    } catch (e) {
+      // Fallback for iOS and older browsers
+      this.fallbackScroll();
+    }
+  }
+
+  // Fallback scroll method for iOS
+  private fallbackScroll(): void {
+    // For iOS, we need to scroll both the documentElement and body
+    if (document.documentElement) {
+      document.documentElement.scrollTop = 0;
+    }
+    if (document.body) {
+      document.body.scrollTop = 0;
+    }
+    // Force scroll with window.scrollTo as final fallback
+    window.scrollTo(0, 0);
   }
 }
