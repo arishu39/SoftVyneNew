@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScrollService } from '../../../../services/scroll.service';
 
 @Component({
   selector: 'app-services',
@@ -6,4 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './services.component.scss',
   standalone: false,
 })
-export class ServicesComponent {}
+export class ServicesComponent {
+  constructor(private scrollService: ScrollService) {}
+
+  scrollToContact(): void {
+    this.scrollService.scrollToElement('contact');
+  }
+}

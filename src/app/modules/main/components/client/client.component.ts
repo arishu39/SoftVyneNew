@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ScrollService } from '../../../../services/scroll.service';
 
 @Component({
   selector: 'app-client',
@@ -21,4 +22,10 @@ export class ClientComponent {
     { src: 'assets/part/client_11_120_60.png', alt: 'Client 11' },
     { src: 'assets/part/client_12_120_60.png', alt: 'Client 12' },
   ];
+
+  constructor(private scrollService: ScrollService) {}
+
+  scrollToContact(): void {
+    this.scrollService.scrollToElement('contact');
+  }
 }

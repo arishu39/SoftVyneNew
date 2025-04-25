@@ -5,6 +5,7 @@ import {
   HireDevContent,
 } from '../../../../interfaces/content.interface';
 import { DataService } from '../../../../services/data.service';
+import { ScrollService } from '../../../../services/scroll.service';
 
 @Component({
   selector: 'app-hiredev',
@@ -18,7 +19,14 @@ export class HiredevComponent implements OnInit {
   @Input() subRoute: string = '';
   hiredevContent: HireDevContent | null = null;
 
-  constructor(private dataService: DataService) {}
+  constructor(
+    private dataService: DataService,
+    private scrollService: ScrollService
+  ) {}
+
+  scrollToContact(): void {
+    this.scrollService.scrollToElement('contact');
+  }
 
   ngOnInit(): void {
     if (this.mainRoute) {

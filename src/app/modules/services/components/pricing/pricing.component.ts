@@ -6,6 +6,7 @@ import {
   SimpleChanges,
 } from '@angular/core';
 import { DataService } from '../../../../services/data.service';
+import { ScrollService } from '../../../../services/scroll.service';
 import { LanguageSpecificContent } from '../../../../interfaces/content.interface';
 
 @Component({
@@ -25,7 +26,14 @@ export class PricingComponent implements OnInit, OnChanges {
       })
     | undefined;
 
-  constructor(private dataService: DataService) {}
+  constructor(
+    private dataService: DataService,
+    private scrollService: ScrollService
+  ) {}
+
+  scrollToContact(): void {
+    this.scrollService.scrollToElement('contact');
+  }
 
   ngOnChanges(changes: SimpleChanges): void {
     if ((changes['mainRoute'] || changes['subRoute']) && this.mainRoute) {

@@ -9,7 +9,11 @@
         <p class="subtitle">{{ hiringContent!.heroDescription }}</p>
       </header>
       <div class="hiring-cta-buttons">
-        <a href="#" class="btn btn-primary">
+        <a
+          (click)="scrollToContact()"
+          class="btn btn-primary"
+          style="cursor: pointer"
+        >
           {{ hiringContent!.trialButtonText }}
         </a>
       </div>

@@ -12,7 +12,9 @@
       <p class="description">
         {{ content?.hourlyDescription }}
       </p>
-      <button class="pricing-btn">Hire Now</button>
+      <a (click)="scrollToContact()" class="pricing-btn" style="cursor: pointer"
+        >Hire Now</a
+      >
     </div>
 
     <!-- Monthly Pricing - Individual -->
@@ -25,7 +27,9 @@
       <p class="description">
         {{ content?.monthlyDescriptionIndividual }}
       </p>
-      <button class="pricing-btn">Get Started</button>
+      <a (click)="scrollToContact()" class="pricing-btn" style="cursor: pointer"
+        >Get Started</a
+      >
     </div>
 
     <!-- Monthly Pricing - Team -->
@@ -33,10 +37,14 @@
       <h2 class="price">{{ content?.monthlyPriceTeam }}<span>*****</span></h2>
       <p class="price-type">Monthly (USD)</p>
       <p class="description">{{ content?.monthlyDescriptionTeam }}</p>
-      <button class="pricing-btn">Contact Us</button>
+      <a (click)="scrollToContact()" class="pricing-btn" style="cursor: pointer"
+        >Contact Us</a
+      >
     </div>
   </div>
   <div class="text-center">
-    <button class="cta-button">{{ content?.trialButtonText }}</button>
+    <a (click)="scrollToContact()" class="cta-button" style="cursor: pointer">{{
+      content?.trialButtonText
+    }}</a>
   </div>
 </section>

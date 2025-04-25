@@ -1,6 +1,7 @@
 declare const Calendly: any;
 
 import { Component } from '@angular/core';
+import { ScrollService } from '../../../../services/scroll.service';
 
 @Component({
   selector: 'app-navbar',
@@ -155,7 +156,7 @@ export class NavbarComponent {
   isMobile = window.innerWidth < 992;
   isMegaMenuOpen = false;
 
-  constructor() {
+  constructor(private scrollService: ScrollService) {
     window.addEventListener('resize', () => {
       this.isMobile = window.innerWidth < 992;
       if (!this.isMobile) {
@@ -260,4 +261,8 @@ export class NavbarComponent {
       this.closeMegaMenu();
     }
   };
+
+  scrollToContact(): void {
+    this.scrollService.scrollToElement('contact');
+  }
 }

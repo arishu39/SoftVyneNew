@@ -1,4 +1,5 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { ScrollService } from '../../../../services/scroll.service';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +11,12 @@ export class HomeComponent implements AfterViewInit {
   @ViewChild('myVideo') myVideo!: ElementRef;
   private retryCount = 0;
   private readonly maxRetries = 5;
+
+  constructor(private scrollService: ScrollService) {}
+
+  scrollToContact(): void {
+    this.scrollService.scrollToElement('contact');
+  }
 
   ngAfterViewInit(): void {
     this.setupVideo();

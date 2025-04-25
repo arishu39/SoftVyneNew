@@ -9,134 +9,157 @@ body {
 
 /* Pricing Section */
 .pricing-section {
-  padding: 60px 10%;
+  padding: 80px 0;
+  text-align: center;
+  background: var(--bg-light);
+
+  h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+  }
+
+  .subtext {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    max-width: 800px;
+    margin: 0 auto 60px;
+  }
 }
 
-h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #222;
-}
-
-.subtext {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 40px;
-}
-
-/* Pricing Container */
 .pricing-container {
   display: flex;
   justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Pricing Card */
 .pricing-card {
-  background: white;
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 320px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 1;
+  max-width: 350px;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 48px rgba(44, 62, 80, 0.2);
+  }
+
+  &.highlighted {
+    border: 2px solid var(--secondary-color);
+
+    .badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--secondary-color);
+      color: white;
+      padding: 4px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+  }
+
+  .price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 20px 0 5px;
+
+    span {
+      font-size: 1rem;
+      opacity: 0.5;
+      margin-left: 2px;
+    }
+  }
+
+  .price-type {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
 }
 
-.pricing-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Highlighted Card */
-.highlighted {
-  border: 3px solid #ff6f00;
-  background: #fff4e6;
-}
-
-.badge {
-  position: absolute;
-  top: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #ff6f00;
-  color: white;
-  font-size: 0.8rem;
-  padding: 5px 12px;
-  border-radius: 8px;
-  font-weight: 600;
-}
-
-/* Price Styling */
-.price {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #ff6f00;
-  margin-bottom: 5px;
-}
-
-.price span {
-  font-size: 1.8rem;
-  color: #999;
-}
-
-.price-type {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #444;
-  margin-bottom: 20px;
-}
-
-.description {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 20px;
-  line-height: 1.5;
-}
-
-/* Pricing Buttons */
 .pricing-btn {
   display: inline-block;
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: 600;
-  background: #ff6f00;
+  background: var(--secondary-color);
   color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
   border: none;
-  border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
-}
 
-.pricing-btn:hover {
-  background: #e65c00;
+  &:hover {
+    background: var(--secondary-dark);
+    transform: translateY(-2px);
+  }
 }
 
 /* CTA Button */
 .cta-button {
-  margin-top: 40px;
-  background: #ff6f00;
+  display: inline-block;
+  margin-top: 50px;
+  background: var(--primary-color);
   color: white;
-  font-size: 1.2rem;
-  padding: 14px 30px;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
   border: none;
-  border-radius: 10px;
   cursor: pointer;
-  transition: 0.3s;
-}
 
-.cta-button:hover {
-  background: #e65c00;
+  &:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+  }
 }
 
 /* Responsive Design */
-@media screen and (max-width: 900px) {
+@media (max-width: 991px) {
   .pricing-container {
     flex-direction: column;
     align-items: center;
+    gap: 40px;
   }
 
   .pricing-card {
-    width: 90%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .pricing-section {
+    h1 {
+      font-size: 2rem;
+    }
+    .subtext {
+      font-size: 1rem;
+      padding: 0 20px;
+    }
+  }
+
+  .pricing-card {
+    padding: 30px 20px;
   }
 }

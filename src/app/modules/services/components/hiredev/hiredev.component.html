@@ -22,9 +22,12 @@
             <p class="card-text">
               {{ hiredevContent!.sections.trial.description }}
             </p>
-            <a href="#" class="btn custom-btn">{{
-              hiredevContent!.sections.trial.buttonText
-            }}</a>
+            <a
+              (click)="scrollToContact()"
+              class="btn custom-btn"
+              style="cursor: pointer"
+              >{{ hiredevContent!.sections.trial.buttonText }}</a
+            >
           </div>
         </div>
       </div>
@@ -43,9 +46,12 @@
             <p class="card-text">
               {{ hiredevContent!.sections.experience.description }}
             </p>
-            <a href="#" class="btn custom-btn">{{
-              hiredevContent!.sections.experience.buttonText
-            }}</a>
+            <a
+              (click)="scrollToContact()"
+              class="btn custom-btn"
+              style="cursor: pointer"
+              >{{ hiredevContent!.sections.experience.buttonText }}</a
+            >
           </div>
         </div>
       </div>
@@ -64,9 +70,12 @@
             <p class="card-text">
               {{ hiredevContent!.sections.costSaving.description }}
             </p>
-            <a href="#" class="btn custom-btn">{{
-              hiredevContent!.sections.costSaving.buttonText
-            }}</a>
+            <a
+              (click)="scrollToContact()"
+              class="btn custom-btn"
+              style="cursor: pointer"
+              >{{ hiredevContent!.sections.costSaving.buttonText }}</a
+            >
           </div>
         </div>
       </div>
