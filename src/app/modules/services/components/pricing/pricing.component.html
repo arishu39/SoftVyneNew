@@ -5,44 +5,67 @@
   </p>
 
   <div class="pricing-container">
-    <!-- Hourly Pricing -->
+    <!-- Project Based -->
     <div class="pricing-card">
-      <h2 class="price">{{ content?.hourlyPrice }}<span>*</span></h2>
-      <p class="price-type">Hourly (USD)</p>
-      <p class="description">
-        {{ content?.hourlyDescription }}
-      </p>
+      <h2>{{ content?.basicTitle }}</h2>
+      <div class="features">
+        <p class="description">
+          {{ content?.basicDescription }}
+        </p>
+        <ul>
+          <li>✓ Defined Project Scope</li>
+          <li>✓ Milestone-based Delivery</li>
+          <li>✓ Flexible Timeline</li>
+          <li>✓ Project Manager Included</li>
+        </ul>
+      </div>
       <a (click)="scrollToContact()" class="pricing-btn" style="cursor: pointer"
-        >Hire Now</a
+        >Get Custom Quote</a
       >
     </div>
 
-    <!-- Monthly Pricing - Individual -->
+    <!-- Dedicated Resource -->
     <div class="pricing-card highlighted">
-      <div class="badge">STARTS WITH</div>
-      <h2 class="price">
-        {{ content?.monthlyPriceIndividual }}<span>***</span>
-      </h2>
-      <p class="price-type">Monthly (USD)</p>
-      <p class="description">
-        {{ content?.monthlyDescriptionIndividual }}
-      </p>
+      <div class="badge">MOST POPULAR</div>
+      <h2>{{ content?.proTitle }}</h2>
+      <div class="features">
+        <p class="description">
+          {{ content?.proDescription }}
+        </p>
+        <ul>
+          <li>✓ Full-time Dedication</li>
+          <li>✓ Direct Communication</li>
+          <li>✓ Agile Integration</li>
+          <li>✓ Flexible Contract Terms</li>
+        </ul>
+      </div>
       <a (click)="scrollToContact()" class="pricing-btn" style="cursor: pointer"
-        >Get Started</a
+        >Schedule Consultation</a
       >
     </div>
 
-    <!-- Monthly Pricing - Team -->
+    <!-- Full Team -->
     <div class="pricing-card">
-      <h2 class="price">{{ content?.monthlyPriceTeam }}<span>*****</span></h2>
-      <p class="price-type">Monthly (USD)</p>
-      <p class="description">{{ content?.monthlyDescriptionTeam }}</p>
+      <h2>{{ content?.teamTitle }}</h2>
+      <div class="features">
+        <p class="description">
+          {{ content?.teamDescription }}
+        </p>
+        <ul>
+          <li>✓ Complete SCRUM Team</li>
+          <li>✓ End-to-end Delivery</li>
+          <li>✓ Dedicated PM & QA</li>
+          <li>✓ Enterprise Support</li>
+        </ul>
+      </div>
       <a (click)="scrollToContact()" class="pricing-btn" style="cursor: pointer"
         >Contact Us</a
       >
     </div>
   </div>
-  <div class="text-center">
+
+  <div class="text-center mt-4">
+    <p class="consultation-text">Not sure which model fits your needs?</p>
     <a (click)="scrollToContact()" class="cta-button" style="cursor: pointer">{{
       content?.trialButtonText
     }}</a>

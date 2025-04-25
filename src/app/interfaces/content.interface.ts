@@ -14,12 +14,12 @@ export interface LanguageSpecificContent {
   upgradeServiceText?: string;
   costSavingText?: string;
   imageUrl?: string;
-  hourlyPrice?: string;
-  monthlyPriceIndividual?: string;
-  monthlyPriceTeam?: string;
-  hourlyDescription?: string;
-  monthlyDescriptionIndividual?: string;
-  monthlyDescriptionTeam?: string;
+  basicTitle: string;
+  proTitle: string;
+  teamTitle: string;
+  basicDescription: string;
+  proDescription: string;
+  teamDescription: string;
 }
 
 export interface Position {

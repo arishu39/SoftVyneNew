@@ -1,47 +1,47 @@
 {
   "languages": {
     "ai-machine-learning-experts": {
-      "heroTitle": "Hire AI & Machine Learning Experts As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$3.2",
-      "monthlyPriceIndividual": "$3.0",
-      "monthlyPriceTeam": "$1.6",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior AI & ML Expert <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
+      "heroTitle": "Flexible Engagement Models for AI & Machine Learning Experts",
+      "heroDescription": "Customized Solutions | Fully Signed NDA | Code Security | Easy Exit Policy",
+      "basicTitle": "Project-Based",
+      "proTitle": "Dedicated Resource",
+      "teamTitle": "Full Team",
+      "basicDescription": "Perfect for specific AI/ML projects with defined scope. Includes project management, quality assurance, and complete documentation.",
+      "proDescription": "Dedicated senior AI & ML expert working full-time with your team. Seamless integration with your development process.",
+      "teamDescription": "Custom-built SCRUM team of AI/ML experts. Ideal for large-scale projects and long-term partnerships."
     },
     "full-stack-developers": {
-      "heroTitle": "Hire Full-Stack Engineering Experts As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$2.5",
-      "monthlyPriceIndividual": "$2.2",
-      "monthlyPriceTeam": "$1.2",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Full-Stack Engineer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
+      "heroTitle": "Flexible Engagement Models for Full-Stack Engineering",
+      "heroDescription": "Customized Solutions | Fully Signed NDA | Code Security | Easy Exit Policy",
+      "basicTitle": "Project-Based",
+      "proTitle": "Dedicated Resource",
+      "teamTitle": "Full Team",
+      "basicDescription": "Ideal for specific development projects. Includes technical planning, development, testing, and deployment.",
+      "proDescription": "Dedicated senior full-stack engineer working exclusively with your team. Direct communication and seamless collaboration.",
+      "teamDescription": "Assembled SCRUM team tailored to your project needs. Perfect for complex, long-term development initiatives."
     },
     "cloud-devops-engineers": {
-      "heroTitle": "Hire Cloud & DevOps Experts As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$2.8",
-      "monthlyPriceIndividual": "$2.6",
-      "monthlyPriceTeam": "$1.4",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Cloud & DevOps Expert <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
+      "heroTitle": "Flexible Engagement Models for Cloud & DevOps",
+      "heroDescription": "Customized Solutions | Fully Signed NDA | Code Security | Easy Exit Policy",
+      "basicTitle": "Project-Based",
+      "proTitle": "Dedicated Resource",
+      "teamTitle": "Full Team",
+      "basicDescription": "Targeted cloud and DevOps solutions with clear deliverables. Includes infrastructure planning and implementation.",
+      "proDescription": "Dedicated senior Cloud & DevOps expert integrated with your team. Continuous optimization and support.",
+      "teamDescription": "Complete DevOps team customized for your infrastructure needs. Ideal for enterprise-scale operations."
     },
     "data-engineering-analytics-experts": {
-      "heroTitle": "Hire Data Engineering Experts As Per Your Need",
-      "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
-      "hourlyPrice": "$3.0",
-      "monthlyPriceIndividual": "$2.8",
-      "monthlyPriceTeam": "$1.5",
-      "hourlyDescription": "We'll provide a fully signed NDA for your project's confidentiality.",
-      "monthlyDescriptionIndividual": "Senior Data Engineer <br />160 hours per month.",
-      "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
+      "heroTitle": "Flexible Engagement Models for Data Engineering",
+      "heroDescription": "Customized Solutions | Fully Signed NDA | Code Security | Easy Exit Policy",
+      "basicTitle": "Project-Based",
+      "proTitle": "Dedicated Resource",
+      "teamTitle": "Full Team",
+      "basicDescription": "Focused data engineering solutions with defined outcomes. Includes data architecture and pipeline development.",
+      "proDescription": "Dedicated senior Data Engineer working full-time with your team. Expert guidance and implementation.",
+      "teamDescription": "Full data engineering team built for your specific needs. Perfect for large-scale data initiatives."
     }
   },
-  "trialButtonText": "SCHEDULE A DEVELOPER INTERVIEW",
-  "callButtonText": "SCHEDULE A CALL",
+  "trialButtonText": "SCHEDULE A CONSULTATION",
+  "callButtonText": "GET CUSTOM QUOTE",
   "positions": []
 }

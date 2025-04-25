@@ -9,157 +9,183 @@ body {
 
 /* Pricing Section */
 .pricing-section {
-  padding: 80px 0;
+  padding: 4rem 2rem;
   text-align: center;
-  background: var(--bg-light);
+  background: linear-gradient(135deg, var(--bg-dark), var(--primary-dark));
+  color: white;
 
   h1 {
-    font-size: 2.8rem;
-    font-weight: 900;
-    margin-bottom: 10px;
-    color: var(--text-primary);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: 600;
   }
 
   .subtext {
-    font-size: 1.15rem;
-    color: var(--text-secondary);
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
     max-width: 800px;
-    margin: 0 auto 60px;
+    margin: 0 auto 3rem;
   }
 }
 
 .pricing-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 2rem;
+  flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
-/* Pricing Card */
 .pricing-card {
-  flex: 1;
-  max-width: 350px;
-  background: #fff;
-  padding: 40px 30px;
+  background: white;
   border-radius: var(--border-radius);
-  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2.5rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  flex: 1;
+  min-width: 300px;
+  max-width: 380px;
   position: relative;
+  transition: all 0.3s ease;
 
   &:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 16px 48px rgba(44, 62, 80, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
   }
 
   &.highlighted {
-    border: 2px solid var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    transform: scale(1.05);
 
-    .badge {
-      position: absolute;
-      top: -12px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--secondary-color);
-      color: white;
-      padding: 4px 16px;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      font-weight: 600;
+    &:hover {
+      transform: scale(1.05) translateY(-5px);
     }
   }
 
-  .price {
-    font-size: 2.5rem;
-    font-weight: 700;
+  h2 {
+    font-size: 1.8rem;
     color: var(--text-primary);
-    margin: 20px 0 5px;
-
-    span {
-      font-size: 1rem;
-      opacity: 0.5;
-      margin-left: 2px;
-    }
+    margin-bottom: 1.5rem;
+    font-weight: 600;
   }
 
-  .price-type {
-    color: var(--text-secondary);
-    font-size: 1rem;
-    margin-bottom: 20px;
+  .features {
+    margin: 1.5rem 0;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 1.5rem 0;
+      text-align: left;
+
+      li {
+        margin: 0.8rem 0;
+        color: var(--text-secondary);
+        font-size: 1rem;
+
+        &::before {
+          content: "✓";
+          color: var(--primary-color);
+          margin-right: 0.5rem;
+          font-weight: bold;
+        }
+      }
+    }
   }
 
   .description {
     color: var(--text-secondary);
     font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 1.5rem;
+    text-align: left;
   }
 }
 
-.pricing-btn {
-  display: inline-block;
+.badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
   background: var(--secondary-color);
   color: white;
-  padding: 12px 30px;
+  padding: 0.5rem 1.2rem;
   border-radius: 25px;
+  font-size: 0.8rem;
   font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  border: none;
-  cursor: pointer;
-
-  &:hover {
-    background: var(--secondary-dark);
-    transform: translateY(-2px);
-  }
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(255, 90, 44, 0.2);
 }
 
-/* CTA Button */
-.cta-button {
+%btn-primary {
   display: inline-block;
-  margin-top: 50px;
+  padding: 1rem 2rem;
   background: var(--primary-color);
   color: white;
-  padding: 15px 40px;
-  border-radius: 30px;
-  font-weight: 600;
   text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
   transition: all 0.3s ease;
-  border: none;
-  cursor: pointer;
 
   &:hover {
     background: var(--primary-dark);
     transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.3);
   }
 }
 
-/* Responsive Design */
-@media (max-width: 991px) {
+.pricing-btn {
+  @extend %btn-primary;
+  width: 100%;
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.consultation-text {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 2rem 0 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: var(--secondary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(255, 90, 44, 0.3);
+
+  &:hover {
+    background: var(--secondary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 90, 44, 0.4);
+  }
+}
+
+@media (max-width: 768px) {
   .pricing-container {
     flex-direction: column;
     align-items: center;
-    gap: 40px;
   }
 
   .pricing-card {
     width: 100%;
-  }
-}
+    max-width: none;
+    margin-bottom: 2rem;
 
-@media (max-width: 576px) {
-  .pricing-section {
-    h1 {
-      font-size: 2rem;
-    }
-    .subtext {
-      font-size: 1rem;
-      padding: 0 20px;
-    }
-  }
+    &.highlighted {
+      transform: none;
+      order: -1;
 
-  .pricing-card {
-    padding: 30px 20px;
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
   }
 }
