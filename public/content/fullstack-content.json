@@ -1,92 +1,102 @@
 {
   "languages": {
-    "ai-machine-learning": {
+    "ai-machine-learning-experts": {
       "title": "Transform Your Business with AI & ML",
       "description": "Harness the power of artificial intelligence and machine learning to create innovative solutions that drive business growth and automation excellence.",
       "items": [
         {
-          "title": "Advanced Deep Learning Solutions",
-          "content": "Unlock the potential of neural networks to solve complex problems with our state-of-the-art deep learning implementations. From image recognition to predictive analytics, we build systems that learn and adapt."
+          "title": "Generative AI & AI Agents",
+          "content": "Build powerful language models and intelligent automation solutions that enhance productivity and streamline operations."
         },
         {
-          "title": "Natural Language AI",
-          "content": "Create intelligent conversational experiences with our advanced NLP solutions. We develop sophisticated systems that understand context, sentiment, and human intent with remarkable accuracy."
+          "title": "Retrieval-Augmented Generation (RAG)",
+          "content": "Enhance knowledge management by combining AI capabilities with your data for improved information retrieval and generation."
         },
         {
-          "title": "Intelligent Computer Vision",
-          "content": "Transform visual data into actionable insights with our computer vision solutions. From real-time object detection to advanced image analysis, we bring vision intelligence to your applications."
+          "title": "Conversational AI & Voice Interfaces",
+          "content": "Create sophisticated chatbots and voice interfaces using natural language processing for enhanced user engagement."
+        },
+        {
+          "title": "ML & Deep Learning",
+          "content": "Develop custom machine learning solutions using TensorFlow and PyTorch, focused on accuracy and innovation."
+        },
+        {
+          "title": "MLOps & Model Governance",
+          "content": "Streamline AI model deployment and governance with robust MLOps practices for reliable scaling."
         }
       ]
     },
-    "full-stack-engineering": {
+    "full-stack-developers": {
       "title": "Create End-to-End Applications with Full-Stack Engineering",
       "description": "Build complete web applications with expertise in both frontend and backend technologies for seamless user experiences.",
       "items": [
         {
-          "icon": "assets/techstack/FullStack.png",
-          "alt": "Frontend Development",
-          "title": "Modern Frontend Development",
-          "content": "Create responsive and interactive user interfaces using React, Angular, or Vue.js."
+          "title": "Modern Web & Mobile Development",
+          "content": "Create responsive and interactive applications using React, Angular, Vue, and Next.js, optimized for all devices."
         },
         {
-          "icon": "assets/techstack/FullStack.png",
-          "alt": "Backend Development",
-          "title": "Robust Backend Systems",
-          "content": "Build scalable server-side applications using Node.js, Python, or Java."
+          "title": "Design Systems & UX Excellence",
+          "content": "Build intuitive, accessible interfaces that boost user engagement and satisfaction."
         },
         {
-          "icon": "assets/techstack/FullStack.png",
-          "alt": "Database Integration",
-          "title": "Database & API Integration",
-          "content": "Implement efficient data storage and API architectures for seamless data flow."
+          "title": "Microservices & API Engineering",
+          "content": "Develop scalable backend services using .NET, Java/Spring, Node, Python, Go, and Rust."
+        },
+        {
+          "title": "Serverless Architectures",
+          "content": "Build highly responsive applications using modern serverless solutions."
+        },
+        {
+          "title": "Performance & Security",
+          "content": "Optimize application performance, security, and scalability to protect users and brands."
         }
       ]
     },
-    "cloud-devops-automation": {
-      "title": "Optimize Operations with Cloud & DevOps Solutions",
+    "cloud-devops-engineers": {
+      "title": "Optimize Operations with Cloud & DevOps",
       "description": "Implement efficient cloud infrastructure and DevOps practices for improved deployment and operational efficiency.",
       "items": [
         {
-          "icon": "assets/techstack/Cloud.png",
-          "alt": "Cloud Infrastructure",
-          "title": "Cloud Infrastructure",
-          "content": "Design and implement scalable cloud solutions using AWS, Azure, or Google Cloud."
+          "title": "Multi-Cloud Strategy",
+          "content": "Seamlessly migrate and optimize workloads across AWS, Azure, GCP, Oracle, and IBM clouds."
         },
         {
-          "icon": "assets/techstack/Cloud.png",
-          "alt": "DevOps Automation",
-          "title": "DevOps Automation",
-          "content": "Streamline development workflows with CI/CD pipelines and automation tools."
-        },
-        {
-          "icon": "assets/techstack/Cloud.png",
-          "alt": "Container Orchestration",
           "title": "Container Orchestration",
-          "content": "Manage containerized applications using Docker and Kubernetes."
+          "content": "Deploy and manage containerized applications using Docker, Kubernetes, and OpenShift."
+        },
+        {
+          "title": "CI/CD & Infrastructure-as-Code",
+          "content": "Implement automated pipelines and infrastructure-as-code for accelerated development cycles."
+        },
+        {
+          "title": "Site Reliability Engineering",
+          "content": "Proactively manage and improve service reliability, performance, and uptime."
         }
       ]
     },
-    "data-engineering-analytics": {
-      "title": "Transform Data into Insights with Data Engineering",
+    "data-engineering-analytics-experts": {
+      "title": "Transform Data into Insights",
       "description": "Build robust data pipelines and analytics solutions to extract valuable insights from your data.",
       "items": [
         {
-          "icon": "assets/techstack/Data.png",
-          "alt": "Data Pipeline",
-          "title": "Data Pipeline Development",
-          "content": "Create efficient ETL pipelines for processing and transforming large datasets."
+          "title": "Data Warehousing & ETL",
+          "content": "Design and build scalable data pipelines and warehouses for actionable insights."
         },
         {
-          "icon": "assets/techstack/Data.png",
-          "alt": "Data Analytics",
-          "title": "Advanced Analytics",
-          "content": "Implement analytics solutions using modern tools and frameworks for data-driven decisions."
+          "title": "Business Intelligence",
+          "content": "Create interactive dashboards and advanced analytics solutions for data-driven decisions."
         },
         {
-          "icon": "assets/techstack/Data.png",
-          "alt": "Big Data",
-          "title": "Big Data Processing",
-          "content": "Handle large-scale data processing using technologies like Spark and Hadoop."
+          "title": "Data Lakes & Big Data",
+          "content": "Implement big data platforms for storage, processing, and analytics at scale."
+        },
+        {
+          "title": "Data Governance & Quality",
+          "content": "Ensure data accuracy, consistency, and compliance across your organization."
+        },
+        {
+          "title": "Real-Time Analytics",
+          "content": "Build streaming analytics and event processing solutions for immediate insights."
         }
       ]
     }

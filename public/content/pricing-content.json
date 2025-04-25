@@ -1,6 +1,6 @@
 {
   "languages": {
-    "ai-machine-learning": {
+    "ai-machine-learning-experts": {
       "heroTitle": "Hire AI & Machine Learning Experts As Per Your Need",
       "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
       "hourlyPrice": "$3.2",
@@ -10,7 +10,7 @@
       "monthlyDescriptionIndividual": "Senior AI & ML Expert <br />160 hours per month.",
       "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
     },
-    "full-stack-engineering": {
+    "full-stack-developers": {
       "heroTitle": "Hire Full-Stack Engineering Experts As Per Your Need",
       "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
       "hourlyPrice": "$2.5",
@@ -20,7 +20,7 @@
       "monthlyDescriptionIndividual": "Senior Full-Stack Engineer <br />160 hours per month.",
       "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
     },
-    "cloud-devops-automation": {
+    "cloud-devops-engineers": {
       "heroTitle": "Hire Cloud & DevOps Experts As Per Your Need",
       "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
       "hourlyPrice": "$2.8",
@@ -30,7 +30,7 @@
       "monthlyDescriptionIndividual": "Senior Cloud & DevOps Expert <br />160 hours per month.",
       "monthlyDescriptionTeam": "Build a SCRUM Team of 5 Developers."
     },
-    "data-engineering-analytics": {
+    "data-engineering-analytics-experts": {
       "heroTitle": "Hire Data Engineering Experts As Per Your Need",
       "heroDescription": "Simple & Transparent Pricing | Fully Signed NDA | Code Security | Easy Exit Policy",
       "hourlyPrice": "$3.0",

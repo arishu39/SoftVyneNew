@@ -1,6 +1,6 @@
 {
   "languages": {
-    "ai-agents": {
+    "hire-generative-ai-developers-agents": {
       "heroTitle": "Hire Generative AI & AI Agents Experts",
       "heroDescription": "Hire expert AI developers to build powerful language models and intelligent automation solutions. Our team specializes in developing custom AI agents that enhance productivity and streamline operations.",
       "experienceYears": "5+ Years",
@@ -8,7 +8,7 @@
       "costSavingText": "Save Up to 40% On Development Cost",
       "imageUrl": "assets/AI_AGent_1980_800_4.png"
     },
-    "rag": {
+    "hire-retrieval-augmented-generation-rag-developers": {
       "heroTitle": "Hire RAG Developers",
       "heroDescription": "Hire RAG (Retrieval-Augmented Generation) experts to enhance your knowledge management systems. Our specialists combine AI capabilities with your data for improved information retrieval and generation.",
       "experienceYears": "4+ Years",
@@ -16,7 +16,7 @@
       "costSavingText": "Save Up to 35% On Development Cost",
       "imageUrl": "assets/AI_AGent_1980_600_5.png"
     },
-    "conversational-ai": {
+    "hire-conversational-ai-voice-bots-developers": {
       "heroTitle": "Hire Conversational AI Experts",
       "heroDescription": "Hire conversational AI developers to create sophisticated chatbots and voice interfaces. Our team delivers natural language processing solutions that enhance user engagement.",
       "experienceYears": "6+ Years",
@@ -24,7 +24,7 @@
       "costSavingText": "Save Up to 38% On Development Cost",
       "imageUrl": "assets/AI_AGent_1980_800_3.png"
     },
-    "ml-development": {
+    "hire-ml-deep-learning-developers": {
       "heroTitle": "Hire ML & Deep Learning Experts",
       "heroDescription": "Hire machine learning experts specialized in TensorFlow and PyTorch. Our team develops custom ML solutions focused on accuracy and innovation.",
       "experienceYears": "8+ Years",
@@ -32,7 +32,7 @@
       "costSavingText": "Save Up to 42% On Development Cost",
       "imageUrl": "assets/brain.png"
     },
-    "mlops": {
+    "hire-mlops-model-ai-governance-experts": {
       "heroTitle": "Hire MLOps Engineers",
       "heroDescription": "Hire MLOps engineers to streamline your AI model deployment and governance. Our experts ensure smooth operationalization and scaling of ML models.",
       "experienceYears": "5+ Years",
@@ -40,7 +40,7 @@
       "costSavingText": "Save Up to 35% On Development Cost",
       "imageUrl": "assets/brain.png"
     },
-    "web-mobile-development": {
+    "hire-web-mobile-app-developers": {
       "heroTitle": "Hire Full-Stack Web & Mobile Developers",
       "heroDescription": "Hire expert developers specializing in React, Angular, Vue, and Next.js to build seamless, responsive applications optimized for all devices.",
       "experienceYears": "12+ Years",
@@ -48,7 +48,7 @@
       "costSavingText": "Save Up to 40% On Development Cost",
       "imageUrl": "assets/back_end_1980_800_1.png"
     },
-    "design-systems": {
+    "hire-ux-ui-design-experts": {
       "heroTitle": "Hire Design Systems & UX Experts",
       "heroDescription": "Hire UX specialists to create intuitive, accessible interfaces that boost user engagement and satisfaction.",
       "experienceYears": "8+ Years",
@@ -56,7 +56,7 @@
       "costSavingText": "Save Up to 35% On Development Cost",
       "imageUrl": "assets/back_end_1980_800_1.png"
     },
-    "microservices": {
+    "hire-microservices-api-developers": {
       "heroTitle": "Hire Microservices & API Engineers",
       "heroDescription": "Hire experts in .NET, Java/Spring, Node, Python, Go, and Rust to build scalable and maintainable backend services.",
       "experienceYears": "10+ Years",
@@ -64,7 +64,7 @@
       "costSavingText": "Save Up to 45% On Development Cost",
       "imageUrl": "assets/back_end_1980_800_1.png"
     },
-    "serverless-architectures": {
+    "hire-serverless-architectures-experts": {
       "heroTitle": "Hire Serverless Architecture Experts",
       "heroDescription": "Hire developers to build highly responsive applications using modern serverless solutions and architectures.",
       "experienceYears": "7+ Years",
@@ -72,7 +72,7 @@
       "costSavingText": "Save Up to 38% On Development Cost",
       "imageUrl": "assets/back_end_1980_800_1.png"
     },
-    "performance-optimization": {
+    "hire-performance-security-optimization": {
       "heroTitle": "Hire Performance & Security Experts",
       "heroDescription": "Hire specialists to optimize application performance, security, and scalability to protect your users and brand.",
       "experienceYears": "9+ Years",
@@ -80,7 +80,7 @@
       "costSavingText": "Save Up to 40% On Development Cost",
       "imageUrl": "assets/back_end_1980_800_1.png"
     },
-    "multi-cloud": {
+    "hire-multi-cloud-migration-experts": {
       "heroTitle": "Hire Multi-Cloud Strategy Experts",
       "heroDescription": "Hire cloud specialists to seamlessly migrate and optimize workloads across AWS, Azure, GCP, Oracle, and IBM clouds.",
       "experienceYears": "8+ Years",
@@ -88,7 +88,7 @@
       "costSavingText": "Save Up to 42% On Development Cost",
       "imageUrl": "assets/cloud.png"
     },
-    "containers-kubernetes": {
+    "hire-kubernetes-docker-orchestration-experts": {
       "heroTitle": "Hire Container & Kubernetes Experts",
       "heroDescription": "Hire specialists in Docker, Kubernetes, and OpenShift for containerized application deployment and orchestration.",
       "experienceYears": "7+ Years",
@@ -96,7 +96,7 @@
       "costSavingText": "Save Up to 38% On Development Cost",
       "imageUrl": "assets/cloud.png"
     },
-    "ci-cd": {
+    "hire-cicd-infrastructure-code-experts": {
       "heroTitle": "Hire CI/CD & IaC Experts",
       "heroDescription": "Hire DevOps engineers to implement automated pipelines and infrastructure-as-code for accelerated development cycles.",
       "experienceYears": "8+ Years",
@@ -104,7 +104,7 @@
       "costSavingText": "Save Up to 40% On Development Cost",
       "imageUrl": "assets/cloud.png"
     },
-    "sre": {
+    "hire-sre-observability-engineers": {
       "heroTitle": "Hire Site Reliability Engineers",
       "heroDescription": "Hire SRE experts to proactively manage and improve service reliability, performance, and uptime.",
       "experienceYears": "7+ Years",
@@ -112,7 +112,7 @@
       "costSavingText": "Save Up to 35% On Development Cost",
       "imageUrl": "assets/cloud.png"
     },
-    "data-warehousing-etl": {
+    "hire-data-warehousing-etl-developers": {
       "heroTitle": "Hire Data Warehousing & ETL Experts",
       "heroDescription": "Hire data engineers to design and build scalable data pipelines and warehouses for actionable insights.",
       "experienceYears": "9+ Years",
@@ -120,7 +120,7 @@
       "costSavingText": "Save Up to 42% On Development Cost",
       "imageUrl": "assets/front_end_1980_800_3.png"
     },
-    "business-intelligence": {
+    "hire-business-intelligence-developers": {
       "heroTitle": "Hire Business Intelligence Experts",
       "heroDescription": "Hire BI specialists to create interactive dashboards and advanced analytics solutions for data-driven decisions.",
       "experienceYears": "8+ Years",
@@ -128,7 +128,7 @@
       "costSavingText": "Save Up to 38% On Development Cost",
       "imageUrl": "assets/front_end_1980_800_3.png"
     },
-    "data-lake-bigdata": {
+    "hire-big-data-lake-experts": {
       "heroTitle": "Hire Data Lake & Big Data Experts",
       "heroDescription": "Hire specialists to implement big data platforms for storage, processing, and analytics at scale.",
       "experienceYears": "8+ Years",
@@ -136,7 +136,7 @@
       "costSavingText": "Save Up to 40% On Development Cost",
       "imageUrl": "assets/front_end_1980_800_3.png"
     },
-    "data-governance": {
+    "hire-data-governance-quality-experts": {
       "heroTitle": "Hire Data Governance Experts",
       "heroDescription": "Hire specialists to ensure data accuracy, consistency, and compliance across your organization.",
       "experienceYears": "7+ Years",
@@ -144,7 +144,7 @@
       "costSavingText": "Save Up to 35% On Development Cost",
       "imageUrl": "assets/front_end_1980_800_3.png"
     },
-    "real-time-analytics": {
+    "hire-real-time-analytics-developers": {
       "heroTitle": "Hire Real-Time Analytics Experts",
       "heroDescription": "Hire specialists in real-time data streaming and event processing for immediate insights and actions.",
       "experienceYears": "8+ Years",
