@@ -263,6 +263,8 @@ export class NavbarComponent {
   };
 
   scrollToContact(): void {
+    this.onMenuItemClick(); // Close mobile menu
+    this.closeMegaMenu(); // Close mega menu if open
     this.scrollService.scrollToElement('contact');
   }
 }

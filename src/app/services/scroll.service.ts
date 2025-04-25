@@ -18,14 +18,33 @@ export class ScrollService {
   scrollToElement(elementId: string): void {
     const element = document.getElementById(elementId);
     if (element) {
+      // Get element's position
+      const elementPosition =
+        element.getBoundingClientRect().top + window.pageYOffset;
+
       // Try modern smooth scroll first
       try {
-        element.scrollIntoView({ behavior: 'smooth' });
+        window.scrollTo({
+          top: elementPosition,
+          behavior: 'smooth',
+        });
       } catch (e) {
-        // Fallback for older browsers
-        element.scrollIntoView();
+        // Fallback for iOS
+        this.fallbackScrollToElement(elementPosition);
       }
     }
+  }
+
+  private fallbackScrollToElement(topPosition: number): void {
+    // For iOS, we need to scroll both documentElement and body
+    if (document.documentElement) {
+      document.documentElement.scrollTop = topPosition;
+    }
+    if (document.body) {
+      document.body.scrollTop = topPosition;
+    }
+    // Force scroll with window.scrollTo as final fallback
+    window.scrollTo(0, topPosition);
   }
 
   // Improved scroll to top method with iOS support
